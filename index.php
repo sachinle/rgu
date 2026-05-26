@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RGU | Rathinam Global University</title>
+    <style>body{margin:0!important;padding:0!important}</style>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +15,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body>
-    <?php include __DIR__ . '/partials/banner.php'; ?>
+<body><?php include __DIR__ . '/partials/banner.php'; ?>
     <?php include __DIR__ . '/partials/marquee.php'; ?>
     <?php include __DIR__ . '/partials/live-admission.php'; ?>
     <?php include __DIR__ . '/partials/courses.php'; ?>

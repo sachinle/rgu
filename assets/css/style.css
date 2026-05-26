@@ -20,34 +20,86 @@
   --grad-cyan: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
   --grad-indigo: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
 }
+html {
+  background: #ffffff;
+}
 body {
   font-family: "Sora", sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .banner {
   background-image: url("../images/earth-half.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  margin-top: 0 !important;
 }
 
 /* Mobile Dark Overlay */
 @media (max-width: 767px) {
   .banner {
-  background-image: url("../images/earth-half-mobileview.jpg");
-}
+    background-image: url("../images/earth-half-mobileview.jpg");
+    overflow: hidden;
+  }
 
   .banner::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgb(0 0 0), rgb(0 65 247 / 33%));
-    /* backdrop-filter: blur(2px); */
+    /* background: linear-gradient(135deg, rgb(0 0 0), rgb(0 65 247 / 33%)); */
     z-index: 1;
   }
 
   .banner > * {
     position: relative;
     z-index: 2;
+  }
+}
+
+/* ===== Yonsei-style Rising Light Trailing Lines (desktop) ===== */
+.rising-line {
+  position: relative;
+  width: 1px;
+  background: linear-gradient(to top, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.18) 40%, rgba(255,255,255,0.05) 100%);
+  overflow: hidden;
+}
+.rising-line::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  bottom: -40%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0) 100%);
+  filter: blur(0.5px);
+  animation: rise-up 2.8s ease-in-out infinite;
+}
+.rising-line.rd-1::before { animation-delay: 0s; }
+.rising-line.rd-2::before { animation-delay: 0.25s; }
+.rising-line.rd-3::before { animation-delay: 0.5s; }
+.rising-line.rd-4::before { animation-delay: 0.75s; }
+.rising-line.rd-5::before { animation-delay: 1.0s; }
+.rising-line.rd-6::before { animation-delay: 1.25s; }
+.rising-line.rd-7::before { animation-delay: 1.5s; }
+.rising-line.rd-8::before { animation-delay: 1.75s; }
+.rising-line.rd-9::before { animation-delay: 2.0s; }
+
+@keyframes rise-up {
+  0% {
+    bottom: -40%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
   }
 }
 

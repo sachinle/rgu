@@ -1,513 +1,254 @@
-<section class="h-[100vh] banner py-10">
-    <div class="grid grid-cols-12 gap-3 container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
-        <div class="col-span-12 md:col-span-1 order-2 md:order-1">
-            <div class="space-y-3 flex flex-row md:flex-col justify-center items-center order-2 md:order-1 gap-2 mt-10 md:mt-0 md:h-100">
-                <div class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-1">
-                    <span class="badge flex items-center justify-center"></span>
-                    <p class="text-[6px] md:text-[9px] text-center leading-tight mt-1">
-                        RANKING EXCELLENCE
-                    </p>
-                </div>
-                <div class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-2">
-                    <span class="lightning flex items-center justify-center"></span>
-                    <p class="text-[6px] md:text-[9px] text-center leading-tight mt-1">
-                        RGU WAY
-                    </p>
-                </div>
-                <div class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-4">
-                    <span class="PaperRocket flex items-center justify-center"></span>
-                    <p class="text-[6px] md:text-[9px] text-center leading-tight mt-1">
-                        ADMISSION OPEN
-                    </p>
-                </div>
+<section class="h-auto md:h-[100vh] banner">
+
+    <!-- ===== TRANSPARENT NAVBAR ===== -->
+    <nav class="relative z-30 flex items-center justify-between px-4 py-3 md:px-10 md:py-5">
+        <img src="./assets/images/logo.webp" alt="RGU Logo" id="rgu-nav-logo"
+            class="h-10 md:h-14 w-auto object-contain">
+    </nav>
+    <!-- ===== END NAVBAR ===== -->
+
+
+    <!-- ===== MAIN CONTENT: [Left Circles] + [Right Stats] ===== -->
+    <div class="flex items-start gap-0 px-2 md:px-8 lg:px-12 xl:px-16 pt-2 md:pt-6 pb-6 md:pb-0">
+
+        <!-- â”€â”€ LEFT SIDEBAR: 3 Circles (vertical, both mobile & desktop) â”€â”€ -->
+        <div class="flex flex-col items-center gap-3 md:gap-6 w-[72px] md:w-[110px] flex-shrink-0 relative z-10 pt-1 md:pt-4">
+            <div class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-1 cursor-pointer hover:bg-[#ffffff30] transition-all">
+                <span class="badge flex items-center justify-center"></span>
+                <p class="text-[5px] md:text-[8px] text-center leading-tight mt-1">RANKING<br>EXCELLENCE</p>
+            </div>
+            <div class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-2 cursor-pointer hover:bg-[#ffffff30] transition-all">
+                <span class="lightning flex items-center justify-center"></span>
+                <p class="text-[5px] md:text-[8px] text-center leading-tight mt-1">RGU WAY</p>
+            </div>
+            <div class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-4 cursor-pointer hover:bg-[#ffffff30] transition-all">
+                <span class="PaperRocket flex items-center justify-center"></span>
+                <p class="text-[5px] md:text-[8px] text-center leading-tight mt-1">ADMISSION<br>OPEN</p>
             </div>
         </div>
+        <!-- â”€â”€ END LEFT SIDEBAR â”€â”€ -->
 
-        <div class="hidden md:block col-span-12 md:col-span-11 order-1 md:order-2">
 
-            <div class="relative pb-32 md:pb-52">
+        <!-- â”€â”€ RIGHT: Stats Area â”€â”€ -->
+        <div class="flex-1 min-w-0 relative z-10">
 
-                <div class="grid grid-cols-2 md:flex md:flex-wrap gap-y-16 md:gap-x-20 md:gap-y-10 justify-items-center md:justify-evenly">
+            
+            <div class="md:hidden relative" style="min-height: 565px;">
 
-                    <!-- Item -->
-                    <div class="timeline-item relative text-center mx-auto md:mt-10">
-
-                        <!-- Vertical Line -->
-                        <div class="absolute left-1/2 top-[60%] -translate-x-1/2 w-[1px] h-24 md:h-80 bg-white/30">
-                            <span
-                                class="absolute bottom-26 left-1/2 -translate-x-1/2 
-                                w-3 h-3 rounded-full 
-                                bg-white 
-                                shadow-[0_0_0_8px_rgba(255,255,255,0.08),0_0_0_16px_rgba(255,255,255,0.06),0_0_40px_14px_rgba(255,255,255,0.45)]
-                                animate-pulse">
-                            </span>
-                        </div>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            QS I-Gauge
-                        </p>
-
-                        <p class="text-sm md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                            PLATINUM
-                        </p>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            Rank
-                        </p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="timeline-item relative text-center mx-auto mb-10">
-
-                        <div class="absolute left-1/2 top-[60%] -translate-x-1/2 w-[1px] h-32 md:h-80 bg-white/30">
-                            <span
-                                class="absolute bottom-26 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_18px_6px_rgba(255,255,255,0.8)] animate-pulse"></span>
-                        </div>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            NIRF Ranking
-                        </p>
-
-                        <p class="text-sm md:text-4xl font-black text-white" style="text-shadow: 0 0px 5px #fffff8;">
-                            9TH
-                        </p>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            YEAR IN A ROW
-                        </p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="timeline-item relative text-center mx-auto md:mt-20">
-
-                        <div class="absolute left-1/2 top-[60%] -translate-x-1/2 w-[1px] h-20 md:h-80 bg-white/30">
-                            <span
-                                class="absolute bottom-26 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_18px_6px_rgba(255,255,255,0.8)] animate-pulse"></span>
-                        </div>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            Global Network
-                        </p>
-
-                        <p class="text-sm md:text-4xl font-black text-white" style="text-shadow: 0 0px 5px #fffff8;">
-                            100+
-                        </p>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            GLOBAL PARTNERS
-                        </p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="timeline-item relative text-center mx-auto mb-10">
-
-                        <div class="absolute left-1/2 top-[60%] -translate-x-1/2 w-[1px] h-28 md:h-80 bg-white/30">
-                            <span
-                                class="absolute bottom-26 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_18px_6px_rgba(255,255,255,0.8)] animate-pulse"></span>
-                        </div>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            In-Campus
-                        </p>
-
-                        <p class="text-sm md:text-4xl font-black text-white" style="text-shadow: 0 0px 5px #fffff8;">
-                            ATAL
-                        </p>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            INCUBATION CENTRE
-                        </p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="timeline-item relative text-center mx-auto md:mt-20">
-
-                        <div class="absolute left-1/2 top-[60%] -translate-x-1/2 w-[1px] h-20 md:h-80 bg-white/30">
-                            <span
-                                class="absolute bottom-26 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_18px_6px_rgba(255,255,255,0.8)] animate-pulse"></span>
-                        </div>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            Global Reach
-                        </p>
-
-                        <p class="text-sm md:text-4xl font-black text-white" style="text-shadow: 0 0px 5px #fffff8;">
-                            1000+
-                        </p>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            INTERNATIONAL STUDENTS
-                        </p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="timeline-item relative text-center mx-auto">
-
-                        <div class="absolute left-1/2 top-[60%] -translate-x-1/2 w-[1px] h-24 md:h-80 bg-white/30">
-                            <span
-                                class="absolute bottom-26 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_18px_6px_rgba(255,255,255,0.8)] animate-pulse"></span>
-                        </div>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            NAAC
-                        </p>
-
-                        <p class="text-sm md:text-4xl font-black text-white" style="text-shadow: 0 0px 5px #fffff8;">
-                            A++
-                        </p>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            ACCREDITED
-                        </p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="timeline-item relative text-center mx-auto">
-
-                        <div class="absolute left-1/2 top-[60%] -translate-x-1/2 w-[1px] h-24 md:h-80 bg-white/30">
-                            <span
-                                class="absolute bottom-26 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_18px_6px_rgba(255,255,255,0.8)] animate-pulse"></span>
-                        </div>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            NIRF Innovation
-                        </p>
-
-                        <p class="text-sm md:text-4xl font-black text-white" style="text-shadow: 0 0px 5px #fffff8;">
-                            TOP 50
-                        </p>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            IN INDIA
-                        </p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="timeline-item relative text-center mx-auto">
-
-                        <div class="absolute left-1/2 top-[60%] -translate-x-1/2 w-[1px] h-24 md:h-80 bg-white/30">
-                            <span
-                                class="absolute bottom-26 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_18px_6px_rgba(255,255,255,0.8)] animate-pulse"></span>
-                        </div>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            INDIA'S
-                        </p>
-
-                        <p class="text-sm md:text-4xl font-black text-white" style="text-shadow: 0 0px 5px #fffff8;">
-                            FIRST
-                        </p>
-
-                        <p class="uppercase text-gray-300 text-[9px] md:text-[12px] font-bold">
-                            INDUSTRY INTEGRATED INSTITUTE
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="block md:hidden col-span-12 md:col-span-10 order-1 md:order-2">
-
-            <div class="grid grid-cols-12 space-y-4 gap-5">
-                <div class="col-span-6">
-                    <div class="flex justify-end items-center">
-                        <div class="timeline-item relative text-center md:mt-10">
-
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-[100%] -translate-x-1/2 w-[1px] h-[250px] md:h-80 bg-white/30">
-                                <span
-                                    class="absolute bottom-24 left-1/2 -translate-x-1/2 
-                                w-1.5 h-1.5 rounded-full 
-                                bg-[#ffffffdb] 
-                                shadow-[0_0_0_4px_rgba(255,255,255,0.08),0_0_0_10px_rgba(255,255,255,0.06),0_0_30px_10px_rgba(255,255,255,0.35)]
-                                animate-pulse">
-                                </span>
-                            </div>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                QS I-Gauge
-                            </p>
-
-                            <p class="text-[10px] md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                                PLATINUM
-                            </p>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                Rank
-                            </p>
-                        </div>
+                <!-- CENTER TIP: 1st in Tamil Nadu Under UGC 2023 -->
+                <div class="absolute text-center" style="top:5px; left:37%; transform:translateX(-50%);">
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">1st in</p>
+                    <p class="text-[14px] font-black text-white leading-tight whitespace-nowrap" style="text-shadow:0 0 10px rgba(255,255,255,0.9)">TAMIL NADU</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Under UGC 2023</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[52px] bg-white/40 relative">
+                        <span class="absolute bottom-[13px] left-1/2 -translate-x-1/2 w-[9px] h-[9px] rounded-full bg-white shadow-[0_0_0_5px_rgba(255,255,255,0.18),0_0_0_13px_rgba(255,255,255,0.09),0_0_32px_12px_rgba(255,255,255,0.65)] animate-pulse"></span>
                     </div>
                 </div>
-                <div class="col-span-6 mt-6">
-                    <div class="flex justify-start items-center">
-                        <div class="timeline-item relative text-center md:mt-10">
 
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-[100%] -translate-x-1/2 w-[1px] h-[250px] md:h-80 bg-white/30">
-                                <span
-                                    class="absolute bottom-24 left-1/2 -translate-x-1/2 
-                                w-1.5 h-1.5 rounded-full 
-                                bg-[#ffffffdb] 
-                                shadow-[0_0_0_4px_rgba(255,255,255,0.08),0_0_0_10px_rgba(255,255,255,0.06),0_0_30px_10px_rgba(255,255,255,0.35)]
-                                animate-pulse">
-                                </span>
-                            </div>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                QS I-Gauge
-                            </p>
-
-                            <p class="text-[10px] md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                                PLATINUM
-                            </p>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                Rank
-                            </p>
-                        </div>
+                <!-- ROW 1 LEFT: QS I-GAUGE PLATINUM -->
+                <div class="absolute text-center" style="top:100px; left:20%; transform:translateX(-50%);">
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">QS I-Gauge</p>
+                    <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">PLATINUM</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Rank</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[130px] bg-white/30 relative">
+                        <span class="absolute bottom-[40px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
-                <div class="col-span-6 me-10">
-                    <div class="flex justify-end items-center">
-                        <div class="timeline-item relative text-center md:mt-10">
 
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-[100%] -translate-x-1/2 w-[1px] h-28 md:h-80 bg-white/30">
-                                <span
-                                    class="absolute bottom-20 left-1/2 -translate-x-1/2 
-                                w-1.5 h-1.5 rounded-full 
-                                bg-[#ffffffdb] 
-                                shadow-[0_0_0_4px_rgba(255,255,255,0.08),0_0_0_10px_rgba(255,255,255,0.06),0_0_30px_10px_rgba(255,255,255,0.35)]
-                                animate-pulse">
-                                </span>
-                            </div>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                QS I-Gauge
-                            </p>
-
-                            <p class="text-[10px] md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                                PLATINUM
-                            </p>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                Rank
-                            </p>
-                        </div>
+                <!-- ROW 1 RIGHT: NAAC A++ -->
+                <div class="absolute text-center" style="top:100px; left:54%; transform:translateX(-50%);">
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">NAAC</p>
+                    <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">A++</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Accredited</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[130px] bg-white/30 relative">
+                        <span class="absolute bottom-[40px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
-                <div class="col-span-6 ms-10 mt-6">
-                    <div class="flex justify-start items-center">
-                        <div class="timeline-item relative text-center md:mt-10">
 
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-[100%] -translate-x-1/2 w-[1px] h-28 md:h-80 bg-white/30">
-                                <span
-                                    class="absolute bottom-20 left-1/2 -translate-x-1/2 
-                                w-1.5 h-1.5 rounded-full 
-                                bg-[#ffffffdb] 
-                                shadow-[0_0_0_4px_rgba(255,255,255,0.08),0_0_0_10px_rgba(255,255,255,0.06),0_0_30px_10px_rgba(255,255,255,0.35)]
-                                animate-pulse">
-                                </span>
-                            </div>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                QS I-Gauge
-                            </p>
-
-                            <p class="text-[10px] md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                                PLATINUM
-                            </p>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                Rank
-                            </p>
-                        </div>
+                <!-- ROW 2 LEFT: NIRF RANKING 9TH -->
+                <div class="absolute text-center" style="top:190px; left:1%; transform:translateX(-50%);">
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">NIRF Ranking</p>
+                    <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">9TH</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Year in a Row</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[115px] bg-white/30 relative">
+                        <span class="absolute bottom-[36px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
-                <div class="col-span-6 me-16">
-                    <div class="flex justify-end items-center">
-                        <div class="timeline-item relative text-center md:mt-10">
 
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-[100%] -translate-x-1/2 w-[1px] h-28 md:h-80 bg-white/30">
-                                <span
-                                    class="absolute bottom-20 left-1/2 -translate-x-1/2 
-                                w-1.5 h-1.5 rounded-full 
-                                bg-[#ffffffdb] 
-                                shadow-[0_0_0_4px_rgba(255,255,255,0.08),0_0_0_10px_rgba(255,255,255,0.06),0_0_30px_10px_rgba(255,255,255,0.35)]
-                                animate-pulse">
-                                </span>
-                            </div>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                QS I-Gauge
-                            </p>
-
-                            <p class="text-[10px] md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                                PLATINUM
-                            </p>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                Rank
-                            </p>
-                        </div>
+                <!-- ROW 2 RIGHT: NIRF INNOVATION TOP 50 -->
+                <div class="absolute text-center" style="top:190px; left:73%; transform:translateX(-50%);">
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">NIRF Innovation</p>
+                    <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">TOP 50</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">In India</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[115px] bg-white/30 relative">
+                        <span class="absolute bottom-[36px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
-                <div class="col-span-6 ms-16 mt-6">
-                    <div class="flex justify-start items-center">
-                        <div class="timeline-item relative text-center md:mt-10">
 
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-[100%] -translate-x-1/2 w-[1px] h-28 md:h-80 bg-white/30">
-                                <span
-                                    class="absolute bottom-20 left-1/2 -translate-x-1/2 
-                                w-1.5 h-1.5 rounded-full 
-                                bg-[#ffffffdb] 
-                                shadow-[0_0_0_4px_rgba(255,255,255,0.08),0_0_0_10px_rgba(255,255,255,0.06),0_0_30px_10px_rgba(255,255,255,0.35)]
-                                animate-pulse">
-                                </span>
-                            </div>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                QS I-Gauge
-                            </p>
-
-                            <p class="text-[10px] md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                                PLATINUM
-                            </p>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                Rank
-                            </p>
-                        </div>
+                <!-- ROW 3 LEFT: GLOBAL NETWORK 100+ -->
+                <div class="absolute text-center" style="top:288px; left:-9%; transform:translateX(-50%);">
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Global Network</p>
+                    <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">100+</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Global Partners</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[100px] bg-white/30 relative">
+                        <span class="absolute bottom-[30px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
-                <div class="col-span-6 me-24">
-                    <div class="flex justify-end items-center">
-                        <div class="timeline-item relative text-center md:mt-10">
 
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-[100%] -translate-x-1/2 w-[1px] h-28 md:h-80 bg-white/30">
-                                <span
-                                    class="absolute bottom-20 left-1/2 -translate-x-1/2 
-                                w-1.5 h-1.5 rounded-full 
-                                bg-[#ffffffdb] 
-                                shadow-[0_0_0_4px_rgba(255,255,255,0.08),0_0_0_10px_rgba(255,255,255,0.06),0_0_30px_10px_rgba(255,255,255,0.35)]
-                                animate-pulse">
-                                </span>
-                            </div>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                QS I-Gauge
-                            </p>
-
-                            <p class="text-[10px] md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                                PLATINUM
-                            </p>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                Rank
-                            </p>
-                        </div>
+                <!-- ROW 3 RIGHT: GLOBAL REACH 1000+ -->
+                <div class="absolute text-center" style="top:288px; left:83%; transform:translateX(-50%);">
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Global Reach</p>
+                    <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">1000+</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-tight">International<br>Students</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[100px] bg-white/30 relative">
+                        <span class="absolute bottom-[30px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
-                <div class="col-span-6 ms-24 mt-6">
-                    <div class="flex justify-start items-center">
-                        <div class="timeline-item relative text-center md:mt-10">
 
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-[100%] -translate-x-1/2 w-[1px] h-28 md:h-80 bg-white/30">
-                                <span
-                                    class="absolute bottom-20 left-1/2 -translate-x-1/2 
-                                w-1.5 h-1.5 rounded-full 
-                                bg-[#ffffffdb] 
-                                shadow-[0_0_0_4px_rgba(255,255,255,0.08),0_0_0_10px_rgba(255,255,255,0.06),0_0_30px_10px_rgba(255,255,255,0.35)]
-                                animate-pulse">
-                                </span>
-                            </div>
+                <!-- ROW 4 LEFT: INDIAS FIRST -->
+                <div class="absolute text-center" style="top:382px; left:-17%; transform:translateX(-50%);">
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none">India's</p>
+                    <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">FIRST</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-tight">Industry<br>Integrated<br>Institute</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[80px] bg-white/30 relative">
+                        <span class="absolute bottom-[24px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
+                    </div>
+                </div>
 
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                QS I-Gauge
-                            </p>
-
-                            <p class="text-[10px] md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                                PLATINUM
-                            </p>
-
-                            <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                                Rank
-                            </p>
-                        </div>
+                <!-- ROW 4 RIGHT: IN-CAMPUS ATAL -->
+                <div class="absolute text-center" style="top:382px; left:91%; transform:translateX(-50%);">
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">In-Campus</p>
+                    <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">ATAL</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-tight">Incubation<br>Centre</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[80px] bg-white/30 relative">
+                        <span class="absolute bottom-[24px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
 
             </div>
+            <!-- ===================== END MOBILE STATS ===================== -->
+
+
+            <!-- ===================== DESKTOP STATS ===================== -->
+            <!--
+                YONSEI-STYLE: 9 stats in ONE horizontal row, alternating HIGH/LOW positions.
+                All dots land at same visual height (mt_px + text~68px + 8px + line_h = 356px).
+                Col:  1-TN    2-PLAT  3-NAAC  4-NIRF9  5-TOP50  6-NET   7-REACH  8-FIRST  9-ATAL
+                mt:   0       80      24       64        8       96       40       112      56
+                line: 288px   208px   264px    224px     280px   192px    248px    176px    232px
+            -->
+            <div class="hidden md:grid md:grid-cols-9 gap-x-2 lg:gap-x-3 xl:gap-x-5 pb-36 pt-4">
+
+                <!-- Col 1 - 1st in Tamil Nadu | mt-0 | line 288px -->
+                <div class="relative text-center mt-0">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">1st in</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">TAMIL<br>NADU</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-tight">Under UGC<br>2023</p>
+                    <div class="rising-line rd-1 mx-auto mt-2 h-[288px] relative">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Col 2 - QS PLATINUM | mt-20 | line 208px -->
+                <div class="relative text-center mt-20">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">QS I-Gauge</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">PLATINUM</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Rank</p>
+                    <div class="rising-line rd-2 mx-auto mt-2 h-[208px] relative">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Col 3 - NAAC A++ | mt-6 | line 264px -->
+                <div class="relative text-center mt-6">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">NAAC</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">A++</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Accredited</p>
+                    <div class="rising-line rd-3 mx-auto mt-2 h-[264px] relative">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Col 4 - NIRF 9TH | mt-16 | line 224px -->
+                <div class="relative text-center mt-16">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">NIRF Ranking</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">9TH</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Year in a Row</p>
+                    <div class="rising-line rd-4 mx-auto mt-2 h-[224px] relative">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Col 5 - NIRF TOP 50 | mt-2 | line 280px -->
+                <div class="relative text-center mt-2">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">NIRF Innovation</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">TOP 50</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">In India</p>
+                    <div class="rising-line rd-5 mx-auto mt-2 h-[280px] relative">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Col 6 - Global Network 100+ | mt-24 | line 192px -->
+                <div class="relative text-center mt-24">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Global Network</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">100+</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Global Partners</p>
+                    <div class="rising-line rd-6 mx-auto mt-2 h-[192px] relative">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Col 7 - Global Reach 1000+ | mt-10 | line 248px -->
+                <div class="relative text-center mt-10">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Global Reach</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">1000+</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-tight">International<br>Students</p>
+                    <div class="rising-line rd-7 mx-auto mt-2 h-[248px] relative">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Col 8 - Indias FIRST | mt-28 | line 176px -->
+                <div class="relative text-center mt-28">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">India's</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">FIRST</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-tight">Industry<br>Integrated<br>Institute</p>
+                    <div class="rising-line rd-8 mx-auto mt-2 h-[176px] relative">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Col 9 - In-Campus ATAL | mt-14 | line 232px -->
+                <div class="relative text-center mt-14">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">In-Campus</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">ATAL</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-tight">Incubation<br>Centre</p>
+                    <div class="mx-auto mt-2 w-[1px] h-[350px] bg-white/30 relative">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ===================== END DESKTOP STATS ===================== -->
+
         </div>
+        <!-- â”€â”€ END RIGHT STATS â”€â”€ -->
 
     </div>
+    <!-- ===== END MAIN CONTENT ===== -->
+
 </section>
 
 <script>
-    const badge = `
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"></path>
-      <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path>
-    </svg>
-  `;
+    const badge = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"></path><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>`;
+    document.querySelectorAll('.badge').forEach(el => el.innerHTML = badge);
 
-    document.querySelectorAll('.badge').forEach((el) => {
-        el.innerHTML = badge;
-    });
-    const lightning = `
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path>
-    </svg>
-  `;
+    const lightning = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path></svg>`;
+    document.querySelectorAll('.lightning').forEach(el => el.innerHTML = lightning);
 
-    document.querySelectorAll('.lightning').forEach((el) => {
-        el.innerHTML = lightning;
-    });
-    const PaperRocket = `
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M22 2L11 13"></path>
-    <path d="M22 2L15 22 11 13 2 9l20-7z"></path>
-    </svg>
-  `;
-
-    document.querySelectorAll('.PaperRocket').forEach((el) => {
-        el.innerHTML = PaperRocket;
-    });
-    const Items = `
-    <div class="timeline-item relative text-center mx-auto md:mt-10">
-
-                    <!-- Vertical Line -->
-                    <div class="absolute left-1/2 top-[60%] -translate-x-1/2 w-[1px] h-24 md:h-80 bg-white/30">
-                        <span
-                            class="absolute bottom-8 left-1/2 -translate-x-1/2 
-                                w-3 h-3 rounded-full 
-                                bg-white 
-                                shadow-[0_0_0_8px_rgba(255,255,255,0.08),0_0_0_16px_rgba(255,255,255,0.06),0_0_40px_14px_rgba(255,255,255,0.45)]
-                                animate-pulse">
-                        </span>
-                    </div>
-
-                    <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                        QS I-Gauge
-                    </p>
-
-                    <p class="text-[10px] md:text-4xl font-black text-white" style="text-shadow: 0 0px 2px #fffff8;">
-                        PLATINUM
-                    </p>
-
-                    <p class="uppercase text-gray-300 text-[8px] md:text-[12px] font-bold">
-                        Rank
-                    </p>
-                </div>
-  `;
-
-    document.querySelectorAll('.Items').forEach((el) => {
-        el.innerHTML = Items;
-    });
+    const PaperRocket = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"></path><path d="M22 2L15 22 11 13 2 9l20-7z"></path></svg>`;
+    document.querySelectorAll('.PaperRocket').forEach(el => el.innerHTML = PaperRocket);
 </script>
+
+
