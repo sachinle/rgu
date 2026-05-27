@@ -1,9 +1,9 @@
 <section class="h-auto md:h-[100vh] banner">
 
     <!-- ===== TRANSPARENT NAVBAR ===== -->
-    <nav class="relative z-30 flex items-center justify-between px-4 py-3 md:px-10 md:py-5">
+    <nav class="relative z-30 flex items-center justify-center px-4 py-3 md:px-10 md:py-5">
         <img src="./assets/images/logo.webp" alt="RGU Logo" id="rgu-nav-logo"
-            class="h-10 md:h-14 w-auto object-contain">
+            class="h-10 md:h-14 w-auto object-contain" style="filter: brightness(0) invert(1);">
     </nav>
     <!-- ===== END NAVBAR ===== -->
 
@@ -13,18 +13,19 @@
 
         <!-- â”€â”€ LEFT SIDEBAR: 3 Circles (vertical, both mobile & desktop) â”€â”€ -->
         <div class="flex flex-col items-center gap-3 md:gap-6 w-[72px] md:w-[110px] flex-shrink-0 relative z-10 pt-1 md:pt-4">
-            <div class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-1 cursor-pointer hover:bg-[#ffffff30] transition-all">
+            <a href="#ranking-excellence" onclick="document.getElementById('ranking-excellence').scrollIntoView({behavior:'smooth'}); return false;" class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-1 cursor-pointer hover:bg-[#ffffff30] transition-all">
                 <span class="badge flex items-center justify-center"></span>
                 <p class="text-[5px] md:text-[8px] text-center leading-tight mt-1">RANKING<br>EXCELLENCE</p>
-            </div>
-            <div class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-2 cursor-pointer hover:bg-[#ffffff30] transition-all">
-                <span class="lightning flex items-center justify-center"></span>
+            </a>
+                        <a href="https://admissions.rathinamcollege.edu.in/?utm_source=footer&utm_medium=button&utm_campaign=Admission&utm_term=Apply+now%2C+footer%2C+Admission" target="_blank" class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-4 cursor-pointer hover:bg-[#ffffff30] transition-all">
+ 
+            <span class="lightning flex items-center justify-center"></span>
                 <p class="text-[5px] md:text-[8px] text-center leading-tight mt-1">RGU WAY</p>
-            </div>
-            <div class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-4 cursor-pointer hover:bg-[#ffffff30] transition-all">
+            
+            <a href="https://admissions.rathinamcollege.edu.in/?utm_source=footer&utm_medium=button&utm_campaign=Admission&utm_term=Apply+now%2C+footer%2C+Admission" target="_blank" class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-4 cursor-pointer hover:bg-[#ffffff30] transition-all">
                 <span class="PaperRocket flex items-center justify-center"></span>
                 <p class="text-[5px] md:text-[8px] text-center leading-tight mt-1">ADMISSION<br>OPEN</p>
-            </div>
+            </a>
         </div>
         <!-- â”€â”€ END LEFT SIDEBAR â”€â”€ -->
 
@@ -37,11 +38,11 @@
 
                 <!-- CENTER TIP: 1st in Tamil Nadu Under UGC 2023 -->
                 <div class="absolute text-center" style="top:5px; left:37%; transform:translateX(-50%);">
-                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">1st in</p>
-                    <p class="text-[14px] font-black text-white leading-tight whitespace-nowrap" style="text-shadow:0 0 10px rgba(255,255,255,0.9)">TAMIL NADU</p>
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Under UGC 2023</p>
-                    <div class="mx-auto mt-1 w-[1px] h-[52px] bg-white/40 relative">
-                        <span class="absolute bottom-[13px] left-1/2 -translate-x-1/2 w-[9px] h-[9px] rounded-full bg-white shadow-[0_0_0_5px_rgba(255,255,255,0.18),0_0_0_13px_rgba(255,255,255,0.09),0_0_32px_12px_rgba(255,255,255,0.65)] animate-pulse"></span>
+                    <p class="text-[14px] font-black text-white leading-tight whitespace-nowrap" style="text-shadow:0 0 10px rgba(255,255,255,0.9)">1st in</p>
+                    <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">TAMIL NADU</p>
+                    <div class="mx-auto mt-1 w-[1px] h-[400px] bg-white/40 relative">
+                        <span class="absolute bottom-[380px] left-1/2 -translate-x-1/2 w-[9px] h-[9px] rounded-full bg-white shadow-[0_0_0_5px_rgba(255,255,255,0.18),0_0_0_13px_rgba(255,255,255,0.09),0_0_32px_12px_rgba(255,255,255,0.65)] animate-pulse"></span>
                     </div>
                 </div>
 
@@ -50,8 +51,8 @@
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">QS I-Gauge</p>
                     <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">PLATINUM</p>
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Rank</p>
-                    <div class="mx-auto mt-1 w-[1px] h-[130px] bg-white/30 relative">
-                        <span class="absolute bottom-[40px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
+                    <div class="mx-auto mt-1 w-[1px] h-[280px] bg-white/30 relative">
+                        <span class="absolute bottom-[268px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
 
@@ -60,8 +61,8 @@
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">NAAC</p>
                     <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">A++</p>
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Accredited</p>
-                    <div class="mx-auto mt-1 w-[1px] h-[130px] bg-white/30 relative">
-                        <span class="absolute bottom-[40px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
+                    <div class="mx-auto mt-1 w-[1px] h-[280px] bg-white/30 relative">
+                        <span class="absolute bottom-[268px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
 
@@ -70,8 +71,8 @@
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">NIRF Ranking</p>
                     <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">9TH</p>
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Year in a Row</p>
-                    <div class="mx-auto mt-1 w-[1px] h-[115px] bg-white/30 relative">
-                        <span class="absolute bottom-[36px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
+                    <div class="mx-auto mt-1 w-[1px] h-[180px] bg-white/30 relative">
+                        <span class="absolute bottom-[170px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
 
@@ -80,8 +81,8 @@
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">NIRF Innovation</p>
                     <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">TOP 50</p>
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">In India</p>
-                    <div class="mx-auto mt-1 w-[1px] h-[115px] bg-white/30 relative">
-                        <span class="absolute bottom-[36px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
+                    <div class="mx-auto mt-1 w-[1px] h-[180px] bg-white/30 relative">
+                        <span class="absolute bottom-[170px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
 
@@ -90,8 +91,8 @@
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Global Network</p>
                     <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">100+</p>
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Global Partners</p>
-                    <div class="mx-auto mt-1 w-[1px] h-[100px] bg-white/30 relative">
-                        <span class="absolute bottom-[30px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
+                    <div class="mx-auto mt-1 w-[1px] h-[60px] bg-white/30 relative">
+                        <span class="absolute bottom-[50px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
 
@@ -100,28 +101,28 @@
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">Global Reach</p>
                     <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">1000+</p>
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-tight">International<br>Students</p>
-                    <div class="mx-auto mt-1 w-[1px] h-[100px] bg-white/30 relative">
-                        <span class="absolute bottom-[30px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
+                    <div class="mx-auto mt-1 w-[1px] h-[60px] bg-white/30 relative">
+                        <span class="absolute bottom-[50px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
 
                 <!-- ROW 4 LEFT: INDIAS FIRST -->
-                <div class="absolute text-center" style="top:382px; left:-17%; transform:translateX(-50%);">
+                <div class="absolute text-center" style="top:382px; left:-10%; transform:translateX(-50%);">
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none">India's</p>
                     <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">FIRST</p>
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-tight">Industry<br>Integrated<br>Institute</p>
-                    <div class="mx-auto mt-1 w-[1px] h-[80px] bg-white/30 relative">
-                        <span class="absolute bottom-[24px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
+                    <div class="mx-auto mt-1 w-[1px] h-[70px] bg-white/30 relative">
+                        <span class="absolute bottom-[50px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
 
                 <!-- ROW 4 RIGHT: IN-CAMPUS ATAL -->
-                <div class="absolute text-center" style="top:382px; left:91%; transform:translateX(-50%);">
+                <div class="absolute text-center" style="top:382px; left:86%; transform:translateX(-50%);">
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-none whitespace-nowrap">In-Campus</p>
                     <p class="text-[13px] font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.8)">ATAL</p>
                     <p class="uppercase text-gray-300 text-[8px] font-bold tracking-wide leading-tight">Incubation<br>Centre</p>
-                    <div class="mx-auto mt-1 w-[1px] h-[80px] bg-white/30 relative">
-                        <span class="absolute bottom-[24px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
+                    <div class="mx-auto mt-1 w-[1px] h-[70px] bg-white/30 relative">
+                        <span class="absolute bottom-[50px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_0_10px_rgba(255,255,255,0.07),0_0_26px_8px_rgba(255,255,255,0.5)] animate-pulse"></span>
                     </div>
                 </div>
 
@@ -141,10 +142,11 @@
 
                 <!-- Col 1 - 1st in Tamil Nadu | mt-0 | line 288px -->
                 <div class="relative text-center mt-0">
-                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">1st in</p>
-                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">TAMIL<br>NADU</p>
-                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-tight">Under UGC<br>2023</p>
-                    <div class="rising-line rd-1 mx-auto mt-2 h-[288px] relative">
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Under UGC 2023</p>
+                    <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">1st in</p>
+                    <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-tight">TAMIL NADU</p>
+                    <div class="rising-wrap mt-2" style="height:400px">
+                        <div class="rising-line rd-1"></div>
                         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
                     </div>
                 </div>
@@ -154,7 +156,8 @@
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">QS I-Gauge</p>
                     <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">PLATINUM</p>
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Rank</p>
-                    <div class="rising-line rd-2 mx-auto mt-2 h-[208px] relative">
+                    <div class="rising-wrap mt-2" style="height:260px">
+                        <div class="rising-line rd-2"></div>
                         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
                     </div>
                 </div>
@@ -164,7 +167,8 @@
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">NAAC</p>
                     <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">A++</p>
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Accredited</p>
-                    <div class="rising-line rd-3 mx-auto mt-2 h-[264px] relative">
+                    <div class="rising-wrap mt-2" style="height:275px">
+                        <div class="rising-line rd-3"></div>
                         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
                     </div>
                 </div>
@@ -174,7 +178,8 @@
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">NIRF Ranking</p>
                     <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">9TH</p>
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Year in a Row</p>
-                    <div class="rising-line rd-4 mx-auto mt-2 h-[224px] relative">
+                    <div class="rising-wrap mt-2" style="height:218px">
+                        <div class="rising-line rd-4"></div>
                         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
                     </div>
                 </div>
@@ -184,7 +189,8 @@
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">NIRF Innovation</p>
                     <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">TOP 50</p>
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">In India</p>
-                    <div class="rising-line rd-5 mx-auto mt-2 h-[280px] relative">
+                    <div class="rising-wrap mt-2" style="height:270px">
+                        <div class="rising-line rd-5"></div>
                         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
                     </div>
                 </div>
@@ -194,7 +200,8 @@
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Global Network</p>
                     <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">100+</p>
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Global Partners</p>
-                    <div class="rising-line rd-6 mx-auto mt-2 h-[192px] relative">
+                    <div class="rising-wrap mt-2" style="height:200px">
+                        <div class="rising-line rd-6"></div>
                         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
                     </div>
                 </div>
@@ -204,7 +211,8 @@
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">Global Reach</p>
                     <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">1000+</p>
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-tight">International<br>Students</p>
-                    <div class="rising-line rd-7 mx-auto mt-2 h-[248px] relative">
+                    <div class="rising-wrap mt-2" style="height:280px">
+                        <div class="rising-line rd-7"></div>
                         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
                     </div>
                 </div>
@@ -214,17 +222,19 @@
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">India's</p>
                     <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">FIRST</p>
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-tight">Industry<br>Integrated<br>Institute</p>
-                    <div class="rising-line rd-8 mx-auto mt-2 h-[176px] relative">
+                    <div class="rising-wrap mt-2" style="height:280px">
+                        <div class="rising-line rd-8"></div>
                         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
                     </div>
                 </div>
 
                 <!-- Col 9 - In-Campus ATAL | mt-14 | line 232px -->
-                <div class="relative text-center mt-14">
+                <div class="relative text-center mt-0">
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-none">In-Campus</p>
                     <p class="text-lg lg:text-2xl xl:text-3xl font-black text-white leading-tight" style="text-shadow:0 0 8px rgba(255,255,255,0.85)">ATAL</p>
                     <p class="uppercase text-gray-300 text-[9px] lg:text-[11px] font-bold tracking-wide leading-tight">Incubation<br>Centre</p>
-                    <div class="mx-auto mt-2 w-[1px] h-[350px] bg-white/30 relative">
+                    <div class="rising-wrap mt-2" style="height:400px">
+                        <div class="rising-line rd-9"></div>
                         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.12),0_0_0_14px_rgba(255,255,255,0.07),0_0_36px_12px_rgba(255,255,255,0.55)] animate-pulse"></span>
                     </div>
                 </div>

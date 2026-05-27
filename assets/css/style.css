@@ -59,9 +59,22 @@ body {
 }
 
 /* ===== Yonsei-style Rising Light Trailing Lines (desktop) ===== */
-.rising-line {
+/* Wrapper: holds the line + the dot. Width set to dot size (12px) so dot's glow halo
+   isn't clipped. The inner .rising-line is the 1px line itself with overflow:hidden
+   so the rising-light pseudo-element stays inside the line bounds. */
+.rising-wrap {
   position: relative;
+  width: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rising-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
   width: 1px;
+  height: 100%;
   background: linear-gradient(to top, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.18) 40%, rgba(255,255,255,0.05) 100%);
   overflow: hidden;
 }

@@ -1,4 +1,4 @@
-<section class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-10 md:py-14 space-y-5 bg-[#f8fafc]">
+<section id="ranking-excellence" class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-10 md:py-14 space-y-5 bg-[#f8fafc]">
     <div class="flex items-center gap-2 rounded-full border border-[#f59e0b]/20 bg-[#f8f3e6] px-[18px] py-[7px] w-max mx-auto">
         <!-- Pulse Dot -->
         <span class="h-[6px] w-[6px] rounded-full bg-[#f59e0b] animate-pulse"></span>
