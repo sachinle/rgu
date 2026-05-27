@@ -1,4 +1,4 @@
-<section class="my-10 mx-auto px-4 sm:px-6 lg:px-8">
+<section id="courses" class="my-10 mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="flex items-center gap-2 rounded-full border border-purple-700/20 bg-purple-700/10 px-[18px] py-[7px] mb-[22px] w-max mx-auto">
 
@@ -42,9 +42,14 @@
                         <div class="icon-box gradient-purple">
                             <i data-lucide="cpu"></i>
                         </div>
-                        <span class="programme-count text-white">12 Programmes</span>
+                        <span class="programme-count text-white">13 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Quantum Science, Computing & AI</h2>
+                    <a href="./courses/quantum-science.php"
+                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       onclick="event.stopPropagation()">
+                        More Details &#x2192;
+                    </a>
                 </article>
                 <div class="chips-container">
                     <span class="chip">Machine Learning</span>
@@ -62,9 +67,14 @@
                         <div class="icon-box gradient-blue">
                             <i data-lucide="settings"></i>
                         </div>
-                        <span class="programme-count text-white">15 Programmes</span>
+                        <span class="programme-count text-white">10 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Engineering & Emerging Technologies</h2>
+                    <a href="./courses/engineering-emerging-technologies.php"
+                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       onclick="event.stopPropagation()">
+                        More Details &#x2192;
+                    </a>
                 </article>
                 <div class="chips-container">
                     <span class="chip">Robotics</span>
@@ -81,9 +91,14 @@
                         <div class="icon-box gradient-green">
                             <i data-lucide="briefcase"></i>
                         </div>
-                        <span class="programme-count text-white">10 Programmes</span>
+                        <span class="programme-count text-white">36 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Business & Commerce</h2>
+                    <a href="./courses/business-and-commerce.php"
+                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       onclick="event.stopPropagation()">
+                        More Details &#x2192;
+                    </a>
                 </article>
                 <div class="chips-container">
                     <span class="chip">FinTech</span>
@@ -102,9 +117,14 @@
                         <div class="icon-box gradient-pink">
                             <i data-lucide="leaf"></i>
                         </div>
-                        <span class="programme-count text-white">8 Programmes</span>
+                        <span class="programme-count text-white">5 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Applied Biosciences / Food / Agritech</h2>
+                    <a href="./courses/applied-biosciences.php"
+                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       onclick="event.stopPropagation()">
+                        More Details &#x2192;
+                    </a>
                 </article>
                 <div class="chips-container">
                     <span class="chip">Genetics</span>
@@ -121,9 +141,14 @@
                         <div class="icon-box gradient-orange">
                             <i data-lucide="book-open"></i>
                         </div>
-                        <span class="programme-count text-white">14 Programmes</span>
+                        <span class="programme-count text-white">6 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Liberal Arts & Science</h2>
+                    <a href="./courses/liberal-arts-science.php"
+                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       onclick="event.stopPropagation()">
+                        More Details &#x2192;
+                    </a>
                 </article>
                 <div class="chips-container">
                     <span class="chip">Philosophy</span>
@@ -140,9 +165,14 @@
                         <div class="icon-box gradient-pink">
                             <i data-lucide="palette"></i>
                         </div>
-                        <span class="programme-count text-white">9 Programmes</span>
+                        <span class="programme-count text-white">4 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Media & Performing Arts</h2>
+                    <a href="./courses/media-and-performing-arts.php"
+                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       onclick="event.stopPropagation()">
+                        More Details &#x2192;
+                    </a>
                 </article>
                 <div class="chips-container">
                     <span class="chip">UI/UX</span>
@@ -159,9 +189,14 @@
                         <div class="icon-box gradient-orange">
                             <i data-lucide="activity"></i>
                         </div>
-                        <span class="programme-count text-white">11 Programmes</span>
+                        <span class="programme-count text-white">5 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Fashion Design</h2>
+                    <a href="./courses/fashion-design.php"
+                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       onclick="event.stopPropagation()">
+                        More Details &#x2192;
+                    </a>
                 </article>
                 <div class="chips-container">
                     <span class="chip">Medicine</span>
@@ -177,9 +212,14 @@
                         <div class="icon-box gradient-purple">
                             <i data-lucide="activity"></i>
                         </div>
-                        <span class="programme-count text-white">6 Programmes</span>
+                        <span class="programme-count text-white">4 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Sports & Health Sciences</h2>
+                    <a href="./courses/sports-and-health-sciences.php"
+                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       onclick="event.stopPropagation()">
+                        More Details &#x2192;
+                    </a>
                 </article>
                 <div class="chips-container">
                     <span class="chip">Psychology</span>
@@ -197,9 +237,14 @@
                         <div class="icon-box gradient-cyan">
                             <i data-lucide="leaf"></i>
                         </div>
-                        <span class="programme-count text-white">3 Programmes</span>
+                        <span class="programme-count text-white">2 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Sustainability & Climate Studies</h2>
+                    <a href="./courses/sustainability-and-climate-studies.php"
+                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       onclick="event.stopPropagation()">
+                        More Details &#x2192;
+                    </a>
                 </article>
                 <div class="chips-container">
                     <span class="chip">Environment</span>
