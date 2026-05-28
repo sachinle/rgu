@@ -45,7 +45,7 @@
                         <span class="programme-count text-white">13 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Quantum Science, Computing & AI</h2>
-                    <a href="./courses/quantum-science.php"
+                    <a href="./courses/school-of-quantum-science.php"
                        class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
@@ -70,7 +70,7 @@
                         <span class="programme-count text-white">10 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Engineering & Emerging Technologies</h2>
-                    <a href="./courses/engineering-emerging-technologies.php"
+                    <a href="./courses/school-of-engineering-emerging-technologies.php"
                        class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
@@ -94,7 +94,7 @@
                         <span class="programme-count text-white">36 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Business & Commerce</h2>
-                    <a href="./courses/business-and-commerce.php"
+                    <a href="./courses/school-of-business-and-commerce.php"
                        class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
@@ -120,7 +120,7 @@
                         <span class="programme-count text-white">5 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Applied Biosciences / Food / Agritech</h2>
-                    <a href="./courses/applied-biosciences.php"
+                    <a href="./courses/school-of-applied-biosciences.php"
                        class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
@@ -144,7 +144,7 @@
                         <span class="programme-count text-white">6 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Liberal Arts & Science</h2>
-                    <a href="./courses/liberal-arts-science.php"
+                    <a href="./courses/school-of-liberal-arts-science.php"
                        class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
@@ -168,7 +168,7 @@
                         <span class="programme-count text-white">4 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Media & Performing Arts</h2>
-                    <a href="./courses/media-and-performing-arts.php"
+                    <a href="./courses/school-of-media-and-performing-arts.php"
                        class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
@@ -192,7 +192,7 @@
                         <span class="programme-count text-white">5 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Fashion Design</h2>
-                    <a href="./courses/fashion-design.php"
+                    <a href="./courses/school-of-fashion-design.php"
                        class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
@@ -215,7 +215,7 @@
                         <span class="programme-count text-white">4 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Sports & Health Sciences</h2>
-                    <a href="./courses/sports-and-health-sciences.php"
+                    <a href="./courses/school-of-sports-and-health-sciences.php"
                        class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
@@ -240,7 +240,7 @@
                         <span class="programme-count text-white">2 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Sustainability & Climate Studies</h2>
-                    <a href="./courses/sustainability-and-climate-studies.php"
+                    <a href="./courses/school-of-sustainability-and-climate-studies.php"
                        class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
