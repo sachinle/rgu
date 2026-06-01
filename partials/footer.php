@@ -359,6 +359,8 @@
           <li><a href="#" class="text-sm text-white/45 transition hover:text-white">Placements</a></li>
           <li><a href="#" class="text-sm text-white/45 transition hover:text-white">Alumni</a></li>
           <li><a href="#" class="text-sm text-white/45 transition hover:text-white">Contact</a></li>
+          <li><a href="https://rathinam.global/fab/" class="text-sm text-white/45 transition hover:text-white">RGU Summer Camp - 2026</a></li>
+
         </ul>
       </div>
 

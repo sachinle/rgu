@@ -2,6 +2,12 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "rgu-php",
+      "runtimeExecutable": "php",
+      "runtimeArgs": ["-S", "127.0.0.1:8741", "-t", "C:\\xampp\\htdocs\\rgu"],
+      "port": 8741
+    },
+    {
       "name": "rgu-xampp",
       "runtimeExecutable": "cmd",
       "runtimeArgs": ["/c", "echo XAMPP already running"],
