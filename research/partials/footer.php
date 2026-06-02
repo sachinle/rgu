@@ -20,9 +20,7 @@
           Apply Online Now
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a href="./doctoral-programmes.php" class="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-transparent px-6 py-3 text-sm font-bold text-white/80 transition hover:border-white/40 hover:bg-white/5">
-          View Regulations 2026
-        </a>
+        
         <a href="tel:8448448909" class="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-transparent px-6 py-3 text-sm font-bold text-white/80 transition hover:border-white/40 hover:bg-white/5">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.62 2 2 0 0 1 3.6 1.44h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.83-1.83a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Call Admissions
@@ -64,25 +62,12 @@
 
       <!-- Explore -->
       <div>
-        <h5 class="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-white/35">Explore</h5>
-        <ul class="space-y-3">
-          <li><a href="./index.php" class="text-sm text-white/45 transition hover:text-white">Research Overview</a></li>
-          <li><a href="./doctoral-programmes.php" class="text-sm text-white/45 transition hover:text-white">Ph.D. Programmes &amp; Regulations</a></li>
-          <li><a href="./metrics.php" class="text-sm text-white/45 transition hover:text-white">R&amp;D Metrics &amp; Impact</a></li>
-          <li><a href="../index.php" class="text-sm text-white/45 transition hover:text-white">RGU Main Site</a></li>
-        </ul>
+        
       </div>
 
       <!-- Research Output -->
       <div>
-        <h5 class="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-white/35">Research Output</h5>
-        <ul class="space-y-3">
-          <li><a href="./scopus-wos-sci.php" class="text-sm text-white/45 transition hover:text-white">Publications (Scopus / WoS / SCI)</a></li>
-          <li><a href="./books-book-chapters.php" class="text-sm text-white/45 transition hover:text-white">Books &amp; Book Chapters</a></li>
-          <li><a href="./patents.php" class="text-sm text-white/45 transition hover:text-white">Patents</a></li>
-          <li><a href="./external-grants.php" class="text-sm text-white/45 transition hover:text-white">External Grants</a></li>
-          <li><a href="./internal-grants.php" class="text-sm text-white/45 transition hover:text-white">Internal Grants</a></li>
-        </ul>
+        
       </div>
 
       <!-- Contact -->
@@ -96,6 +81,10 @@
           <div class="flex items-start gap-3">
             <span class="text-white/40">📞</span>
             <p class="text-sm leading-6 text-white/45">+91-844-844-8909</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-white/40">✉️</span>
+            <p class="text-sm leading-6 text-white/45"><a href="mailto:researchsection@rathinam.in" class="text-white/75 transition hover:text-white">researchsection@rathinam.in</a></p>
           </div>
         </div>
       </div>

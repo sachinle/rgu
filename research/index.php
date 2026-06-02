@@ -26,7 +26,7 @@ include __DIR__ . '/partials/nav.php';
         Innovation &amp; Impact
       </h1>
       <p class="mt-6 max-w-xl text-base sm:text-lg leading-8 text-white/55">
-        Rathinam Global University offers dynamic, research-intensive Doctoral Programmes (Ph.D.)
+        Rathinam Global Deemed to be University offers dynamic, research-intensive Doctoral Programmes (Ph.D.)
         that cultivate scholarly excellence, ethical inquiry and interdisciplinary knowledge creation —
         in alignment with <strong class="text-white/80">UGC Regulations 2022</strong>,
         <strong class="text-white/80">NHEQF 2023</strong> and <strong class="text-white/80">NEP 2020</strong>.
@@ -36,9 +36,7 @@ include __DIR__ . '/partials/nav.php';
            class="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-violet-500/30 hover:scale-105 transition-transform">
           Apply for Ph.D. <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a href="./metrics.php" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-7 py-3.5 text-sm font-bold text-white/85 hover:bg-white/5 hover:border-white/40 transition">
-          Explore R&amp;D Metrics
-        </a>
+        
       </div>
       <!-- trust badges -->
       <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-white/40 text-xs font-semibold uppercase tracking-wider">
@@ -53,10 +51,10 @@ include __DIR__ . '/partials/nav.php';
     <div class="lg:col-span-5 grid grid-cols-2 gap-4">
       <?php
         $hero_cards = [
-          ['312', 'Scopus / WoS / SCI publications', 'from-violet-500/20 to-violet-500/5', 'book-open', './scopus-wos-sci.php'],
-          ['₹2.23 Cr', 'External research funding', 'from-emerald-500/20 to-emerald-500/5', 'wallet', './external-grants.php'],
-          ['96', 'Patents filed · 20 granted', 'from-sky-500/20 to-sky-500/5', 'lightbulb', './patents.php'],
-          ['549', 'Books & book chapters', 'from-fuchsia-500/20 to-fuchsia-500/5', 'library', './books-book-chapters.php'],
+          ['312', 'Scopus / WoS / SCI publications (per year)', 'from-violet-500/20 to-violet-500/5', 'book-open'],
+          ['₹2.23 Cr', 'External research funding<br>(per year)', 'from-emerald-500/20 to-emerald-500/5', 'wallet'],
+          ['96', 'Patents filed · 20 granted<br>(per year)', 'from-sky-500/20 to-sky-500/5', 'lightbulb'],
+          ['549', 'Books & book chapters<br>(per year)', 'from-fuchsia-500/20 to-fuchsia-500/5', 'library'],
         ];
         foreach ($hero_cards as $i => $c):
       ?>
@@ -64,7 +62,7 @@ include __DIR__ . '/partials/nav.php';
         <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white mb-4"><i data-lucide="<?php echo $c[3]; ?>" class="h-5 w-5"></i></div>
         <div class="text-3xl font-black text-white leading-none"><?php echo $c[0]; ?></div>
         <div class="mt-2 text-xs leading-5 text-white/55"><?php echo $c[1]; ?></div>
-        <div class="mt-3 inline-flex items-center gap-1 text-[11px] font-bold text-violet-300 opacity-0 group-hover:opacity-100 transition">View <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        
       </a>
       <?php endforeach; ?>
     </div>
@@ -94,7 +92,7 @@ include __DIR__ . '/partials/nav.php';
         $why = [
           ['target', 'from-violet-600 to-violet-500', 'Original & Innovative Research', [
             'Original and innovative research', 'Interdisciplinary &amp; multidisciplinary inquiry',
-            'Research-driven problem solving', 'Industry and societal relevance', 'Academic integrity &amp; ethical practice']],
+            'Research-driven problem solving', 'Industry and societal relevance', 'Academic integrity &amp; ethical practice','Global Immersion']],
           ['network', 'from-sky-600 to-sky-500', 'Strong Innovation Ecosystem', [
             'Research Development &amp; Innovation Council (RDIC)', 'Advanced labs &amp; Centres of Excellence',
             'Industry–academia collaboration', 'Incubation support via AIC-RaISE', 'Research funding &amp; sponsored projects', 'International exposure &amp; publication support']],
@@ -131,31 +129,34 @@ include __DIR__ . '/partials/nav.php';
       <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-white">Measurable research momentum</h2>
       <p class="mt-4 text-white/55">Cumulative research output and impact recorded by the Directorate of Research, Development &amp; Innovation.</p>
     </div>
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
       <?php
         $glance = [
-          ['count','312','','Publications', 'Scopus / WoS / SCI', './scopus-wos-sci.php'],
-          ['count','549','','Books & Chapters', 'Authored & edited', './books-book-chapters.php'],
-          ['count','96','','Patents Filed', '20 granted', './patents.php'],
-          ['text','₹2.23 Cr','','External Grants', '93 funded projects', './external-grants.php'],
+          ['count','312','','Publications', 'Scopus / WoS / SCI'],
+          ['count','549','','Books & Chapters', 'Authored & edited'],
+          ['count','96','','Patents Filed', '20 granted'],
+          ['count','2.23','','External Grants', '93 funded projects', '₹', ' Cr', 2],
+          ['count','86','','Internal Grants', 'Institutional seed grants nurturing early-stage research.', '₹', ' L', 0],
         ];
         foreach ($glance as $g):
+          $countAttrs = '';
+          if ($g[0] === 'count') {
+            $countAttrs = 'data-count="'.htmlspecialchars($g[1]).'"';
+            if (!empty($g[5])) $countAttrs .= ' data-prefix="'.htmlspecialchars($g[5]).'"';
+            if (!empty($g[6])) $countAttrs .= ' data-suffix="'.htmlspecialchars($g[6]).'"';
+            if (isset($g[7])) $countAttrs .= ' data-dec="'.intval($g[7]).'"';
+          }
       ?>
-      <a href="<?php echo $g[5]; ?>" class="group rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur p-6 hover:bg-white/[0.07] transition r-reveal">
-        <div class="text-4xl sm:text-5xl font-black text-white leading-none" <?php echo $g[0]==='count' ? 'data-count="'.$g[1].'"' : ''; ?>>
+      <div class="group rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur p-5 transition r-reveal">
+        <div class="<?php echo $g[0]==='count' ? 'text-3xl sm:text-4xl' : 'text-xl sm:text-2xl'; ?> font-black text-white leading-tight break-words" <?php echo $countAttrs; ?> >
           <?php echo $g[0]==='count' ? '0' : $g[1]; ?>
         </div>
-        <div class="mt-3 text-sm font-bold text-white/90"><?php echo $g[3]; ?></div>
+        <div class="mt-2 text-sm font-bold text-white/90"><?php echo $g[3]; ?></div>
         <div class="text-xs text-white/45"><?php echo $g[4]; ?></div>
-        <div class="mt-4 inline-flex items-center gap-1 text-[11px] font-bold text-violet-300">Explore <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      </a>
+      </div>
       <?php endforeach; ?>
     </div>
-    <div class="mt-8 text-center r-reveal">
-      <a href="./metrics.php" class="inline-flex items-center gap-2 rounded-xl bg-white/10 px-6 py-3 text-sm font-bold text-white hover:bg-white/15 transition">
-        View full R&amp;D metrics &amp; impact <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
+    
   </div>
 </section>
 
@@ -234,47 +235,10 @@ include __DIR__ . '/partials/nav.php';
       </div>
       <?php endforeach; ?>
     </div>
-    <div class="mt-8 r-reveal">
-      <a href="./doctoral-programmes.php" class="inline-flex items-center gap-2 text-sm font-bold text-violet-700 hover:gap-3 transition-all">
-        Read the full Doctoral Regulations 2026 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
+    
   </div>
 </section>
 
-<!-- ════════════════ RESEARCH OUTPUT EXPLORER ════════════════ -->
-<section class="bg-[#f8fafc] py-16 sm:py-24 border-t border-slate-100">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl mb-12 r-reveal">
-      <p class="r-eyebrow text-violet-700 mb-3"><span class="h-1.5 w-1.5 rounded-full bg-violet-600"></span> Research Output</p>
-      <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">Explore the complete research record</h2>
-      <p class="mt-4 text-slate-600">Every publication, book, patent and grant — presented as searchable, year-wise tables.</p>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <?php
-        $outputs = [
-          ['book-open','Publications','312 indexed articles','Scopus / WoS / SCI peer-reviewed publications, year-wise.','./scopus-wos-sci.php','from-violet-600 to-violet-500'],
-          ['library','Books & Book Chapters','549 titles','Authored and edited books & chapters with ISBN and publisher.','./books-book-chapters.php','from-fuchsia-600 to-fuchsia-500'],
-          ['lightbulb','Patents','96 filed · 20 granted','Utility & design patents with status and application numbers.','./patents.php','from-sky-600 to-sky-500'],
-          ['landmark','External Grants','₹2.23 Cr funded','Extramural grants from government agencies & industry.','./external-grants.php','from-emerald-600 to-emerald-500'],
-          ['sprout','Internal Grants','₹86 L seed funding','Institutional seed grants nurturing early-stage research.','./internal-grants.php','from-amber-500 to-orange-500'],
-          ['bar-chart-3','R&D Metrics','Citations · h-index · funding','Visual dashboards of citation, patent & funding growth.','./metrics.php','from-indigo-600 to-violet-500'],
-        ];
-        foreach ($outputs as $o):
-      ?>
-      <a href="<?php echo $o[4]; ?>" class="r-card group p-7 r-reveal">
-        <div class="flex items-center justify-between mb-5">
-          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br <?php echo $o[5]; ?> text-white shadow-lg"><i data-lucide="<?php echo $o[0]; ?>" class="h-6 w-6"></i></div>
-          <svg class="text-slate-300 group-hover:text-violet-500 group-hover:translate-x-1 transition" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
-        </div>
-        <h3 class="text-lg font-extrabold text-slate-900"><?php echo $o[1]; ?></h3>
-        <p class="mt-0.5 text-sm font-bold text-violet-700"><?php echo $o[2]; ?></p>
-        <p class="mt-2 text-sm leading-6 text-slate-500"><?php echo $o[3]; ?></p>
-      </a>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
 
 <!-- ════════════════ ADMISSION PROCESS ════════════════ -->
 <section class="bg-white py-16 sm:py-24">
@@ -299,8 +263,8 @@ include __DIR__ . '/partials/nav.php';
           $steps = [
             ['Online Application Submission','Submit the duly completed online application (Form 1) before the notified deadline.'],
             ['Eligibility Verification','School-wise committee scrutinises qualifications and supporting documents.'],
-            ['Common Entrance Test (CET)','70% weightage — 50% Research Methodology + 50% Subject Specialization.'],
-            ['Research Presentation & Interview','30% weightage — present your skills, interests and research aptitude.'],
+            ['Common Entrance Test (CET) (Online)','70% weightage — 50% Research Methodology + 50% Subject Specialization.'],
+            ['Research Presentation & Interview (Online)','30% weightage — present your skills, interests and research aptitude.'],
             ['Supervisor Allocation','Recognised supervisors are allotted based on research interest &amp; expertise.'],
           ];
           foreach ($steps as $i => $s):
