@@ -105,7 +105,7 @@
             </div>
             <div class="relative hidden lg:block fade-up delay-200">
                 <div class="rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-[440px]">
-                    <img src="./assets/images/life/04.jpg" alt="Engineering Campus" class="w-full h-full object-cover opacity-55">
+                    <img src="./assets/images/life/School-of-Emerging-Tech.png" alt="Engineering Campus" class="w-full h-full object-cover opacity-55">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#080810]/80 via-[#080810]/10 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6">
                         <p class="text-xs font-semibold uppercase tracking-widest text-white/40 mb-1">RGU Campus</p>
