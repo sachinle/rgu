@@ -57,6 +57,7 @@ body {
    NAVBAR
    ============================================================ */
 .r-nav { transition: box-shadow .3s ease, background .3s ease; }
+.r-nav .r-link { white-space: nowrap; }
 .r-nav a.r-link { position: relative; }
 .r-nav a.r-link::after {
   content: "";

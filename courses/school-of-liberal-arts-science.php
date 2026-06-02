@@ -61,7 +61,7 @@
                 <p class="text-base sm:text-lg leading-8 text-white/50 mb-9 max-w-lg">Think broadly, lead wisely. Our liberal arts and science programmes cultivate critical thinkers, writers, mathematicians, and public leaders for an interconnected world.</p>
                 <div class="mb-10 grid grid-cols-2 gap-x-8 gap-y-6 w-fit">
                     <div>
-                        <p class="text-3xl font-black text-white">6</p>
+                        <p class="text-3xl font-black text-white">11</p>
                         <p class="text-[11px] font-semibold uppercase tracking-widest text-white/35 mt-0.5">Programmes</p>
                     </div>
                     <div class="pl-7 border-l border-white/10">
@@ -107,7 +107,7 @@
         </div>
         <div class="rounded-3xl bg-gradient-to-r from-orange-600 to-amber-600 p-px">
             <div class="rounded-3xl bg-[#0d0d1a] px-8 py-10 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
-                <?php foreach([["val"=>"6","label"=>"Programmes"],["val"=>"400+","label"=>"Placements / Year"],["val"=>"30+","label"=>"Partner Institutions"],["val"=>"NAAC A++","label"=>"Accredited University"]] as $h): ?><div><p class="text-3xl lg:text-4xl font-black text-white mb-1"><?=$h['val']?></p><p class="text-[10px] font-semibold uppercase tracking-widest text-white/35"><?=$h['label']?></p></div><?php endforeach; ?>
+                <?php foreach([["val"=>"11","label"=>"Programmes"],["val"=>"400+","label"=>"Placements / Year"],["val"=>"30+","label"=>"Partner Institutions"],["val"=>"NAAC A++","label"=>"Accredited University"]] as $h): ?><div><p class="text-3xl lg:text-4xl font-black text-white mb-1"><?=$h['val']?></p><p class="text-[10px] font-semibold uppercase tracking-widest text-white/35"><?=$h['label']?></p></div><?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -134,14 +134,14 @@
 
 <section id="programmes" class="py-20 bg-[#f8fafc]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center gap-2 rounded-full border border-orange-700/20 bg-orange-700/10 px-[18px] py-[7px] mb-5 w-max mx-auto"><span class="h-[6px] w-[6px] rounded-full bg-orange-700 animate-pulse"></span><span class="text-[11px] font-medium uppercase tracking-[0.24em] text-orange-700">14 Programmes</span></div>
+        <div class="flex items-center gap-2 rounded-full border border-orange-700/20 bg-orange-700/10 px-[18px] py-[7px] mb-5 w-max mx-auto"><span class="h-[6px] w-[6px] rounded-full bg-orange-700 animate-pulse"></span><span class="text-[11px] font-medium uppercase tracking-[0.24em] text-orange-700">11 Programmes</span></div>
         <h2 class="text-3xl md:text-5xl font-extrabold text-center text-slate-900 mb-4">Programmes Offered</h2>
         <p class="text-center text-slate-500 max-w-2xl mx-auto mb-14 leading-7">Undergraduate and postgraduate programmes spanning pure sciences, humanities, and social sciences.</p>
 
         <div class="mb-10">
             <div class="flex items-center gap-3 mb-5"><span class="w-9 h-9 rounded-full bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center text-white text-sm font-black shadow-lg shadow-orange-500/30">1</span><div><h3 class="text-lg font-extrabold text-slate-900">B.Sc Programmes</h3><p class="text-xs text-slate-400">3 Years &middot; Undergraduate &middot; Full Time</p></div></div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <?php foreach(["B.Sc Mathematics","B.Sc Physics"] as $i=>$c): ?><div class="prog-card bg-white border border-slate-100 rounded-2xl p-5 hover:border-orange-200 hover:shadow-md transition group cursor-default"><div class="flex items-start gap-3"><span class="prog-number mt-0.5 w-6 h-6 rounded-full bg-orange-50 border border-orange-200 text-orange-700 text-[10px] font-bold flex items-center justify-center flex-shrink-0 transition-all"><?=$i+1?></span><div><p class="text-sm font-semibold text-slate-800 leading-snug group-hover:text-orange-700 transition"><?=htmlspecialchars($c)?></p><span class="inline-block mt-2 text-[10px] bg-orange-50 text-orange-600 border border-orange-100 rounded-full px-2 py-0.5 font-medium">3 Years</span></div></div></div><?php endforeach; ?>
+                <?php foreach(["B.Sc Mathematics","B.Sc Physics","B.Sc Psychology"] as $i=>$c): ?><div class="prog-card bg-white border border-slate-100 rounded-2xl p-5 hover:border-orange-200 hover:shadow-md transition group cursor-default"><div class="flex items-start gap-3"><span class="prog-number mt-0.5 w-6 h-6 rounded-full bg-orange-50 border border-orange-200 text-orange-700 text-[10px] font-bold flex items-center justify-center flex-shrink-0 transition-all"><?=$i+1?></span><div><p class="text-sm font-semibold text-slate-800 leading-snug group-hover:text-orange-700 transition"><?=htmlspecialchars($c)?></p><span class="inline-block mt-2 text-[10px] bg-orange-50 text-orange-600 border border-orange-100 rounded-full px-2 py-0.5 font-medium">3 Years</span></div></div></div><?php endforeach; ?>
             </div>
         </div>
 
@@ -155,7 +155,7 @@
         <div>
             <div class="flex items-center gap-3 mb-5"><span class="w-9 h-9 rounded-full bg-gradient-to-br from-red-500 to-orange-600 flex items-center justify-center text-white text-sm font-black shadow-lg shadow-red-500/30">3</span><div><h3 class="text-lg font-extrabold text-slate-900">Postgraduate Programmes</h3><p class="text-xs text-slate-400">2 Years &middot; M.A / M.Sc &middot; Full Time</p></div></div>
             <div class="grid sm:grid-cols-2 gap-4">
-                <?php foreach(["M.A English Literature","M.A Public Administration","M.Sc Mathematics"] as $i=>$c): ?><div class="prog-card bg-white border border-slate-100 rounded-2xl p-5 hover:border-red-200 hover:shadow-md transition group cursor-default"><div class="flex items-start gap-3"><span class="prog-number mt-0.5 w-6 h-6 rounded-full bg-red-50 border border-red-200 text-red-700 text-[10px] font-bold flex items-center justify-center flex-shrink-0 transition-all"><?=$i+1?></span><div><p class="text-sm font-semibold text-slate-800 leading-snug group-hover:text-red-700 transition"><?=htmlspecialchars($c)?></p><span class="inline-block mt-2 text-[10px] bg-red-50 text-red-600 border border-red-100 rounded-full px-2 py-0.5 font-medium">2 Years</span></div></div></div><?php endforeach; ?>
+                <?php foreach(["M.A English Literature","M.A Public Administration","M.Sc Mathematics","M.Sc Applied Psychology","M.Sc Clinical Psychology","M.Sc Counselling Psychology","Post Graduate Diploma in Counselling"] as $i=>$c): ?><div class="prog-card bg-white border border-slate-100 rounded-2xl p-5 hover:border-red-200 hover:shadow-md transition group cursor-default"><div class="flex items-start gap-3"><span class="prog-number mt-0.5 w-6 h-6 rounded-full bg-red-50 border border-red-200 text-red-700 text-[10px] font-bold flex items-center justify-center flex-shrink-0 transition-all"><?=$i+1?></span><div><p class="text-sm font-semibold text-slate-800 leading-snug group-hover:text-red-700 transition"><?=htmlspecialchars($c)?></p><span class="inline-block mt-2 text-[10px] bg-red-50 text-red-600 border border-red-100 rounded-full px-2 py-0.5 font-medium"><?= strpos($c,'Diploma')!==false ? 'PG Diploma' : '2 Years' ?></span></div></div></div><?php endforeach; ?>
             </div>
         </div>
         <div class="mt-14 text-center"><a href="https://admissions.rathinamcollege.edu.in/?utm_source=school-page&utm_medium=programmes-cta&utm_campaign=liberal-arts-science" target="_blank" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-orange-500 to-amber-500 px-8 py-4 text-sm font-bold text-white shadow-[0_8px_32px_rgba(249,115,22,0.35)] hover:scale-105 transition-transform">Apply for These Programmes &#x2192;</a></div>

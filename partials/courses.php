@@ -141,7 +141,7 @@
                         <div class="icon-box gradient-orange">
                             <i data-lucide="book-open"></i>
                         </div>
-                        <span class="programme-count text-white">6 Programmes</span>
+                        <span class="programme-count text-white">11 Programmes</span>
                     </div>
                     <h2 class="card-title text-white">Liberal Arts & Science</h2>
                     <a href="./courses/school-of-liberal-arts-science.php"
@@ -151,6 +151,7 @@
                     </a>
                 </article>
                 <div class="chips-container">
+                    <span class="chip">Psychology</span>
                     <span class="chip">Philosophy</span>
                     <span class="chip">Physics</span>
                 </div>
@@ -417,6 +418,7 @@
                             <ul>
                                 <li>B.Sc Mathematics</li>
                                 <li>B.Sc Physics</li>
+                                <li>B.Sc Psychology</li>
                             </ul>
                         </div>
                         <div class="details-column">
@@ -433,6 +435,10 @@
                                 <li>M.A English Literature</li>
                                 <li>M.A Public Administration</li>
                                 <li>M.Sc Mathematics</li>
+                                <li>M.Sc Applied Psychology</li>
+                                <li>M.Sc Clinical Psychology</li>
+                                <li>M.Sc Counselling Psychology</li>
+                                <li>Post Graduate Diploma in Counselling</li>
                             </ul>
                         </div>
                     </div>
