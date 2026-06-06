@@ -20,12 +20,12 @@ $output_active = in_array($active, $output_pages, true);
       <!-- Desktop links -->
       <div class="hidden xl:flex items-center gap-5 2xl:gap-7">
         <a href="./index.php" class="r-link text-sm font-medium text-slate-600 hover:text-violet-700 transition <?php echo r_is($active,'home'); ?>">Home</a>
-        <a href="./directorate.php" class="r-link text-sm font-medium text-slate-600 hover:text-violet-700 transition <?php echo r_is($active,'directorate'); ?>">About Directorate</a>
-        <a href="./registrar.php" class="r-link text-sm font-medium text-slate-600 hover:text-violet-700 transition <?php echo r_is($active,'registrar'); ?>">Registrar</a>
+        <!-- <a href="./directorate.php" class="r-link text-sm font-medium text-slate-600 hover:text-violet-700 transition <?php echo r_is($active,'directorate'); ?>">About Directorate</a>
+        <a href="./registrar.php" class="r-link text-sm font-medium text-slate-600 hover:text-violet-700 transition <?php echo r_is($active,'registrar'); ?>">Registrar</a> -->
 
         <a href="../index.php" class="r-link text-sm font-medium text-slate-500 hover:text-violet-700 transition">RGU Home</a>
 
-        <a href="https://admissions.rathinamcollege.edu.in/?utm_source=research&utm_medium=navbar&utm_campaign=phd"
+        <a href="https://payment.rathinam.global/login"
            target="_blank" rel="noopener"
            class="inline-flex items-center gap-2 whitespace-nowrap rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-violet-500/25 hover:scale-105 transition-transform">
           Apply for Ph.D.
