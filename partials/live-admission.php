@@ -202,11 +202,11 @@
                     }
                 </style>
 
-                <div class="flex gap-4">
+                <div class="flex w-full flex-col sm:flex-row gap-4">
                     <!-- Apply Now Button -->
                     <a
                         href="https://admissions.rathinamcollege.edu.in/"
-                        class="inline-flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-lime-300 to-emerald-400 px-3 py-3 md:px-9 md:py-4 font-[Sora] text-[10px] md:text-lg font-extrabold text-[#0A0A14] no-underline shadow-[0_8px_32px_rgba(163,230,53,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_40px_rgba(163,230,53,0.5)]">
+                        class="flex-1 inline-flex items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-lime-300 to-emerald-400 px-6 py-3 md:px-9 md:py-4 font-[Sora] text-[10px] md:text-lg font-extrabold text-[#0A0A14] no-underline shadow-[0_8px_32px_rgba(163,230,53,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_40px_rgba(163,230,53,0.5)]">
                         Apply Now
 
                         <svg
@@ -220,11 +220,29 @@
                         </svg>
                     </a>
 
+                    
+
                     <!-- Explore RGU Way Button -->
                     <a
                         href="https://admissions.rathinamcollege.edu.in/"
-                        class="inline-flex items-center gap-2.5 rounded-2xl px-3 py-3 md:px-9 md:py-4 text-[10px] md:text-lg font-extrabold text-white hover:scale-105 border border-[#ffffff38] transition-all duration-300">
+                        class="flex-1 inline-flex items-center justify-center gap-2.5 rounded-2xl px-6 py-3 md:px-9 md:py-4 text-[10px] md:text-lg font-extrabold text-white hover:scale-105 border border-[#ffffff38] transition-all duration-300">
                         Explore RGU Way
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-[18px] w-[18px]"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+
+                    <a
+                        href="https://payment.rathinam.global/login"
+                        class="flex-1 inline-flex items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-lime-300 to-emerald-400 px-6 py-3 md:px-9 md:py-4 font-[Sora] text-[10px] md:text-lg font-extrabold text-[#0A0A14] no-underline shadow-[0_8px_32px_rgba(163,230,53,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_40px_rgba(163,230,53,0.5)]">
+                        Apply Ph.D.
 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
