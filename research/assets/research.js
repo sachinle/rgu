@@ -148,4 +148,31 @@
   document.addEventListener("DOMContentLoaded", function () {
     icons(); mobileNav(); navShadow(); reveal(); counters(); bars(); tableSearch(); backTop();
   });
+
+  /* ---- Popup modal (site-load) ---- */
+  function popupModal() {
+    var modal = document.getElementById('r-popup-modal');
+    if (!modal) return;
+    var inner = modal.querySelector('.r-popup-inner');
+    var close = document.getElementById('r-popup-close');
+    function hide() { modal.classList.add('hidden'); modal.style.display = 'none'; }
+    function show() { modal.style.display = 'flex'; // small delay for CSS
+      setTimeout(function () { modal.classList.remove('hidden'); }, 50);
+    }
+    // show on load
+    show();
+    // close on X
+    if (close) close.addEventListener('click', function (e) { e.stopPropagation(); hide(); });
+    // close when clicking outside the image (overlay) or anywhere outside modal content
+    document.addEventListener('click', function (e) {
+      if (modal.classList.contains('hidden')) return;
+      // if the click target is not inside the modal inner content, hide
+      if (!inner.contains(e.target)) hide();
+    }, true);
+    // also close when pressing Esc
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') hide(); });
+  }
+
+  // initialize popup after other DOM handlers
+  document.addEventListener('DOMContentLoaded', function () { popupModal(); });
 })();

@@ -221,3 +221,16 @@ tr.r-status-granted td .r-pill { background: #dcfce7; color: #166534; }
   box-shadow: 0 10px 30px -8px rgba(79,70,229,.6);
 }
 #r-top.show { display: flex; }
+
+/* ---------------- Popup modal ---------------- */
+#r-popup-modal { display: none; }
+#r-popup-modal.items-center { display: flex; }
+.r-popup-inner { position: relative; }
+.r-popup-close { border: none; cursor: pointer; font-size: 14px; line-height: 1; }
+.r-popup-content { background: transparent; }
+.r-popup-image { display: block; border-radius: 12px; max-height: 85vh; width: 100%; height: auto; }
+
+@media (max-width: 640px) {
+  .r-popup-inner { padding: 10px; }
+  .r-popup-image { border-radius: 8px; max-height: 70vh; }
+}
