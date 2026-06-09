@@ -6,6 +6,16 @@ include __DIR__ . '/partials/head.php';
 include __DIR__ . '/partials/nav.php';
 ?>
 
+<!-- Popup modal for site-load image -->
+<div id="r-popup-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60">
+  <div class="r-popup-inner max-w-[95%] max-h-[95%] p-4">
+    <button id="r-popup-close" aria-label="Close popup" class="r-popup-close absolute top-3 right-3 z-60 bg-white/90 rounded-full p-2 shadow">✕</button>
+    <div class="r-popup-content rounded-lg overflow-hidden max-w-3xl mx-auto">
+      <img src="./assets/popup-model.jpeg" alt="Research popup" class="r-popup-image w-full h-auto object-cover block">
+    </div>
+  </div>
+</div>
+
 <!-- ════════════════ HERO ════════════════ -->
 <section class="relative overflow-hidden bg-[#080810] min-h-[92vh] flex items-center">
   <div class="r-blob bg-violet-700/30 h-[520px] w-[520px] -top-32 -left-24"></div>
@@ -142,49 +152,7 @@ include __DIR__ . '/partials/nav.php';
     </div>
   </div>
 </section>
-<section class="px-4 sm:px-6 lg:px-8 bg-[#f3f3f3] py-10">
-  <div class="mx-auto max-w-6xl r-reveal">
-    <div class="text-center max-w-2xl mx-auto">
-      <p class="r-eyebrow text-violet-300 mb-3 justify-center"><span class="h-1.5 w-1.5 rounded-full bg-violet-400"></span> Admission Process</p>
-      <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">The admission process includes</h2>
-      <p class="mt-4 text-slate-600">A clear, merit-based pathway that guides candidates through application, assessment, interview and provisional selection.</p>
-    </div>
 
-    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-      <?php
-      $admission_steps = [
-        ['01', 'monitor', 'Submission of Online Application', 'Complete the online application with accurate information and required documents.'],
-        ['02', 'clipboard', 'Online  Research and Ph.D. Entrance Test (RPET)', 'Appear for the RPET covering research methodology and subject specialization.'],
-        ['03', 'users', 'Personal Interview / Research Interaction', 'Showcase your research aptitude during the interview and interaction.'],
-        ['04', 'check-circle', 'Provisionally Selected List', 'Receive provisional selection confirmation once evaluation is complete.'],
-      ];
-      foreach ($admission_steps as $step):
-      ?>
-        <div class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-          <div class="flex items-center gap-3">
-            <span class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-600 text-sm font-extrabold text-white shadow-sm"><?php echo $step[0]; ?></span>
-            <div class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-50 text-violet-700 shadow-inner">
-              <i data-lucide="<?php echo $step[1]; ?>" class="h-5 w-5"></i>
-            </div>
-          </div>
-          <h3 class="mt-6 text-base font-semibold text-slate-900"><?php echo $step[2]; ?></h3>
-          <p class="mt-3 text-sm leading-6 text-slate-600"><?php echo $step[3]; ?></p>
-        </div>
-      <?php endforeach; ?>
-    </div>
-
-    <div class="mt-10 rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-      <div class="flex flex-col md:flex-row items-start gap-4">
-        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-600 text-white">
-          <i data-lucide="info" class="h-5 w-5"></i>
-        </span>
-        <div class="my-auto">
-          <p class="text-sm font-semibold text-slate-900">Applicants who have cleared state or national level examinations like SET, SLET, UGC-NET, CSIR-NET, GATE are exempted only from RPET.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <section class="px-4 sm:px-6 lg:px-8 py-10 sm:py-20">
   <div class="text-center max-w-2xl mx-auto r-reveal">
     <p class="r-eyebrow text-violet-300 mb-3 justify-center"><span class="h-1.5 w-1.5 rounded-full bg-violet-400"></span> Research at a Glance</p>
@@ -219,6 +187,38 @@ include __DIR__ . '/partials/nav.php';
 
 </section>
 
+<!-- ════════════════ Research Clusters ════════════════ -->
+<section class="bg-[#f8fafc] py-16 sm:py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mb-12 r-reveal">
+      <p class="r-eyebrow text-violet-700 mb-3"><span class="h-1.5 w-1.5 rounded-full bg-violet-600"></span> Future-Focused Research Ecosystems</p>
+      <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">Next-Generation Innovation Clusters</h2>
+      <p class="mt-4 text-slate-600">Advancing breakthrough ideas through collaborative research across science, technology, design, sustainability, and human development.</p>
+    </div>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <?php
+      $clusters = [
+        ['cpu', 'School of Quantum Science, Computing & AI'],
+        ['hard-drive', 'School of Engineering & Technology'],
+        ['briefcase', 'School of Business & Commerce'],
+        ['award', 'School of Fashion Design, Media & Performing Arts'],
+        ['book-open', 'School of Liberal Arts and Science'],
+        ['dna', 'School of Applied Biosciences, Food & Agritech'],
+        ['globe', 'School of Sustainability & Climate Studies'],
+        ['heart-pulse', 'School of Sports & Health Science'],
+      ];
+      foreach ($clusters as $cluster):
+      ?>
+        <article class="r-card rounded-3xl border border-slate-200/60 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-violet-700 mb-4">
+            <i data-lucide="<?php echo $cluster[0]; ?>" class="h-5 w-5"></i>
+          </div>
+          <p class="text-base font-semibold text-slate-900 leading-7"><?php echo $cluster[1]; ?></p>
+        </article>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
 <!-- ════════════════ RESEARCH AT A GLANCE ════════════════ -->
 <section class="relative overflow-hidden bg-[#0b1020] py-16 sm:py-24">
@@ -234,11 +234,11 @@ include __DIR__ . '/partials/nav.php';
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
       <?php
       $glance = [
-        ['count', '312', '', 'Publications', 'Scopus / WoS / SCI - (AY 2025)'],
-        ['count', '549', '', 'Books & Chapters', 'Authored & edited - (AY 2025)'],
-        ['count', '96', '', 'Patents Filed', '20 granted - (AY 2025)'],
-        ['count', '2.23', '', 'External Grants', '93 funded projects - (AY 2025)', '₹', ' Cr', 2],
-        ['count', '86', '', 'Internal Grants', 'Institutional seed grants nurturing early-stage research - (AY 2025)', '₹', ' L', 0],
+        ['count', '312', '', 'Publications', 'Scopus / WoS / SCI <br> (AY 2025 - 26)'],
+        ['count', '549', '', 'Books & Chapters', 'Authored & edited  <br> (AY 2025 - 26)'],
+        ['count', '96', '', 'Patents Filed', '20 granted  <br> (AY 2025 - 26)'],
+        ['count', '2.23', '', 'External Grants', '93 funded projects  <br> (AY 2025 - 26)', '₹', ' Cr', 2],
+        ['count', '86', '', 'Internal Grants', 'Institutional seed grants nurturing early-stage research  <br> (AY 2025 - 26)', '₹', ' L', 0],
       ];
       foreach ($glance as $g):
         $countAttrs = '';
@@ -261,6 +261,101 @@ include __DIR__ . '/partials/nav.php';
 
   </div>
 </section>
+
+<!-- ════════════════ EMERGING THEMES ════════════════ -->
+<section class="bg-[#f8fafc] py-16 sm:py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="rounded-3xl bg-gradient-to-br from-violet-600 to-sky-500 p-8 sm:p-12 text-white relative overflow-hidden r-reveal">
+      <div class="absolute -top-16 -right-10 h-60 w-60 rounded-full bg-white/10 blur-2xl"></div>
+      <p class="r-eyebrow text-white/70 mb-3"><span class="h-1.5 w-1.5 rounded-full bg-white"></span> Research Areas &amp; Emerging Themes</p>
+      <h2 class="text-2xl sm:text-3xl font-black tracking-tight mb-7 max-w-2xl">The University actively promotes research in</h2>
+      <div class="flex flex-wrap gap-2.5">
+        <?php
+        $themes = ['Artificial Intelligence & Machine Learning', 'Artificial & Computational Intelligence', 'Data Science, Analytics & Business Intelligence', 'Cyber Security, Digital Forensics & Blockchain', 'Networking, Cloud & Advanced Computing', 'Internet of Things, Robotics & Intelligent Systems', 'Computer Vision, Image Processing & Immersive Technologies', 'Engineering Sciences & Technology', 'Environmental Science, Sustainability & Climate Studies', 'Materials Science, Nanotechnology & Advanced Functional Materials', 'Physics & Applied Physical Sciences', 'Chemistry & Chemical Sciences', 'Biological Sciences & Biotechnology', 'Life Sciences, Biodiversity & Conservation Biology','Food Science, Nutrition & Agricultural Sciences','Textile, Fashion & Apparel Sciences','Management & Organizational Studies','Finance, Banking, Insurance & FinTech','Marketing, Digital Business & Entrepreneurship','Operations, Supply Chain, Logistics & International Business','Human Resource Management & Workplace Studies','Media, Communication & Journalism Studies','Language, Literature & Linguistic Studies','Mathematical Sciences & Operations Research','Psychology, Behavioural Sciences, Law & Social Sciences','Tourism, Hospitality & Service Industries','Health, Wellness, Sports & Physical Education'];
+        foreach ($themes as $t) echo '<span class="rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur">' . $t . '</span>';
+        ?>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PROGRAMME MODES ════════════════ -->
+<section class="bg-white py-16 sm:py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mb-12 r-reveal">
+      <p class="r-eyebrow text-violet-700 mb-3"><span class="h-1.5 w-1.5 rounded-full bg-violet-600"></span> Flexible <span style="text-transform:none;">Ph.D.</span> Programme Modes</p>
+      <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">Multiple pathways for doctoral research</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <?php
+      $modes = [
+        ['Full-Time Ph.D.', 'clock', 'from-violet-600 to-violet-500', ['With or without fellowship', 'Sponsored research / project support', 'Start-up integrated research opportunities']],
+        ['Part-Time Ph.D.', 'briefcase', 'from-sky-600 to-sky-500', ['Internal category for faculty &amp; staff', 'External category for industry professionals', 'For academicians &amp; working researchers']],
+        ['Integrated Ph.D.', 'layers', 'from-emerald-600 to-emerald-500', ['For eligible 4-year UG Honours degrees', 'Minimum 75% aggregate or equivalent', 'Direct pathway into doctoral research']],
+      ];
+      foreach ($modes as $i => $m):
+      ?>
+        <div class="r-card p-7 r-reveal d<?php echo $i + 1; ?>">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br <?php echo $m[2]; ?> text-white shadow-lg mb-5"><i data-lucide="<?php echo $m[1]; ?>" class="h-6 w-6"></i></div>
+          <h3 class="text-lg font-extrabold text-slate-900 mb-4"><?php echo $m[0]; ?></h3>
+          <ul class="space-y-2.5">
+            <?php foreach ($m[3] as $li): ?>
+              <li class="flex items-start gap-2.5 text-sm text-slate-600"><span class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-violet-500"></span><span><?php echo $li; ?></span></li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-slate-50">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mt-12 grid gap-8 lg:grid-cols-1">
+
+
+      <article class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl">
+        <div class="flex items-start gap-4 mb-6">
+          <div class="flex h-14 w-14 items-center justify-center rounded-3xl bg-sky-50 text-sky-700 shadow-sm">
+            <i data-lucide="sparkles" class="h-6 w-6"></i>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 font-semibold">Research Environment</p>
+            <h3 class="mt-3 text-3xl font-black text-slate-900">A modern ecosystem for discovery</h3>
+          </div>
+        </div>
+        <p class="max-w-xl text-sm leading-7 text-slate-600 mb-8">RGU nurtures research through labs, collaborations, events, resources and entrepreneurship support designed for emerging scholars.</p>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <?php
+          $environment_items = [
+            ['microscope', 'State-of-the-art research centres and laboratories'],
+            ['handshake', 'Industry–academia partnerships'],
+            ['globe', 'National and global research collaborations'],
+            ['users', 'Seminars, conferences and faculty development programmes'],
+            ['book-open', 'Access to e-journals, research databases and digital libraries'],
+            ['lightbulb', 'Innovation & entrepreneurship initiatives at AIC RaISE'],
+          ];
+          foreach ($environment_items as $item):
+          ?>
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5 transition hover:border-slate-300">
+              <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-violet-600 text-white shadow-sm">
+                <i data-lucide="<?php echo $item[0]; ?>" class="h-5 w-5"></i>
+              </div>
+              <p class="mt-4 text-sm leading-6 text-slate-700"><?php echo $item[1]; ?></p>
+            </div>
+          <?php endforeach; ?>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 
 <!-- <section class="overflow-hidden bg-[#080810] py-14 sm:py-20">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -481,38 +576,7 @@ include __DIR__ . '/partials/nav.php';
 </section> -->
 
 
-<!-- ════════════════ Research Clusters ════════════════ -->
-<section class="bg-[#f8fafc] py-16 sm:py-24">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl mb-12 r-reveal">
-      <p class="r-eyebrow text-violet-700 mb-3"><span class="h-1.5 w-1.5 rounded-full bg-violet-600"></span> Future-Focused Research Ecosystems</p>
-      <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">Next-Generation Innovation Clusters</h2>
-      <p class="mt-4 text-slate-600">Advancing breakthrough ideas through collaborative research across science, technology, design, sustainability, and human development.</p>
-    </div>
-    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      <?php
-      $clusters = [
-        ['cpu', 'School of Quantum Science, Computing & AI'],
-        ['hard-drive', 'School of Engineering & Technology'],
-        ['briefcase', 'School of Business & Commerce'],
-        ['award', 'School of Fashion Design, Media & Performing Arts'],
-        ['book-open', 'School of Liberal Arts and Science'],
-        ['dna', 'School of Applied Biosciences, Food & Agritech'],
-        ['globe', 'School of Sustainability & Climate Studies'],
-        ['heart-pulse', 'School of Sports & Health Science'],
-      ];
-      foreach ($clusters as $cluster):
-      ?>
-        <article class="r-card rounded-3xl border border-slate-200/60 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-violet-700 mb-4">
-            <i data-lucide="<?php echo $cluster[0]; ?>" class="h-5 w-5"></i>
-          </div>
-          <p class="text-base font-semibold text-slate-900 leading-7"><?php echo $cluster[1]; ?></p>
-        </article>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
+
 <section class="bg-slate-50">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="mt-12 grid gap-8 lg:grid-cols-1">
@@ -525,7 +589,7 @@ include __DIR__ . '/partials/nav.php';
             </div>
             <div>
               <p class="text-xs uppercase tracking-[0.3em] text-orange-100 font-semibold">Additional Support</p>
-              <h3 class="mt-3 text-3xl font-black">Practical help for research success</h3>
+              <h3 class="mt-3 text-3xl font-black">Comprehensive Support For Research Excellence</h3>
             </div>
           </div>
           <?php
@@ -552,41 +616,10 @@ include __DIR__ . '/partials/nav.php';
         </div>
       </article>
 
-      <article class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl">
-        <div class="flex items-start gap-4 mb-6">
-          <div class="flex h-14 w-14 items-center justify-center rounded-3xl bg-sky-50 text-sky-700 shadow-sm">
-            <i data-lucide="sparkles" class="h-6 w-6"></i>
-          </div>
-          <div>
-            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 font-semibold">Research Environment</p>
-            <h3 class="mt-3 text-3xl font-black text-slate-900">A modern ecosystem for discovery</h3>
-          </div>
-        </div>
-        <p class="max-w-xl text-sm leading-7 text-slate-600 mb-8">RGU nurtures research through labs, collaborations, events, resources and entrepreneurship support designed for emerging scholars.</p>
-        <div class="grid gap-4 sm:grid-cols-2">
-          <?php
-          $environment_items = [
-            ['microscope', 'State-of-the-art research centres and laboratories'],
-            ['handshake', 'Industry–academia partnerships'],
-            ['globe', 'National and global research collaborations'],
-            ['users', 'Seminars, conferences and faculty development programmes'],
-            ['book-open', 'Access to e-journals, research databases and digital libraries'],
-            ['lightbulb', 'Innovation & entrepreneurship initiatives at AIC RaISE'],
-          ];
-          foreach ($environment_items as $item):
-          ?>
-            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5 transition hover:border-slate-300">
-              <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-violet-600 text-white shadow-sm">
-                <i data-lucide="<?php echo $item[0]; ?>" class="h-5 w-5"></i>
-              </div>
-              <p class="mt-4 text-sm leading-6 text-slate-700"><?php echo $item[1]; ?></p>
-            </div>
-          <?php endforeach; ?>
-        </div>
-      </article>
     </div>
   </div>
 </section>
+
 
 
 <!-- ════════════════ DISCIPLINES ════════════════ -->
@@ -628,53 +661,9 @@ include __DIR__ . '/partials/nav.php';
   </div>
 </section> -->
 
-<!-- ════════════════ EMERGING THEMES ════════════════ -->
-<section class="bg-[#f8fafc] py-16 sm:py-20">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="rounded-3xl bg-gradient-to-br from-violet-600 to-sky-500 p-8 sm:p-12 text-white relative overflow-hidden r-reveal">
-      <div class="absolute -top-16 -right-10 h-60 w-60 rounded-full bg-white/10 blur-2xl"></div>
-      <p class="r-eyebrow text-white/70 mb-3"><span class="h-1.5 w-1.5 rounded-full bg-white"></span> Research Areas &amp; Emerging Themes</p>
-      <h2 class="text-2xl sm:text-3xl font-black tracking-tight mb-7 max-w-2xl">The University actively promotes research in</h2>
-      <div class="flex flex-wrap gap-2.5">
-        <?php
-        $themes = ['Artificial Intelligence & Machine Learning', 'Artificial & Computational Intelligence', 'Data Science, Analytics & Business Intelligence', 'Cyber Security, Digital Forensics & Blockchain', 'Networking, Cloud & Advanced Computing', 'Internet of Things, Robotics & Intelligent Systems', 'Computer Vision, Image Processing & Immersive Technologies', 'Engineering Sciences & Technology', 'Environmental Science, Sustainability & Climate Studies', 'Materials Science, Nanotechnology & Advanced Functional Materials', 'Physics & Applied Physical Sciences', 'Chemistry & Chemical Sciences', 'Biological Sciences & Biotechnology', 'Life Sciences, Biodiversity & Conservation Biology','Food Science, Nutrition & Agricultural Sciences','Textile, Fashion & Apparel Sciences','Management & Organizational Studies','Finance, Banking, Insurance & FinTech','Marketing, Digital Business & Entrepreneurship','Operations, Supply Chain, Logistics & International Business','Human Resource Management & Workplace Studies','Media, Communication & Journalism Studies','Language, Literature & Linguistic Studies','Mathematical Sciences & Operations Research','Psychology, Behavioural Sciences, Law & Social Sciences','Tourism, Hospitality & Service Industries','Health, Wellness, Sports & Physical Education'];
-        foreach ($themes as $t) echo '<span class="rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur">' . $t . '</span>';
-        ?>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ════════════════ PROGRAMME MODES ════════════════ -->
-<section class="bg-white py-16 sm:py-24">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl mb-12 r-reveal">
-      <p class="r-eyebrow text-violet-700 mb-3"><span class="h-1.5 w-1.5 rounded-full bg-violet-600"></span> Flexible <span style="text-transform:none;">Ph.D.</span> Programme Modes</p>
-      <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">Multiple pathways for doctoral research</h2>
-    </div>
-    <div class="grid md:grid-cols-3 gap-6">
-      <?php
-      $modes = [
-        ['Full-Time Ph.D.', 'clock', 'from-violet-600 to-violet-500', ['With or without fellowship', 'Sponsored research / project support', 'Start-up integrated research opportunities']],
-        ['Part-Time Ph.D.', 'briefcase', 'from-sky-600 to-sky-500', ['Internal category for faculty &amp; staff', 'External category for industry professionals', 'For academicians &amp; working researchers']],
-        ['Integrated Ph.D.', 'layers', 'from-emerald-600 to-emerald-500', ['For eligible 4-year UG Honours degrees', 'Minimum 75% aggregate or equivalent', 'Direct pathway into doctoral research']],
-      ];
-      foreach ($modes as $i => $m):
-      ?>
-        <div class="r-card p-7 r-reveal d<?php echo $i + 1; ?>">
-          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br <?php echo $m[2]; ?> text-white shadow-lg mb-5"><i data-lucide="<?php echo $m[1]; ?>" class="h-6 w-6"></i></div>
-          <h3 class="text-lg font-extrabold text-slate-900 mb-4"><?php echo $m[0]; ?></h3>
-          <ul class="space-y-2.5">
-            <?php foreach ($m[3] as $li): ?>
-              <li class="flex items-start gap-2.5 text-sm text-slate-600"><span class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-violet-500"></span><span><?php echo $li; ?></span></li>
-            <?php endforeach; ?>
-          </ul>
-        </div>
-      <?php endforeach; ?>
-    </div>
 
-  </div>
-</section>
+
 
 
 <!-- ════════════════ ADMISSION PROCESS ════════════════ -->
@@ -716,5 +705,50 @@ include __DIR__ . '/partials/nav.php';
     </div>
   </div>
 </section>
+
+<!-- <section class="px-4 sm:px-6 lg:px-8 bg-[#f3f3f3] py-10">
+  <div class="mx-auto max-w-6xl r-reveal">
+    <div class="text-center max-w-2xl mx-auto">
+      <p class="r-eyebrow text-violet-300 mb-3 justify-center"><span class="h-1.5 w-1.5 rounded-full bg-violet-400"></span> Admission Process</p>
+      <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">The admission process includes</h2>
+      <p class="mt-4 text-slate-600">A clear, merit-based pathway that guides candidates through application, assessment, interview and provisional selection.</p>
+    </div>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <?php
+      $admission_steps = [
+        ['01', 'monitor', 'Submission of Online Application', 'Complete the online application with accurate information and required documents.'],
+        ['02', 'clipboard', 'Online  Research and Ph.D. Entrance Test (RPET)', 'Appear for the RPET covering research methodology and subject specialization.'],
+        ['03', 'users', 'Personal Interview / Research Interaction', 'Showcase your research aptitude during the interview and interaction.'],
+        ['04', 'check-circle', 'Provisionally Selected List', 'Receive provisional selection confirmation once evaluation is complete.'],
+      ];
+      foreach ($admission_steps as $step):
+      ?>
+        <div class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div class="flex items-center gap-3">
+            <span class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-600 text-sm font-extrabold text-white shadow-sm"><?php echo $step[0]; ?></span>
+            <div class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-50 text-violet-700 shadow-inner">
+              <i data-lucide="<?php echo $step[1]; ?>" class="h-5 w-5"></i>
+            </div>
+          </div>
+          <h3 class="mt-6 text-base font-semibold text-slate-900"><?php echo $step[2]; ?></h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600"><?php echo $step[3]; ?></p>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+    <div class="mt-10 rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+      <div class="flex flex-col md:flex-row items-start gap-4">
+        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-600 text-white">
+          <i data-lucide="info" class="h-5 w-5"></i>
+        </span>
+        <div class="my-auto">
+          <p class="text-sm font-semibold text-slate-900">Applicants who have cleared state or national level examinations like SET, SLET, UGC-NET, CSIR-NET, GATE are exempted only from RPET.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
 
 <?php include __DIR__ . '/partials/footer.php'; ?>
