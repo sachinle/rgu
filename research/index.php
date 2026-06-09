@@ -11,7 +11,7 @@ include __DIR__ . '/partials/nav.php';
   <div class="r-popup-inner max-w-[95%] max-h-[95%] p-4">
     <button id="r-popup-close" aria-label="Close popup" class="r-popup-close absolute top-3 right-3 z-60 bg-white/90 rounded-full p-2 shadow">✕</button>
     <div class="r-popup-content rounded-lg overflow-hidden max-w-3xl mx-auto">
-      <img src="./assets/popup-model.jpeg" alt="Research popup" class="r-popup-image w-full h-auto object-cover block">
+      <img src="./assets/popup-model.jpeg" alt="Research popup" loading="eager" decoding="async" class="r-popup-image w-full h-auto object-cover block">
     </div>
   </div>
 </div>
@@ -706,49 +706,7 @@ include __DIR__ . '/partials/nav.php';
   </div>
 </section>
 
-<!-- <section class="px-4 sm:px-6 lg:px-8 bg-[#f3f3f3] py-10">
-  <div class="mx-auto max-w-6xl r-reveal">
-    <div class="text-center max-w-2xl mx-auto">
-      <p class="r-eyebrow text-violet-300 mb-3 justify-center"><span class="h-1.5 w-1.5 rounded-full bg-violet-400"></span> Admission Process</p>
-      <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">The admission process includes</h2>
-      <p class="mt-4 text-slate-600">A clear, merit-based pathway that guides candidates through application, assessment, interview and provisional selection.</p>
-    </div>
 
-    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-      <?php
-      $admission_steps = [
-        ['01', 'monitor', 'Submission of Online Application', 'Complete the online application with accurate information and required documents.'],
-        ['02', 'clipboard', 'Online  Research and Ph.D. Entrance Test (RPET)', 'Appear for the RPET covering research methodology and subject specialization.'],
-        ['03', 'users', 'Personal Interview / Research Interaction', 'Showcase your research aptitude during the interview and interaction.'],
-        ['04', 'check-circle', 'Provisionally Selected List', 'Receive provisional selection confirmation once evaluation is complete.'],
-      ];
-      foreach ($admission_steps as $step):
-      ?>
-        <div class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-          <div class="flex items-center gap-3">
-            <span class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-600 text-sm font-extrabold text-white shadow-sm"><?php echo $step[0]; ?></span>
-            <div class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-50 text-violet-700 shadow-inner">
-              <i data-lucide="<?php echo $step[1]; ?>" class="h-5 w-5"></i>
-            </div>
-          </div>
-          <h3 class="mt-6 text-base font-semibold text-slate-900"><?php echo $step[2]; ?></h3>
-          <p class="mt-3 text-sm leading-6 text-slate-600"><?php echo $step[3]; ?></p>
-        </div>
-      <?php endforeach; ?>
-    </div>
-
-    <div class="mt-10 rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-      <div class="flex flex-col md:flex-row items-start gap-4">
-        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-600 text-white">
-          <i data-lucide="info" class="h-5 w-5"></i>
-        </span>
-        <div class="my-auto">
-          <p class="text-sm font-semibold text-slate-900">Applicants who have cleared state or national level examinations like SET, SLET, UGC-NET, CSIR-NET, GATE are exempted only from RPET.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 
 <?php include __DIR__ . '/partials/footer.php'; ?>
