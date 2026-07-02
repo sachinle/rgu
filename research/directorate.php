@@ -1,7 +1,7 @@
 <?php
 $active     = 'directorate';
 $page_title = 'About Directorate';
-$page_desc  = 'Directorate of Research – Ph.D Programmes, led by Dr. S. Balasubramanian, Rathinam Global Deemed to be University.';
+$page_desc  = 'Directorate of Research – Ph.D Programmes, led by Dr. S. Balasubramanian, Rathinam Global (Deemed to be University).';
 include __DIR__ . '/partials/head.php';
 include __DIR__ . '/partials/nav.php';
 ?>
@@ -28,7 +28,7 @@ include __DIR__ . '/partials/nav.php';
           <span class="r-chip border-white/15 bg-white/[0.05] text-white/75">Ph.D. (Cell Biology, Basel)</span>
           <span class="r-chip border-white/15 bg-white/[0.05] text-white/75">10 Yrs Research · 9 Yrs Admin</span>
         </div>
-        <p class="mt-5 max-w-xl text-base leading-7 text-white/55">Rathinam Global Deemed to be University, Coimbatore — leading high-quality interdisciplinary research, national &amp; international collaborations, and doctoral programmes.</p>
+        <p class="mt-5 max-w-xl text-base leading-7 text-white/55">Rathinam Global (Deemed to be University), Coimbatore — leading high-quality interdisciplinary research, national &amp; international collaborations, and doctoral programmes.</p>
 
         <!-- Profile contact (incl. directorate email) -->
         <div class="mt-7 flex flex-wrap gap-3">

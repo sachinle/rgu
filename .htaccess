@@ -1,0 +1,98 @@
+# =============================================================================
+# RGU site — performance/caching/security headers
+# Requires Apache modules: mod_deflate, mod_brotli (optional), mod_expires,
+# mod_headers. cPanel/XAMPP have these on by default.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Text compression (gzip + brotli if available)
+# -----------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/xml application/rss+xml
+  AddOutputFilterByType DEFLATE application/font-woff application/font-woff2 font/woff font/woff2
+  AddOutputFilterByType DEFLATE image/svg+xml image/x-icon
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/javascript
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json application/xml
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 2. Cache lifetimes (long for hashed/static assets, short for HTML)
+# -----------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # HTML — short cache so updates show up fast
+  ExpiresByType text/html                       "access plus 1 hour"
+
+  # CSS / JS — 1 year (if you change them, rename or version-bump the URL)
+  ExpiresByType text/css                        "access plus 1 year"
+  ExpiresByType application/javascript          "access plus 1 year"
+  ExpiresByType text/javascript                 "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/woff                       "access plus 1 year"
+  ExpiresByType font/woff2                      "access plus 1 year"
+  ExpiresByType application/font-woff           "access plus 1 year"
+  ExpiresByType application/font-woff2          "access plus 1 year"
+
+  # Images
+  ExpiresByType image/webp                      "access plus 1 year"
+  ExpiresByType image/avif                      "access plus 1 year"
+  ExpiresByType image/png                       "access plus 1 year"
+  ExpiresByType image/jpeg                      "access plus 1 year"
+  ExpiresByType image/gif                       "access plus 1 year"
+  ExpiresByType image/svg+xml                   "access plus 1 year"
+  ExpiresByType image/x-icon                    "access plus 1 year"
+
+  # Video / audio
+  ExpiresByType video/mp4                       "access plus 1 year"
+  ExpiresByType video/webm                      "access plus 1 year"
+  ExpiresByType audio/mpeg                      "access plus 1 year"
+
+  # Documents
+  ExpiresByType application/pdf                 "access plus 1 month"
+</IfModule>
+
+# Force immutable on truly static assets so browsers don't even revalidate.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(woff2?|ttf|otf|eot|webp|avif|png|jpe?g|gif|svg|ico|mp4|webm|css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # PHP/HTML — let the browser revalidate often
+  <FilesMatch "\.(php|html)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+
+  # Security / best-practices
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  # CORS for fonts so other subdomains can use them if needed
+  <FilesMatch "\.(woff2?|ttf|otf)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 3. MIME types (in case the host hasn't registered modern formats)
+# -----------------------------------------------------------------------------
+<IfModule mod_mime.c>
+  AddType image/webp                            .webp
+  AddType image/avif                            .avif
+  AddType font/woff                             .woff
+  AddType font/woff2                            .woff2
+  AddType application/manifest+json             .webmanifest
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 4. Default index
+# -----------------------------------------------------------------------------
+DirectoryIndex index.php index.html

@@ -21,263 +21,69 @@
             </div>
         </div>
     </div>
-    <section class="gallery-section">
-        <!-- Row 1 -->
+    <?php
+      // Centralised gallery list (image, shape). Each item is rendered twice to support
+      // the seamless marquee loop without duplicating markup in source.
+      $gallery1 = [
+        ['01','wide'], ['02','tall'], ['03','square'], ['04','wide'], ['05','square'],
+        ['06','tall'], ['07','wide'], ['08','square'], ['09','wide'],
+      ];
+      $gallery2 = [
+        ['10','wide'], ['11','square'], ['12','tall'], ['13','wide'], ['14','square'],
+        ['15','tall'], ['16','wide'], ['17','square'],
+      ];
+      // Approx render dims (must match CSS) so the browser can reserve space (no CLS).
+      $dims = [
+        'wide'   => ['w' => 380, 'h' => 210],
+        'square' => ['w' => 260, 'h' => 210],
+        'tall'   => ['w' => 190, 'h' => 210],
+      ];
+      function render_gallery_row($items, $dims) {
+        // Render twice for a seamless infinite-scroll loop (transform animates 0 → -50%).
+        for ($pass = 0; $pass < 2; $pass++) {
+          foreach ($items as $g) {
+            [$id, $shape] = $g;
+            $w = $dims[$shape]['w']; $h = $dims[$shape]['h'];
+            // First pass is visible; second pass is the off-screen copy used purely
+            // to fill the gap during the loop — mark it aria-hidden.
+            $hidden = $pass === 1 ? ' aria-hidden="true"' : '';
+            echo '<div class="gallery-card ' . $shape . '"' . $hidden . '><img src="assets/images/life/' . $id . '.webp" alt="' . ($pass === 0 ? 'Life at RGU' : '') . '" width="' . $w . '" height="' . $h . '" loading="lazy" decoding="async"></div>';
+          }
+        }
+      }
+    ?>
+    <section class="gallery-section" aria-label="Life at RGU gallery">
         <div class="marquee marquee-left">
-            <div class="marquee-track">
-
-                <!-- 9 Images -->
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/01.jpg" alt="">
-                </div>
-
-                <div class="gallery-card tall">
-                    <img src="assets/images/life/02.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/03.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/04.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/05.jpg" alt="">
-                </div>
-
-                <div class="gallery-card tall">
-                    <img src="assets/images/life/06.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/07.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/08.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/09.jpg" alt="">
-                </div>
-
-                <!-- Duplicate for infinite loop -->
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/01.jpg" alt="">
-                </div>
-
-                <div class="gallery-card tall">
-                    <img src="assets/images/life/02.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/03.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/04.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/05.jpg" alt="">
-                </div>
-
-                <div class="gallery-card tall">
-                    <img src="assets/images/life/06.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/07.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/08.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/09.jpg" alt="">
-                </div>
-
-            </div>
+            <div class="marquee-track"><?php render_gallery_row($gallery1, $dims); ?></div>
         </div>
-
-        <!-- Row 2 -->
         <div class="marquee marquee-right">
-            <div class="marquee-track">
-
-                <!-- Remaining 9 Images -->
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/10.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/11.jpg" alt="">
-                </div>
-
-                <div class="gallery-card tall">
-                    <img src="assets/images/life/12.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/13.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/14.jpg" alt="">
-                </div>
-
-                <div class="gallery-card tall">
-                    <img src="assets/images/life/15.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/16.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/17.jpg" alt="">
-                </div>
-
-
-                <!-- Duplicate -->
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/10.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/11.jpg" alt="">
-                </div>
-
-                <div class="gallery-card tall">
-                    <img src="assets/images/life/12.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/13.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/14.jpg" alt="">
-                </div>
-
-                <div class="gallery-card tall">
-                    <img src="assets/images/life/15.jpg" alt="">
-                </div>
-
-                <div class="gallery-card wide">
-                    <img src="assets/images/life/16.jpg" alt="">
-                </div>
-
-                <div class="gallery-card square">
-                    <img src="assets/images/life/17.jpg" alt="">
-                </div>
-
-
-            </div>
+            <div class="marquee-track"><?php render_gallery_row($gallery2, $dims); ?></div>
         </div>
     </section>
 
     <style>
-        .gallery-section {
-            background: #020312;
-            overflow: hidden;
-            padding: 40px 0;
-        }
-
-        .marquee {
-            overflow: hidden;
-            width: 100%;
-            margin-bottom: 22px;
-        }
-
-        .marquee-track {
-            display: flex;
-            gap: 20px;
-            width: max-content;
-        }
-
-        .marquee-left .marquee-track {
-            animation: scrollLeft 45s linear infinite;
-        }
-
-        .marquee-right .marquee-track {
-            animation: scrollRight 45s linear infinite;
-        }
-
-        .gallery-card {
-            flex-shrink: 0;
-            overflow: hidden;
-            border-radius: 24px;
-            background: #111827;
-        }
-
-        .gallery-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* Different Sizes */
-        .gallery-card.wide {
-            width: 380px;
-            height: 210px;
-        }
-
-        .gallery-card.square {
-            width: 260px;
-            height: 210px;
-        }
-
-        .gallery-card.tall {
-            width: 190px;
-            height: 210px;
-        }
-
-        /* Animations */
-        @keyframes scrollLeft {
-            from {
-                transform: translateX(0);
-            }
-
-            to {
-                transform: translateX(-50%);
-            }
-        }
-
-        @keyframes scrollRight {
-            from {
-                transform: translateX(-50%);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        /* Responsive */
+        .gallery-section { background:#020312; overflow:hidden; padding:40px 0; }
+        .marquee { overflow:hidden; width:100%; margin-bottom:22px; }
+        .marquee-track { display:flex; gap:20px; width:max-content; will-change:transform; }
+        .marquee-left .marquee-track  { animation: scrollLeft  45s linear infinite; }
+        .marquee-right .marquee-track { animation: scrollRight 45s linear infinite; }
+        .gallery-card { flex-shrink:0; overflow:hidden; border-radius:24px; background:#111827; }
+        .gallery-card img { width:100%; height:100%; object-fit:cover; display:block; }
+        .gallery-card.wide   { width:380px; height:210px; }
+        .gallery-card.square { width:260px; height:210px; }
+        .gallery-card.tall   { width:190px; height:210px; }
+        @keyframes scrollLeft  { from { transform: translateX(0); }     to { transform: translateX(-50%); } }
+        @keyframes scrollRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
         @media (max-width: 768px) {
-
-            .gallery-card.wide {
-                width: 260px;
-                height: 160px;
-            }
-
-            .gallery-card.square {
-                width: 180px;
-                height: 160px;
-            }
-
-            .gallery-card.tall {
-                width: 140px;
-                height: 160px;
-            }
-
-            .marquee-track {
-                gap: 14px;
-            }
+            .gallery-card.wide   { width:260px; height:160px; }
+            .gallery-card.square { width:180px; height:160px; }
+            .gallery-card.tall   { width:140px; height:160px; }
+            .marquee-track { gap:14px; }
+        }
+        /* Honor reduced-motion: don't burn CPU on infinite animation. */
+        @media (prefers-reduced-motion: reduce) {
+            .marquee-left .marquee-track,
+            .marquee-right .marquee-track { animation: none; }
         }
     </style>
 </section>

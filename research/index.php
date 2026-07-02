@@ -11,7 +11,16 @@ include __DIR__ . '/partials/nav.php';
   <div class="r-popup-inner max-w-[95%] max-h-[95%] p-4">
     <button id="r-popup-close" aria-label="Close popup" class="r-popup-close absolute top-3 right-3 z-60 bg-white/90 rounded-full p-2 shadow">✕</button>
     <div class="r-popup-content rounded-lg overflow-hidden max-w-3xl mx-auto">
-      <img src="./assets/popup-model.jpeg" alt="Research popup" loading="eager" decoding="async" class="r-popup-image w-full h-auto object-cover block">
+      <img src="./assets/model.jpeg" alt="Research popup" loading="eager" decoding="async" class="r-popup-image w-full h-auto object-cover block">
+    </div>
+  </div>
+</div>
+
+<div id="r-popup-modal-2" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60">
+  <div class="r-popup-inner max-w-[90vw] max-h-[90vh] p-4">
+    <button id="r-popup-close-2" aria-label="Close second popup" class="r-popup-close absolute top-3 right-3 z-60 bg-white/90 rounded-full p-2 shadow">✕</button>
+    <div class="r-popup-content rounded-lg overflow-hidden max-w-full mx-auto">
+      <img src="./assets/model2.jpeg" alt="Research popup 2" loading="eager" decoding="async" class="r-popup-image w-full max-h-[82vh] h-auto object-contain block">
     </div>
   </div>
 </div>
@@ -36,7 +45,7 @@ include __DIR__ . '/partials/nav.php';
         Innovation &amp; Impact
       </h1>
       <p class="mt-6 text-base sm:text-lg leading-8 text-white/55 text-center">
-        Rathinam Global Deemed to be University offers dynamic, Doctoral Programmes (Ph.D.)
+        Rathinam Global (Deemed to be University) offers dynamic, Doctoral Programmes (Ph.D.)
         that cultivate scholarly excellence, ethical inquiry and interdisciplinary knowledge creation —
         in alignment with <strong class="text-white/80">UGC Regulations 2022</strong>,
         <strong class="text-white/80">NHEQF 2023</strong> and <strong class="text-white/80">NEP 2020</strong>.
@@ -426,7 +435,7 @@ include __DIR__ . '/partials/nav.php';
             </div>
 
             <p class="text-base leading-7 text-white/55">
-              Rathinam Global Deemed to be University, Coimbatore — leading
+              Rathinam Global (Deemed to be University), Coimbatore — leading
               high-quality interdisciplinary research, national &
               international collaborations, and doctoral programmes.
             </p>
@@ -527,7 +536,7 @@ include __DIR__ . '/partials/nav.php';
             </div>
 
             <p class="text-base leading-7 text-white/55">
-              Rathinam Global Deemed to be University, Coimbatore — academic
+              Rathinam Global (Deemed to be University), Coimbatore — academic
               governance, regulatory compliance, quality assurance and
               institutional development.
             </p>

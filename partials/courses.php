@@ -11,7 +11,7 @@
         </span>
     </div>
     <h2 class="text-4xl md:text-6xl font-extrabold text-center mb-0 md:mb-10 relative z-10">
-        Courses Offered at <span style="background:linear-gradient(90deg,#7e22ce,#0284c7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">at RGU</span>
+        Courses Offered at <span style="background:linear-gradient(90deg,#7e22ce,#0284c7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">RGU</span>
     </h2>
     <!-- Background Blobs -->
     <div class="bg-blobs">
@@ -27,7 +27,7 @@
             <!-- Centered Search -->
             <header class="search-section">
                 <div class="search-box-wrapper">
-                    <i data-lucide="search" class="search-icon"></i>
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                     <input type="text" id="programme-search" placeholder="Search programmes, schools..."
                         aria-label="Search programmes">
                 </div>
@@ -40,7 +40,7 @@
     box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 24px, rgba(255, 255, 255, 0.4) 0px 2px 4px inset;">
                     <div class="card-header">
                         <div class="icon-box gradient-purple">
-                            <i data-lucide="cpu"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
                         </div>
                         <span class="programme-count text-white">13 Programmes</span>
                     </div>
@@ -65,7 +65,7 @@
     box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 24px, rgba(255, 255, 255, 0.4) 0px 2px 4px inset;">
                     <div class="card-header">
                         <div class="icon-box gradient-blue">
-                            <i data-lucide="settings"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
                         </div>
                         <span class="programme-count text-white">10 Programmes</span>
                     </div>
@@ -89,7 +89,7 @@
     box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 24px, rgba(255, 255, 255, 0.4) 0px 2px 4px inset;">
                     <div class="card-header">
                         <div class="icon-box gradient-green">
-                            <i data-lucide="briefcase"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
                         </div>
                         <span class="programme-count text-white">36 Programmes</span>
                     </div>
@@ -115,7 +115,7 @@
     box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 24px, rgba(255, 255, 255, 0.4) 0px 2px 4px inset;">
                     <div class="card-header">
                         <div class="icon-box gradient-pink">
-                            <i data-lucide="leaf"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19.2 2.96a1 1 0 0 1 1.8.66 13.7 13.7 0 0 1-2.4 9.39"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
                         </div>
                         <span class="programme-count text-white">5 Programmes</span>
                     </div>
@@ -139,7 +139,7 @@
     box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 24px, rgba(255, 255, 255, 0.4) 0px 2px 4px inset;">
                     <div class="card-header">
                         <div class="icon-box gradient-orange">
-                            <i data-lucide="book-open"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                         </div>
                         <span class="programme-count text-white">11 Programmes</span>
                     </div>
@@ -164,7 +164,7 @@
     box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 24px, rgba(255, 255, 255, 0.4) 0px 2px 4px inset;">
                     <div class="card-header">
                         <div class="icon-box gradient-pink">
-                            <i data-lucide="palette"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
                         </div>
                         <span class="programme-count text-white">4 Programmes</span>
                     </div>
@@ -188,7 +188,7 @@
     box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 24px, rgba(255, 255, 255, 0.4) 0px 2px 4px inset;">
                     <div class="card-header">
                         <div class="icon-box gradient-orange">
-                            <i data-lucide="activity"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.5.5 0 0 1-.96 0L9.24 2.18a.5.5 0 0 0-.96 0l-2.35 8.36A2 2 0 0 1 4 12H2"/></svg>
                         </div>
                         <span class="programme-count text-white">5 Programmes</span>
                     </div>
@@ -211,7 +211,7 @@
     box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 24px, rgba(255, 255, 255, 0.4) 0px 2px 4px inset;">
                     <div class="card-header">
                         <div class="icon-box gradient-purple">
-                            <i data-lucide="activity"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.5.5 0 0 1-.96 0L9.24 2.18a.5.5 0 0 0-.96 0l-2.35 8.36A2 2 0 0 1 4 12H2"/></svg>
                         </div>
                         <span class="programme-count text-white">4 Programmes</span>
                     </div>
@@ -236,7 +236,7 @@
     transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);">
                     <div class="card-header">
                         <div class="icon-box gradient-cyan">
-                            <i data-lucide="leaf"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19.2 2.96a1 1 0 0 1 1.8.66 13.7 13.7 0 0 1-2.4 9.39"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
                         </div>
                         <span class="programme-count text-white">2 Programmes</span>
                     </div>
@@ -543,23 +543,31 @@
 
     <script src="script.js"></script>
     <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
+        // Lucide icons are now inlined as SVGs above — no runtime needed.
 
-        // Create random particles
-        const container = document.getElementById('particles-container');
-        for (let i = 0; i < 30; i++) {
-            const p = document.createElement('div');
-            p.className = 'particle';
-            p.style.left = Math.random() * 100 + '%';
-            p.style.top = Math.random() * 100 + '%';
-            const size = Math.random() * 6 + 2 + 'px';
-            p.style.width = size;
-            p.style.height = size;
-            p.style.animationDelay = Math.random() * 15 + 's';
-            p.style.animationDuration = Math.random() * 10 + 10 + 's';
-            container.appendChild(p);
-        }
+        // Background particles: skip on small screens and when user prefers reduced motion.
+        // Also defer to idle time so it never blocks the main thread during page load.
+        (function () {
+          var container = document.getElementById('particles-container');
+          if (!container) return;
+          if (window.innerWidth < 768) return;
+          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+          var run = function () {
+            for (var i = 0; i < 20; i++) {
+              var p = document.createElement('div');
+              p.className = 'particle';
+              p.style.left = Math.random() * 100 + '%';
+              p.style.top = Math.random() * 100 + '%';
+              var size = Math.random() * 6 + 2 + 'px';
+              p.style.width = size; p.style.height = size;
+              p.style.animationDelay = Math.random() * 15 + 's';
+              p.style.animationDuration = Math.random() * 10 + 10 + 's';
+              container.appendChild(p);
+            }
+          };
+          if ('requestIdleCallback' in window) requestIdleCallback(run, { timeout: 2000 });
+          else setTimeout(run, 1500);
+        })();
     </script>
 
 </section>

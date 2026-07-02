@@ -1,13 +1,14 @@
-<section class="relative overflow-hidden py-10 md:py-10">
+<section class="relative overflow-hidden py-10 md:py-10" id="admission-section" style="background:linear-gradient(135deg,#0a0a14 0%,#1a0a2e 50%,#0a0a14 100%);">
 
-    <!-- Background Video -->
+    <!-- Background Video: NOT loaded until section enters viewport.
+         data-src is swapped to <source src> by JS in footer once visible. -->
     <video
-        autoplay
-        muted
-        loop
-        playsinline
-        class="absolute inset-0 w-full h-full object-cover">
-        <source src="assets/images/bgvideo.mp4" type="video/mp4">
+        id="admission-bgvideo"
+        muted loop playsinline preload="none"
+        poster="assets/images/bgvideo-poster.webp"
+        class="absolute inset-0 w-full h-full object-cover hidden md:block"
+        aria-hidden="true">
+        <source data-src="assets/images/bgvideo.mp4" type="video/mp4">
     </video>
 
     <!-- Dark Overlay -->
@@ -22,11 +23,7 @@
                     <span style="width:8px;height:8px;border-radius:50%;background:#a3e635;box-shadow:0 0 0 3px rgba(163,230,53,.3);animation:heroPulse 2s ease-in-out infinite" class="my-auto"></span>
                     <span>Live — Admissions 2026</span>
                 </div>
-                <!-- Swiper CSS -->
-                <link
-                    rel="stylesheet"
-                    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+                <!-- Swiper CSS+JS are loaded once globally from index.php. -->
                 <section class="relative w-full overflow-hidden">
 
                     <!-- Slider -->
@@ -157,26 +154,38 @@
                     </div>
                 </section>
 
-                <!-- Swiper JS -->
-                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
                 <script>
-                    const admissionSlider = new Swiper(".admissionSlider", {
-                        slidesPerView: 1,
-                        loop: true,
-
-                        autoplay: {
-                            delay: 4000,
-                            disableOnInteraction: false,
-                        },
-
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true,
-                        },
-
-                        speed: 900,
+                  // Swiper is loaded with `defer` in <head>, so by DOMContentLoaded it's ready.
+                  document.addEventListener('DOMContentLoaded', function () {
+                    if (typeof Swiper === 'undefined') return;
+                    new Swiper(".admissionSlider", {
+                      slidesPerView: 1, loop: true,
+                      autoplay: { delay: 4000, disableOnInteraction: false },
+                      pagination: { el: ".admissionSlider .swiper-pagination", clickable: true },
+                      speed: 900,
                     });
+                  });
+
+                  // Lazy-load bgvideo source only when section scrolls into view.
+                  (function () {
+                    var sec = document.getElementById('admission-section');
+                    var vid = document.getElementById('admission-bgvideo');
+                    if (!sec || !vid) return;
+                    var loaded = false;
+                    function load() {
+                      if (loaded) return; loaded = true;
+                      var src = vid.querySelector('source[data-src]');
+                      if (src) { src.src = src.dataset.src; vid.load(); vid.play().catch(function(){}); }
+                    }
+                    if ('IntersectionObserver' in window) {
+                      var io = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (e) { if (e.isIntersecting) { load(); io.disconnect(); } });
+                      }, { rootMargin: '200px' });
+                      io.observe(sec);
+                    } else {
+                      window.addEventListener('load', load);
+                    }
+                  })();
                 </script>
 
                 <style>
@@ -224,7 +233,7 @@
 
                     <!-- Explore RGU Way Button -->
                     <a
-                        href="https://admissions.rathinamcollege.edu.in/"
+                        href="<?= $linkBase ?? './' ?>"
                         class="flex-1 inline-flex items-center justify-center gap-2.5 rounded-2xl px-6 py-3 md:px-9 md:py-4 text-[10px] md:text-lg font-extrabold text-white hover:scale-105 border border-[#ffffff38] transition-all duration-300">
                         Explore RGU Way
 

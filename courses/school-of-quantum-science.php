@@ -91,52 +91,17 @@
 <body>
 
 <!-- ════════════════════════════════════════
-     STICKY NAVBAR
+     SHARED COURSES NAVBAR  (partials/courses-nav.php)
 ════════════════════════════════════════ -->
-<nav class="sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-black/5 shadow-sm overflow-hidden">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16 min-w-0">
-
-            <a href="./index.php" class="flex-shrink-0 min-w-0">
-                <img src="./assets/images/logo.webp" alt="RGU Logo" class="h-9 w-auto max-w-[240px] sm:max-w-none object-contain object-left">
-            </a>
-
-            <!-- Desktop links -->
-            <div class="hidden md:flex items-center gap-7">
-                <a href="./index.php"           class="text-sm font-medium text-slate-600 hover:text-purple-700 transition">Home</a>
-                <a href="./index.php#courses"  class="text-sm font-medium text-slate-600 hover:text-purple-700 transition">Schools</a>
-                <a href="#programmes"    class="text-sm font-medium text-slate-600 hover:text-purple-700 transition">Programmes</a>
-                <a href="#careers"       class="text-sm font-medium text-slate-600 hover:text-purple-700 transition">Careers</a>
-                <a href="#how-to-apply"  class="text-sm font-medium text-slate-600 hover:text-purple-700 transition">How to Apply</a>
-                <a href="https://admissions.rathinamcollege.edu.in/?utm_source=school-page&utm_medium=navbar&utm_campaign=quantum-science"
-                   target="_blank"
-                   class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 to-violet-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-purple-500/25 hover:scale-105 transition-transform">
-                    Apply Now &#x2192;
-                </a>
-            </div>
-
-            <!-- Hamburger -->
-            <button id="mob-btn" class="md:hidden p-2 rounded-xl border border-black/10 text-slate-600" aria-label="Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Mobile dropdown -->
-        <div id="mob-menu" class="md:hidden hidden pb-4 space-y-1 border-t border-black/5 mt-1 pt-3">
-            <a href="./index.php"          class="block px-3 py-2.5 text-sm font-medium text-slate-600 rounded-xl hover:bg-purple-50">Home</a>
-            <a href="./index.php#courses"  class="block px-3 py-2.5 text-sm font-medium text-slate-600 rounded-xl hover:bg-purple-50">Schools</a>
-            <a href="#programmes"   class="block px-3 py-2.5 text-sm font-medium text-slate-600 rounded-xl hover:bg-purple-50">Programmes</a>
-            <a href="#careers"      class="block px-3 py-2.5 text-sm font-medium text-slate-600 rounded-xl hover:bg-purple-50">Careers</a>
-            <a href="#how-to-apply" class="block px-3 py-2.5 text-sm font-medium text-slate-600 rounded-xl hover:bg-purple-50">How to Apply</a>
-            <a href="https://admissions.rathinamcollege.edu.in/" target="_blank"
-               class="block px-3 py-2.5 text-sm font-bold text-white bg-gradient-to-r from-purple-600 to-violet-600 rounded-xl text-center mt-2">
-                Apply Now
-            </a>
-        </div>
-    </div>
-</nav>
+<?php
+    $rootHref    = './';                                                 // <base href="../"> → root is '/global…/'
+    $schoolName  = 'School of Quantum Science, Computing & AI';
+    $schoolHref  = '#';                                                    // self, since we're already on it
+    $programName = '';                                                    // not a program LP
+    $applyUrl    = 'https://admissions.rathinamcollege.edu.in/?utm_source=school-page&utm_medium=navbar&utm_campaign=quantum-science';
+    $accent      = 'purple';
+    include __DIR__ . '/../partials/courses-nav.php';
+?>
 
 
 <!-- ════════════════════════════════════════
@@ -476,6 +441,13 @@
         </div>
 
         <?php
+        // ── Quantum School · Course → Program-LP slug map ──
+        // Add an entry here once a program LP exists; courses without a slug
+        // will render as plain text.
+        $programLinks = [
+            "B.Sc Computer Science" => "./courses/programmes/school-of-quantum-science/b.sc-computer-science.php",
+        ];
+
         // Original course list — no fabricated entries
         $groups = [
             "bsc" => [
@@ -532,17 +504,28 @@
         </div>
 
         <?php
-        // Reusable card renderer
-        $renderGroupCard = function ($num, $g) {
+        // Reusable card renderer — courses with a slug become clickable links
+        $renderGroupCard = function ($num, $g) use ($programLinks) {
             ?>
             <div class="relative bg-white rounded-2xl border border-slate-100 shadow-sm p-7 hover:shadow-md transition">
                 <span class="absolute -top-4 left-6 w-9 h-9 rounded-full bg-gradient-to-br from-purple-600 to-violet-600 text-white text-sm font-black flex items-center justify-center shadow-lg shadow-purple-500/30"><?= $num ?></span>
                 <h3 class="mt-2 mb-5 text-base font-extrabold uppercase tracking-wider text-slate-900"><?= $g['label'] ?></h3>
                 <ul class="space-y-3">
-                    <?php foreach ($g['courses'] as $c): ?>
-                        <li class="flex items-start gap-2 text-sm text-slate-700 leading-6">
+                    <?php foreach ($g['courses'] as $c):
+                        // Match the bare course name (decode &amp; for the lookup)
+                        $key = html_entity_decode($c, ENT_QUOTES, 'UTF-8');
+                        $href = $programLinks[$key] ?? null;
+                    ?>
+                        <li class="flex items-start gap-2 text-sm leading-6">
                             <i data-lucide="arrow-right" class="w-4 h-4 <?= $g['color'] ?> mt-1 flex-shrink-0"></i>
-                            <span><?= $c ?></span>
+                            <?php if ($href): ?>
+                                <a href="<?= htmlspecialchars($href) ?>" class="text-slate-700 hover:text-purple-700 hover:underline underline-offset-4 decoration-purple-400/60 transition inline-flex items-center gap-1.5">
+                                    <span><?= $c ?></span>
+                                    <span class="inline-flex items-center rounded-full bg-purple-100 text-purple-700 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider">View</span>
+                                </a>
+                            <?php else: ?>
+                                <span class="text-slate-700"><?= $c ?></span>
+                            <?php endif; ?>
                         </li>
                     <?php endforeach; ?>
                 </ul>

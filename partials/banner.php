@@ -1,36 +1,30 @@
 <section class="h-auto md:h-[100vh] banner">
 
-    <!-- ===== TRANSPARENT NAVBAR ===== -->
-    <nav class="relative z-30 flex items-center justify-center px-4 py-3 md:px-10 md:py-5">
-        <img src="./assets/images/logo.webp" alt="RGU Logo" id="rgu-nav-logo"
-            class="h-10 md:h-14 w-auto object-contain" style="filter: brightness(0) invert(1);">
-    </nav>
-    <!-- ===== END NAVBAR ===== -->
+    <?php include __DIR__ . "/nav.php"; ?>
 
 
     <!-- ===== MAIN CONTENT: [Left Circles] + [Right Stats] ===== -->
     <div class="flex items-start gap-0 px-2 md:px-8 lg:px-12 xl:px-16 pt-2 md:pt-6 pb-6 md:pb-0">
 
-        <!-- â”€â”€ LEFT SIDEBAR: 3 Circles (vertical, both mobile & desktop) â”€â”€ -->
+        <!-- -- LEFT SIDEBAR: 3 Circles (vertical, both mobile & desktop) -- -->
         <div class="flex flex-col items-center gap-3 md:gap-6 w-[72px] md:w-[110px] flex-shrink-0 relative z-10 pt-1 md:pt-4">
-            <a href="#ranking-excellence" onclick="document.getElementById('ranking-excellence').scrollIntoView({behavior:'smooth'}); return false;" class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-1 cursor-pointer hover:bg-[#ffffff30] transition-all">
-                <span class="badge flex items-center justify-center"></span>
+            <a href="#ranking-excellence" aria-label="Jump to Ranking Excellence section" onclick="document.getElementById('ranking-excellence').scrollIntoView({behavior:'smooth'}); return false;" class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-1 cursor-pointer hover:bg-[#ffffff30] transition-all">
+                <span class="badge flex items-center justify-center" aria-hidden="true"></span>
                 <p class="text-[5px] md:text-[8px] text-center leading-tight mt-1">RANKING<br>EXCELLENCE</p>
             </a>
-                        <a href="https://admissions.rathinamcollege.edu.in/?utm_source=footer&utm_medium=button&utm_campaign=Admission&utm_term=Apply+now%2C+footer%2C+Admission" target="_blank" class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-4 cursor-pointer hover:bg-[#ffffff30] transition-all">
- 
-            <span class="lightning flex items-center justify-center"></span>
+            <a href="<?= $linkBase ?? './' ?>rgu-way/" target="_blank" rel="noopener" aria-label="RGU Way - Visit Admissions" class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-4 cursor-pointer hover:bg-[#ffffff30] transition-all">
+                <span class="lightning flex items-center justify-center" aria-hidden="true"></span>
                 <p class="text-[5px] md:text-[8px] text-center leading-tight mt-1">RGU WAY</p>
-            
-            <a href="https://admissions.rathinamcollege.edu.in/?utm_source=footer&utm_medium=button&utm_campaign=Admission&utm_term=Apply+now%2C+footer%2C+Admission" target="_blank" class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-4 cursor-pointer hover:bg-[#ffffff30] transition-all">
-                <span class="PaperRocket flex items-center justify-center"></span>
+            </a>
+            <a href="https://admissions.rathinamcollege.edu.in/?utm_source=footer&utm_medium=button&utm_campaign=Admission&utm_term=Apply+now%2C+footer%2C+Admission" target="_blank" rel="noopener" aria-label="Admissions Open - Apply Now" class="text-white bg-[#ffffff1c] backdrop-blur-md rounded-full w-14 md:w-20 h-14 md:h-20 border border-zinc-50 flex flex-col items-center justify-center floating-card float-delay-4 cursor-pointer hover:bg-[#ffffff30] transition-all">
+                <span class="PaperRocket flex items-center justify-center" aria-hidden="true"></span>
                 <p class="text-[5px] md:text-[8px] text-center leading-tight mt-1">ADMISSION<br>OPEN</p>
             </a>
         </div>
-        <!-- â”€â”€ END LEFT SIDEBAR â”€â”€ -->
+        <!-- -- END LEFT SIDEBAR -- -->
 
 
-        <!-- â”€â”€ RIGHT: Stats Area â”€â”€ -->
+        <!-- -- RIGHT: Stats Area -- -->
         <div class="flex-1 min-w-0 relative z-10">
 
             
@@ -243,7 +237,7 @@
             <!-- ===================== END DESKTOP STATS ===================== -->
 
         </div>
-        <!-- â”€â”€ END RIGHT STATS â”€â”€ -->
+        <!-- -- END RIGHT STATS -- -->
 
     </div>
     <!-- ===== END MAIN CONTENT ===== -->

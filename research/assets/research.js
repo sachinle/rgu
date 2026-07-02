@@ -148,36 +148,70 @@
   /* ---- Popup modal ---- */
   function popupModal() {
     var modal = document.getElementById("r-popup-modal");
+    var secondModal = document.getElementById("r-popup-modal-2");
     if (!modal) return;
+
+    function showModal(modalEl) {
+      if (!modalEl) return;
+      modalEl.classList.remove("hidden");
+      modalEl.classList.add("flex");
+    }
+
+    function hideModal(modalEl) {
+      if (!modalEl) return;
+      modalEl.classList.add("hidden");
+      modalEl.classList.remove("flex");
+    }
+
+    function closeFirstModal() {
+      hideModal(modal);
+      if (secondModal) {
+        setTimeout(function () {
+          showModal(secondModal);
+        }, 150);
+      }
+    }
 
     var image = modal.querySelector(".r-popup-image");
     if (image) {
       image.loading = "eager";
       image.decoding = "async";
       image.addEventListener("error", function () {
-        modal.classList.add("hidden");
-        modal.classList.remove("flex");
+        hideModal(modal);
       });
     }
 
-    function closeModal() {
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-    }
-
     var closeButton = document.getElementById("r-popup-close");
-    if (closeButton) closeButton.addEventListener("click", closeModal);
+    if (closeButton) closeButton.addEventListener("click", closeFirstModal);
 
     modal.addEventListener("click", function (event) {
-      if (event.target === modal) closeModal();
+      if (event.target === modal) closeFirstModal();
     });
+
+    if (secondModal) {
+      var secondCloseButton = document.getElementById("r-popup-close-2");
+      if (secondCloseButton) {
+        secondCloseButton.addEventListener("click", function () {
+          hideModal(secondModal);
+        });
+      }
+
+      secondModal.addEventListener("click", function (event) {
+        if (event.target === secondModal) hideModal(secondModal);
+      });
+    }
 
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") closeModal();
+      if (event.key === "Escape") {
+        if (secondModal && !secondModal.classList.contains("hidden")) {
+          hideModal(secondModal);
+        } else {
+          closeFirstModal();
+        }
+      }
     });
 
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
+    showModal(modal);
   }
 
   document.addEventListener("DOMContentLoaded", function () {

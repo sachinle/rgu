@@ -1,7 +1,7 @@
 <?php
 $active     = 'registrar';
 $page_title = 'Registrar';
-$page_desc  = 'Office of the Registrar — Dr. C. Krishnaraj, Rathinam Global Deemed to be University.';
+$page_desc  = 'Office of the Registrar — Dr. C. Krishnaraj, Rathinam Global (Deemed to be University).';
 include __DIR__ . '/partials/head.php';
 include __DIR__ . '/partials/nav.php';
 ?>
@@ -18,36 +18,61 @@ include __DIR__ . '/partials/nav.php';
       <a href="./index.php" class="hover:text-white/80">Research</a><span>/</span><span class="text-violet-300">Registrar</span>
     </nav>
 
-    <div class="grid lg:grid-cols-[1fr_300px] gap-10 lg:gap-14 items-center">
-      <!-- details -->
-      <div class="r-reveal is-in order-2 lg:order-1">
-        <div class="r-eyebrow text-violet-300 mb-4"><span class="h-1.5 w-1.5 rounded-full bg-violet-400 animate-pulse"></span> Office of the Registrar</div>
-        <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-white leading-[1.08]">Dr. C. Krishnaraj</h1>
-        <p class="mt-3 text-lg font-semibold text-white/70">Registrar</p>
-        <div class="mt-4 flex flex-wrap gap-2">
-          <span class="r-chip border-white/15 bg-white/[0.05] text-white/75">M.E. (Energy Engineering)</span>
-          <span class="r-chip border-white/15 bg-white/[0.05] text-white/75">Ph.D.</span>
-          <span class="r-chip border-white/15 bg-white/[0.05] text-white/75">22+ Years Experience</span>
-        </div>
-        <p class="mt-5 max-w-xl text-base leading-7 text-white/55">Rathinam Global Deemed to be University, Coimbatore — academic governance, regulatory compliance, quality assurance and institutional development.</p>
+    <div class="r-reveal is-in max-w-4xl">
+      <div class="r-eyebrow text-violet-300 mb-4"><span class="h-1.5 w-1.5 rounded-full bg-violet-400 animate-pulse"></span> Office of the Registrar</div>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-white leading-[1.08]">Dr. C. Krishnaraj</h1>
+      <p class="mt-3 text-lg font-semibold text-white/70">Registrar</p>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="r-chip border-white/15 bg-white/[0.05] text-white/75">M.E.</span>
+        <span class="r-chip border-white/15 bg-white/[0.05] text-white/75">Ph.D.</span>
+        <span class="r-chip border-white/15 bg-white/[0.05] text-white/75">22+ Years Experience</span>
+      </div>
+      <p class="mt-5 max-w-xl text-base leading-7 text-white/55">Rathinam Global (Deemed to be University), Coimbatore — academic governance, regulatory compliance, quality assurance and institutional development.</p>
 
-        <div class="mt-7 flex flex-wrap gap-3">
-          <a href="tel:+919942999430" class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-white/80 hover:bg-white/10 transition">
-            <i data-lucide="phone" class="h-4 w-4 text-violet-300"></i> +91 99429 99430
-          </a>
-          <a href="mailto:Registrar@rathinam.in" class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-white/80 hover:bg-white/10 transition">
-            <i data-lucide="mail" class="h-4 w-4 text-violet-300"></i> Registrar@rathinam.in
-          </a>
-          <a href="mailto:Registrar@rathinamtechzone.com" class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-white/80 hover:bg-white/10 transition">
-            <i data-lucide="mail" class="h-4 w-4 text-violet-300"></i> Registrar@rathinamtechzone.com
-          </a>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="tel:+919942999430" class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-white/80 hover:bg-white/10 transition">
+          <i data-lucide="phone" class="h-4 w-4 text-violet-300"></i> +91 99429 99430
+        </a>
+        <a href="mailto:Registrar@rathinam.in" class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-white/80 hover:bg-white/10 transition">
+          <i data-lucide="mail" class="h-4 w-4 text-violet-300"></i> Registrar@rathinam.in
+        </a>
+        <a href="mailto:Registrar@rathinamtechzone.com" class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-white/80 hover:bg-white/10 transition">
+          <i data-lucide="mail" class="h-4 w-4 text-violet-300"></i> Registrar@rathinamtechzone.com
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ REGISTRAR'S PERSPECTIVE ════════════════ -->
+<section class="bg-white py-16 sm:py-20 border-b border-slate-100">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mb-10 r-reveal">
+      <p class="r-eyebrow text-violet-700 mb-3"><span class="h-1.5 w-1.5 rounded-full bg-violet-600"></span> A Message from the Registrar</p>
+      <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">Registrar&rsquo;s Perspective</h2>
+    </div>
+
+    <div class="grid lg:grid-cols-[1fr_320px] gap-10 lg:gap-14 items-start">
+      <!-- message -->
+      <div class="r-reveal order-2 lg:order-1 space-y-5 text-[15px] leading-8 text-slate-700">
+        <p>As we embark on a journey of higher education, we must remember that it is not just about textbooks and assignments, but also about excelling in every aspect of life. The world around us is in a constant state of transformation, and it is imperative that we equip ourselves with the necessary skills and knowledge to adapt and thrive in this rapidly changing landscape.</p>
+
+        <p>At our institution, we are committed to providing our students with a holistic education that not only hones their technical abilities but also instills in them the values and principles necessary to succeed as compassionate and ethical professionals. Our unique approach, rooted in the principles of Design Thinking, empowers our students to think critically, creatively, and empathetically, ensuring that they are not just proficient in their chosen fields but also equipped to make a positive impact on society.</p>
+
+        <p>We believe that education is not just a means to an end but a lifelong pursuit, and we encourage our students to keep their passion for learning alive by embracing the concept of &ldquo;JUST LOVE YOURSELF&rdquo;. By prioritizing personal growth, celebrating life&rsquo;s moments, and nurturing our conscience, we can create a better future for ourselves and those around us. Let us come together and embrace this journey of self-discovery and transformation.</p>
+
+        <div class="mt-8 pt-5 border-t border-slate-200">
+          <p class="text-lg font-extrabold text-slate-900">Dr. C. Krishnaraj</p>
+          <p class="text-sm text-violet-700 font-semibold">Registrar, Rathinam Global (Deemed University)</p>
         </div>
       </div>
+
       <!-- photo -->
-      <div class="r-reveal is-in order-1 lg:order-2 mx-auto lg:mx-0">
-        <div class="relative w-[230px] sm:w-[260px]">
-          <div class="absolute -inset-3 rounded-3xl bg-gradient-to-br from-violet-600/40 to-sky-500/30 blur-xl"></div>
-          <img src="./assets/registrar.jpg" alt="Dr. C. Krishnaraj, Registrar" class="relative w-full rounded-3xl border border-white/15 object-cover shadow-2xl">
+      <div class="r-reveal d1 order-1 lg:order-2 mx-auto lg:mx-0 lg:sticky lg:top-24">
+        <div class="relative w-[240px] sm:w-[280px]">
+          <div class="absolute -inset-3 rounded-3xl bg-gradient-to-br from-violet-500/25 to-sky-400/20 blur-xl"></div>
+          <img src="./assets/registrar.jpg" alt="Dr. C. Krishnaraj, Registrar"
+            class="relative w-full rounded-3xl border border-slate-200 object-cover shadow-xl">
         </div>
       </div>
     </div>
@@ -92,7 +117,7 @@ include __DIR__ . '/partials/nav.php';
 </section>
 
 <!-- ════════════════ RESEARCH PROFILE STATS ════════════════ -->
-<section class="bg-[#0b1020] py-16 sm:py-20 relative overflow-hidden">
+<!-- <section class="bg-[#0b1020] py-16 sm:py-20 relative overflow-hidden">
   <div class="r-blob bg-violet-700/20 h-80 w-80 top-0 right-1/4"></div>
   <div class="absolute top-0 inset-x-0 h-[2px] r-grad-bg"></div>
   <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -120,19 +145,19 @@ include __DIR__ . '/partials/nav.php';
         }
       ?>
     </div>
-    <!-- Research guidance -->
+    
     <div class="mt-6 grid sm:grid-cols-3 gap-4">
       <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5 r-reveal"><div class="text-xs uppercase tracking-wider text-white/45 mb-1">Anna University Supervisor ID</div><div class="text-xl font-black text-white">2320178</div></div>
       <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5 r-reveal d1"><div class="text-xs uppercase tracking-wider text-white/45 mb-1">Ph.D. Scholars Awarded</div><div class="text-xl font-black text-white">03</div></div>
       <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5 r-reveal d2"><div class="text-xs uppercase tracking-wider text-white/45 mb-1">Ph.D. Scholars Pursuing</div><div class="text-xl font-black text-white">05</div></div>
     </div>
   </div>
-</section>
+</section>-->
 
 <!-- ════════════════ QUALIFICATIONS & EXPERIENCE ════════════════ -->
-<section class="bg-white py-16 sm:py-20">
+<!-- <section class="bg-white py-16 sm:py-20">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8">
-    <!-- Academic Qualifications -->
+    Academic Qualifications
     <div class="r-reveal">
       <h2 class="text-2xl font-black text-slate-900 mb-5">Academic Qualifications</h2>
       <div class="overflow-x-auto rounded-xl border border-slate-200">
@@ -148,7 +173,7 @@ include __DIR__ . '/partials/nav.php';
         </table>
       </div>
     </div>
-    <!-- Administrative Experience -->
+    Administrative Experience
     <div class="r-reveal d1">
       <h2 class="text-2xl font-black text-slate-900 mb-5">Administrative Experience</h2>
       <div class="overflow-x-auto rounded-xl border border-slate-200">
@@ -156,7 +181,7 @@ include __DIR__ . '/partials/nav.php';
           <thead class="bg-slate-900 text-slate-100"><tr><th class="px-4 py-3 text-left font-semibold">Position</th><th class="px-4 py-3 text-left font-semibold">Institution</th></tr></thead>
           <tbody class="divide-y divide-slate-100">
             <?php foreach ([
-              ['Registrar','Rathinam Global Deemed to be University'],
+              ['Registrar','Rathinam Global (Deemed to be University)'],
               ['Principal','Rathinam Technical Campus'],
               ['Dean – Engineering','Rathinam Technical Campus'],
               ['Professor &amp; Head','Karpagam College of Engineering'],
@@ -167,7 +192,7 @@ include __DIR__ . '/partials/nav.php';
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- ════════════════ ACHIEVEMENTS & MEMBERSHIPS ════════════════ -->
 <section class="bg-[#f8fafc] py-16 sm:py-20 border-y border-slate-100">
@@ -183,6 +208,7 @@ include __DIR__ . '/partials/nav.php';
           'Organized numerous international conferences, FDPs, workshops &amp; seminars',
           'Recognized research supervisor under Anna University',
           'Contributed significantly to curriculum development &amp; academic governance',
+          'Total Sponsored Grants & Funding 28+ lakhs',
         ] as $a){ echo '<li class="flex items-start gap-2.5 text-sm text-slate-600"><svg class="mt-0.5 h-4 w-4 flex-shrink-0 text-violet-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>'.$a.'</span></li>'; } ?>
       </ul>
       <div class="mt-6 rounded-xl bg-emerald-50/70 border border-emerald-100 p-4 text-sm text-slate-600">
@@ -201,7 +227,7 @@ include __DIR__ . '/partials/nav.php';
 </section>
 
 <!-- ════════════════ GOVT GRANTS TABLE ════════════════ -->
-<section class="bg-white py-16 sm:py-20">
+<!-- <section class="bg-white py-16 sm:py-20">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="max-w-2xl mb-8 r-reveal">
       <p class="r-eyebrow text-violet-700 mb-3"><span class="h-1.5 w-1.5 rounded-full bg-violet-600"></span> Funds Received from Govt. Agencies</p>
@@ -244,6 +270,6 @@ include __DIR__ . '/partials/nav.php';
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <?php include __DIR__ . '/partials/footer.php'; ?>

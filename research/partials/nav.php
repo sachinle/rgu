@@ -48,7 +48,7 @@ $output_active = in_array($active, $output_pages, true);
       <a href="./directorate.php" class="block rounded-xl px-3 py-2.5 text-sm font-medium <?php echo $active==='directorate'?'bg-violet-50 text-violet-700':'text-slate-700 hover:bg-slate-50'; ?>">About Directorate</a>
       <a href="./registrar.php" class="block rounded-xl px-3 py-2.5 text-sm font-medium <?php echo $active==='registrar'?'bg-violet-50 text-violet-700':'text-slate-700 hover:bg-slate-50'; ?>">Registrar</a>
       <a href="../index.php" class="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50">RGU Home</a>
-      <a href="https://admissions.rathinamcollege.edu.in/?utm_source=research&utm_medium=navmobile&utm_campaign=phd" target="_blank" rel="noopener"
+      <a href="../?utm_source=research&utm_medium=navmobile&utm_campaign=phd" target="_blank" rel="noopener"
          class="mt-2 block rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 px-3 py-3 text-center text-sm font-bold text-white">Apply for Ph.D.</a>
     </div>
   </div>

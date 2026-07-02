@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <p class="text-md text-[#f8fafc7d]">
-                    20+ Centers of Excellence, startup incubation support, hackathons, and innovation programs encourage entrepreneurial thinking.
+                    20+ Center of Excellence, startup incubation support, hackathons, and innovation programs encourage entrepreneurial thinking.
                 </p>
                 <div style="display:flex;align-items:center;gap:8px">
                     <div style="width:6px;height:6px;border-radius:50%;background:#a855f7"></div><span style="font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.35);font-weight:600">Multi-Disciplinary Learning</span>

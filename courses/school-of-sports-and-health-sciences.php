@@ -121,7 +121,7 @@
 
                 <!-- Stats row -->
                 <div class="mb-10 grid grid-cols-2 gap-x-8 gap-y-6 w-fit">
-                    <div>
+                    <!-- <div>
                         <p class="text-3xl font-black text-white">4</p>
                         <p class="text-[11px] font-semibold uppercase tracking-widest text-white/35 mt-0.5">Programmes</p>
                     </div>
@@ -136,7 +136,7 @@
                     <div class="pl-7 border-l border-white/10">
                         <p class="text-lg font-black text-white leading-tight">Industry</p>
                         <p class="text-[11px] font-semibold uppercase tracking-widest text-white/35 mt-0.5">Tie-ups</p>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Buttons -->
@@ -159,7 +159,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-[#080810]/80 via-[#080810]/10 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6">
                         <p class="text-xs font-semibold uppercase tracking-widest text-white/40 mb-1">RGU Campus</p>
-                        <p class="text-sm font-bold text-white leading-snug">Psychology &amp; Sports Science Labs — purpose-built for hands-on clinical practice.</p>
+                        <p class="text-sm font-bold text-white leading-snug">Sports Science Labs — purpose-built for hands-on clinical practice.</p>
                     </div>
                 </div>
                 <div class="absolute -top-5 -left-5 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-2.5 text-white text-sm font-semibold shadow-xl">
@@ -177,243 +177,124 @@
 
 
 <!-- ════════════════════════════════════════
-     SECTION 2 · SCHOOL OVERVIEW
+     SECTION · SPORTS ACHIEVEMENTS (Year PDFs)
 ════════════════════════════════════════ -->
-<section id="overview" class="py-20 bg-[#f8fafc]">
+<section id="achievements" class="py-20 bg-[#f8fafc]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <div class="flex items-center gap-2 rounded-full border border-fuchsia-700/20 bg-fuchsia-700/10 px-[18px] py-[7px] mb-5 w-max mx-auto">
             <span class="h-[6px] w-[6px] rounded-full bg-fuchsia-700 animate-pulse"></span>
-            <span class="text-[11px] font-medium uppercase tracking-[0.24em] text-fuchsia-700">School Overview</span>
+            <span class="text-[11px] font-medium uppercase tracking-[0.24em] text-fuchsia-700">Year-wise Reports</span>
         </div>
 
-        <h2 class="text-3xl md:text-5xl font-extrabold text-center text-slate-900 mb-4">About the School</h2>
-        <p class="text-center text-slate-500 max-w-2xl mx-auto mb-14 leading-7">
-            The School of Sports &amp; Health Sciences at RGU is dedicated to understanding human potential — physical, mental, and clinical. We train graduates who can transform lives through science-backed practice and compassionate care.
-        </p>
-
-        <!-- 3 pillars -->
-        <div class="grid md:grid-cols-3 gap-6 mb-14">
-            <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 rounded-2xl bg-fuchsia-100 flex items-center justify-center mb-5">
-                    <i data-lucide="clock" class="w-5 h-5 text-fuchsia-700"></i>
-                </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">3-Year UG &middot; 2-Year PG</h3>
-                <p class="text-sm leading-6 text-slate-500">Structured undergraduate and postgraduate programmes integrating clinical skills, sports science, and psychological research methodology.</p>
-            </div>
-            <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center mb-5">
-                    <i data-lucide="activity" class="w-5 h-5 text-purple-700"></i>
-                </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Clinical &amp; Sports Labs</h3>
-                <p class="text-sm leading-6 text-slate-500">Fully equipped psychology counselling rooms, biomechanics labs, sports performance centres, and microbiology research facilities.</p>
-            </div>
-            <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 rounded-2xl bg-violet-100 flex items-center justify-center mb-5">
-                    <i data-lucide="users" class="w-5 h-5 text-violet-700"></i>
-                </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Expert Practitioners</h3>
-                <p class="text-sm leading-6 text-slate-500">Faculty comprising licensed clinical psychologists, sports scientists, and biomedical researchers with extensive field experience.</p>
-            </div>
-        </div>
-
-        <!-- Stats strip -->
-        <div class="rounded-3xl bg-gradient-to-r from-fuchsia-500 to-purple-500 p-px">
-            <div class="rounded-3xl bg-[#0d0d1a] px-8 py-10 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
-                <?php
-                $highlights = [
-                    ["val"=>"4+",         "label"=>"Specialisations"],
-                    ["val"=>"200+",       "label"=>"Placements / Year"],
-                    ["val"=>"30+",        "label"=>"Industry Partners"],
-                    ["val"=>"NAAC A++",   "label"=>"Accredited University"],
-                ];
-                foreach($highlights as $h): ?>
-                <div>
-                    <p class="text-3xl lg:text-4xl font-black text-white mb-1"><?= $h['val'] ?></p>
-                    <p class="text-[10px] font-semibold uppercase tracking-widest text-white/35"><?= $h['label'] ?></p>
-                </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     SECTION 3 · WHAT YOU'LL LEARN
-════════════════════════════════════════ -->
-<section class="py-20 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-        <div class="flex items-center gap-2 rounded-full border border-fuchsia-500/20 bg-fuchsia-500/10 px-[18px] py-[7px] mb-5 w-max mx-auto">
-            <span class="h-[6px] w-[6px] rounded-full bg-fuchsia-500 animate-pulse"></span>
-            <span class="text-[11px] font-medium uppercase tracking-[0.24em] text-fuchsia-600">Curriculum Focus</span>
-        </div>
-
-        <h2 class="text-3xl md:text-5xl font-extrabold text-center text-slate-900 mb-4">What You'll Learn</h2>
-        <p class="text-center text-slate-500 max-w-xl mx-auto mb-14 leading-7">
-            A rigorous, evidence-based curriculum spanning psychology, sports performance, health sciences, and clinical practice.
-        </p>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-8">Sports Achievements</h2>
 
         <?php
-        $skills = [
-            ["icon"=>"brain",         "title"=>"Clinical Psychology",       "desc"=>"Psychopathology, assessment tools, CBT, counselling techniques, and ethical clinical practice.",               "bg"=>"bg-fuchsia-50",  "ibg"=>"bg-fuchsia-100",  "ic"=>"text-fuchsia-700"],
-            ["icon"=>"activity",      "title"=>"Sports Science",            "desc"=>"Exercise physiology, biomechanics, sports nutrition, strength &amp; conditioning, and athletic performance.",  "bg"=>"bg-purple-50",   "ibg"=>"bg-purple-100",   "ic"=>"text-purple-700"],
-            ["icon"=>"heart-pulse",   "title"=>"Health Sciences",           "desc"=>"Anatomy, physiology, public health, community medicine, and preventive healthcare strategies.",                "bg"=>"bg-violet-50",   "ibg"=>"bg-violet-100",   "ic"=>"text-violet-700"],
-            ["icon"=>"microscope",    "title"=>"Microbiology",              "desc"=>"Microbial genetics, immunology, epidemiology, lab diagnostics, and global infectious disease management.",    "bg"=>"bg-pink-50",     "ibg"=>"bg-pink-100",     "ic"=>"text-pink-700"],
-            ["icon"=>"shield-check",  "title"=>"Applied Psychology",        "desc"=>"Organisational behaviour, positive psychology, neuropsychology, and applied research methods.",               "bg"=>"bg-indigo-50",   "ibg"=>"bg-indigo-100",   "ic"=>"text-indigo-700"],
-            ["icon"=>"flask-conical", "title"=>"Research &amp; Evidence",   "desc"=>"Quantitative &amp; qualitative methods, statistical analysis, ethical research design, and thesis writing.", "bg"=>"bg-sky-50",      "ibg"=>"bg-sky-100",      "ic"=>"text-sky-700"],
+        $years = [
+            ["label"=>"2025 - 2026", "file"=>"2025-2026.pdf"],
+            ["label"=>"2024 - 2025", "file"=>"2024-2025.pdf"],
+            ["label"=>"2023 - 2024", "file"=>"2023-2024.pdf"],
+            ["label"=>"2022 - 2023", "file"=>"2022-2023.pdf"],
+            ["label"=>"2021 - 2022", "file"=>"2021-2022.pdf"],
+            ["label"=>"2020 - 2021", "file"=>"2020-2021.pdf"],
+            ["label"=>"2019 - 2020", "file"=>"2019-2020.pdf"],
+            ["label"=>"2018 - 2019", "file"=>"2018-2019.pdf"],
+            ["label"=>"2017 - 2018", "file"=>"2017-2018.pdf"],
+            ["label"=>"2016 - 2017", "file"=>"2016-2017.pdf"],
         ];
         ?>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-5">
-            <?php foreach($skills as $s): ?>
-            <div class="<?= $s['bg'] ?> rounded-2xl p-6 hover:shadow-md transition-shadow">
-                <div class="w-11 h-11 <?= $s['ibg'] ?> rounded-xl flex items-center justify-center mb-4">
-                    <i data-lucide="<?= $s['icon'] ?>" class="w-5 h-5 <?= $s['ic'] ?>"></i>
-                </div>
-                <h4 class="font-bold text-slate-900 text-sm mb-1.5"><?= $s['title'] ?></h4>
-                <p class="text-xs leading-5 text-slate-500"><?= $s['desc'] ?></p>
-            </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     SECTION 4 · PROGRAMMES OFFERED
-════════════════════════════════════════ -->
-<section id="programmes" class="py-20 bg-[#f8fafc]">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-        <div class="flex items-center gap-2 rounded-full border border-fuchsia-700/20 bg-fuchsia-700/10 px-[18px] py-[7px] mb-5 w-max mx-auto">
-            <span class="h-[6px] w-[6px] rounded-full bg-fuchsia-700 animate-pulse"></span>
-            <span class="text-[11px] font-medium uppercase tracking-[0.24em] text-fuchsia-700">4 Programmes</span>
-        </div>
-
-        <h2 class="text-3xl md:text-5xl font-extrabold text-center text-slate-900 mb-4">Programmes Offered</h2>
-        <p class="text-center text-slate-500 max-w-2xl mx-auto mb-14 leading-7">
-            Choose from undergraduate and postgraduate programmes designed to build expertise in sports science, psychology, and health-related disciplines.
-        </p>
-
-        <!-- B.Sc -->
-        <div class="mb-10">
-            <div class="flex items-center gap-3 mb-5">
-                <span class="w-9 h-9 rounded-full bg-gradient-to-br from-fuchsia-500 to-purple-500 flex items-center justify-center text-white text-sm font-black shadow-lg shadow-fuchsia-500/30">1</span>
-                <div>
-                    <h3 class="text-lg font-extrabold text-slate-900">B.Sc Programmes</h3>
-                    <p class="text-xs text-slate-400">3 Years &middot; Undergraduate &middot; Full Time</p>
-                </div>
-            </div>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
-                <?php
-                $bsc = [
-                    "B.Sc Psychology",
-                    "B.Sc MicroBiology with Global Industry Programme (GIP)",
-                ];
-                foreach($bsc as $i => $course): ?>
-                <div class="prog-card bg-white border border-slate-100 rounded-2xl p-5 hover:border-fuchsia-200 hover:shadow-md transition group cursor-default">
-                    <div class="flex items-start gap-3">
-                        <span class="prog-number mt-0.5 w-6 h-6 rounded-full bg-fuchsia-50 border border-fuchsia-200 text-fuchsia-700 text-[10px] font-bold flex items-center justify-center flex-shrink-0 transition-all"><?= $i+1 ?></span>
-                        <div>
-                            <p class="text-sm font-semibold text-slate-800 leading-snug group-hover:text-fuchsia-700 transition"><?= htmlspecialchars($course) ?></p>
-                            <div class="flex gap-2 mt-2 flex-wrap">
-                                <span class="text-[10px] bg-fuchsia-50 text-fuchsia-600 border border-fuchsia-100 rounded-full px-2 py-0.5 font-medium">3 Years</span>
-                                <span class="text-[10px] bg-slate-50 text-slate-500 border border-slate-100 rounded-full px-2 py-0.5 font-medium">Full Time</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-
-        <!-- M.Sc -->
-        <div>
-            <div class="flex items-center gap-3 mb-5">
-                <span class="w-9 h-9 rounded-full bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center text-white text-sm font-black shadow-lg shadow-purple-500/30">2</span>
-                <div>
-                    <h3 class="text-lg font-extrabold text-slate-900">Postgraduate Programmes</h3>
-                    <p class="text-xs text-slate-400">2 Years &middot; M.Sc &middot; Full Time</p>
-                </div>
-            </div>
-            <div class="grid sm:grid-cols-2 gap-4">
-                <?php
-                $msc = [
-                    "M.Sc Applied Psychology",
-                    "M.Sc Clinical Psychology",
-                ];
-                foreach($msc as $i => $course): ?>
-                <div class="prog-card bg-white border border-slate-100 rounded-2xl p-5 hover:border-purple-200 hover:shadow-md transition group cursor-default">
-                    <div class="flex items-start gap-3">
-                        <span class="prog-number mt-0.5 w-6 h-6 rounded-full bg-purple-50 border border-purple-200 text-purple-700 text-[10px] font-bold flex items-center justify-center flex-shrink-0 transition-all"><?= $i+1 ?></span>
-                        <div>
-                            <p class="text-sm font-semibold text-slate-800 leading-snug group-hover:text-purple-700 transition"><?= htmlspecialchars($course) ?></p>
-                            <div class="flex gap-2 mt-2 flex-wrap">
-                                <span class="text-[10px] bg-purple-50 text-purple-600 border border-purple-100 rounded-full px-2 py-0.5 font-medium">2 Years</span>
-                                <span class="text-[10px] bg-slate-50 text-slate-500 border border-slate-100 rounded-full px-2 py-0.5 font-medium">Full Time</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-
-        <!-- Bottom CTA -->
-        <div class="mt-14 text-center">
-            <a href="https://admissions.rathinamcollege.edu.in/?utm_source=school-page&utm_medium=programmes-cta&utm_campaign=sports-health"
-               target="_blank"
-               class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-fuchsia-500 to-purple-500 px-8 py-4 text-sm font-bold text-white shadow-[0_8px_32px_rgba(217,70,239,0.35)] hover:scale-105 transition-transform">
-                Apply for These Programmes &#x2192;
+        <div class="flex flex-wrap gap-3 mb-12">
+            <?php foreach($years as $y): ?>
+            <a href="./assets/sports_achievements/<?= $y['file'] ?>" target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-fuchsia-500 to-purple-500 px-6 py-2.5 text-sm font-semibold text-white shadow-md shadow-fuchsia-500/25 hover:scale-105 hover:shadow-fuchsia-500/40 transition-transform">
+                <?= $y['label'] ?>
             </a>
-        </div>
-    </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     SECTION 5 · CAREER PATHWAYS
-════════════════════════════════════════ -->
-<section id="careers" class="py-20 bg-[#080810] relative overflow-hidden">
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute top-0 left-1/4    w-[400px] h-[400px] rounded-full bg-fuchsia-700/15 blur-[100px]"></div>
-        <div class="absolute bottom-0 right-1/4 w-[300px] h-[300px] rounded-full bg-purple-600/10  blur-[80px]"></div>
-    </div>
-
-    <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-        <div class="flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/10 px-[18px] py-[7px] mb-5 w-max mx-auto">
-            <span class="h-[6px] w-[6px] rounded-full bg-lime-400 animate-pulse"></span>
-            <span class="text-[11px] font-medium uppercase tracking-[0.24em] text-lime-300">After Graduation</span>
-        </div>
-
-        <h2 class="text-3xl md:text-5xl font-extrabold text-center text-white mb-4">Career Pathways</h2>
-        <p class="text-center text-white/40 max-w-xl mx-auto mb-14 leading-7">
-            Our graduates build rewarding careers in healthcare, sports organisations, research institutions, and mental health services.
-        </p>
-
-        <?php
-        $careers = [
-            ["role"=>"Clinical Psychologist",        "companies"=>"Hospitals &middot; Clinics &middot; Rehab Centres",          "emoji"=>"&#x1F9E0;"],
-            ["role"=>"Sports Performance Coach",     "companies"=>"BCCI &middot; SAI &middot; International Sports Clubs",       "emoji"=>"&#x26BD;"],
-            ["role"=>"Health Educator",              "companies"=>"NGOs &middot; Govt. Health Depts &middot; Corporates",        "emoji"=>"&#x1F4DA;"],
-            ["role"=>"Counselling Psychologist",     "companies"=>"Schools &middot; Corporates &middot; Private Practice",       "emoji"=>"&#x1F91D;"],
-            ["role"=>"Microbiologist",               "companies"=>"Pharma Labs &middot; ICMR &middot; Diagnostics",              "emoji"=>"&#x1F52C;"],
-            ["role"=>"Sports Physiotherapist",       "companies"=>"Sports Teams &middot; Hospitals &middot; Wellness Centres",   "emoji"=>"&#x1F4AA;"],
-            ["role"=>"HR &amp; Organisational Dev.", "companies"=>"MNCs &middot; Startups &middot; Consulting Firms",            "emoji"=>"&#x1F465;"],
-            ["role"=>"Research Scientist",           "companies"=>"NIMHANS &middot; AIIMS &middot; Global Universities",         "emoji"=>"&#x1F393;"],
-        ];
-        ?>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <?php foreach($careers as $c): ?>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-white/20 transition">
-                <div class="text-2xl mb-3"><?= $c['emoji'] ?></div>
-                <h4 class="text-sm font-bold text-white mb-1.5 leading-snug"><?= $c['role'] ?></h4>
-                <p class="text-xs text-white/30 leading-5"><?= $c['companies'] ?></p>
-            </div>
             <?php endforeach; ?>
         </div>
+
+        <!-- About Club -->
+        <div class="mb-10">
+            <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">About Club</h3>
+            <p class="text-slate-600 leading-7">
+                Rathinam Global deemed to be University Sports Club is a premier facility offering a wide range of sports, including Basketball, Volleyball, Kabaddi, Shuttle Badminton, Turf and Grass Football, and an Indoor Sports Complex. The club promotes physical fitness, teamwork, and community engagement for all ages and skill levels. It provides a safe and inclusive environment for recreational and competitive sports, while also focusing on youth development, mental well-being, and fostering a sense of community. Rathinam Global deemed to be University Sports Club aims to be a hub for athletic growth and a place where individuals can thrive in sports.
+            </p>
+        </div>
+
+        <!-- Objective -->
+        <div class="mb-10">
+            <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">Objective</h3>
+            <?php
+            $objectives = [
+                ["Promote Physical Fitness and Well-being:", "Offer diverse sports facilities to encourage physical activity, improving health and fitness for all ages."],
+                ["Foster Teamwork and Collaboration:", "Create an environment that promotes teamwork through sports like Basketball, Volleyball, Kabaddi, and Football, enhancing communication and collaboration skills."],
+                ["Enhance Skill Development:", "Provide opportunities for individuals to improve their skills through training programs and practice sessions for all skill levels."],
+                ["Encourage Sportsmanship and Discipline:", "Cultivate respect, discipline, and sportsmanship in both individual and team sports, fostering a positive environment."],
+                ["Support Competitive Sports:", "Organize local tournaments and leagues in various sports, providing a platform for competition and recognition."],
+                ["Provide a Safe and Inclusive Space:", "Ensure a welcoming, safe, and inclusive environment for all members, regardless of age, gender, or ability."],
+                ["Promote Mental Health and Stress Relief:", "Offer recreational and competitive sports to improve mental well-being, reduce stress, and promote a healthy work-life balance."],
+                ["Encourage Community Engagement:", "Host sports events and workshops to bring the community together, creating unity and camaraderie."],
+                ["Facilitate Youth Development:", "Support youth talent development by offering training, mentorship, and opportunities for future athletic careers."],
+                ["Promote Sustainability in Sports Infrastructure:", "Maintain sports facilities sustainably, ensuring long-term accessibility and quality for all users."],
+            ];
+            ?>
+            <ul class="space-y-3">
+                <?php foreach($objectives as $o): ?>
+                <li class="flex gap-3 text-slate-600 leading-7">
+                    <span class="mt-2.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-fuchsia-500"></span>
+                    <span><strong class="text-slate-900 font-semibold"><?= $o[0] ?></strong> <?= $o[1] ?></span>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+
+        <!-- Club Activities -->
+        <div class="mb-10">
+            <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">Club Activities</h3>
+            <?php
+            $activities = [
+                ["Sports Training and Coaching:", "Offering structured sessions in various sports including basketball, volleyball, kabaddi, football, badminton, boxing, power lifting, best physique, wushu, judo, and athletics for all skill levels."],
+                ["Tournaments and Competitions:", "Organizing local tournaments and leagues in sports like basketball, football, volleyball, kabaddi, and badminton to promote healthy competition and skill development."],
+                ["Fitness Classes and Workshops:", "Providing fitness programs like yoga and strength training to enhance overall fitness alongside sports activities."],
+                ["Youth Development Programs:", "Offering mentorship and training for youth athletes to help them pursue their sports interests and reach their potential."],
+                ["Wellness and Mental Health Programs:", "Conducting workshops on mindfulness, stress-relief, and wellness to promote mental well-being."],
+                ["Outdoor Sports Camps:", "Organizing outdoor camps and weekend tournaments to foster teamwork, physical fitness, and friendly competition."],
+                ["Collaborative Events with Schools and Colleges:", "Partnering with schools and colleges to host inter-school and inter-college competitions, encouraging youth participation and competition."],
+            ];
+            ?>
+            <ul class="space-y-3">
+                <?php foreach($activities as $a): ?>
+                <li class="flex gap-3 text-slate-600 leading-7">
+                    <span class="mt-2.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                    <span><strong class="text-slate-900 font-semibold"><?= $a[0] ?></strong> <?= $a[1] ?></span>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+
+        <!-- Club Coordinator contact details -->
+        <div>
+            <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">Club Coordinator contact details</h3>
+            <?php
+            $coordinators = [
+                ["Mr. Raman Vijayan",        "Director, Centre for sports Excellence (Former Indian Football player)"],
+                ["Dr. S. Joicsy",            "Dean School of Sports and Health Sciences"],
+                ["Mr. S. Ramesh",            "Assistant Director &ndash; Physical Education"],
+                ["Mr. Martin",               "Mentor &ndash; Cricket"],
+                ["Mr. Blessing Selvakumar",  "Coach &ndash; Football"],
+                ["Mr. Dharman",              "Coach &ndash; Kabaddi"],
+                ["Mr. Muralidharan B",        "Coach &ndash; Ball Badminton"],
+            ];
+            ?>
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm divide-y divide-slate-100">
+                <?php foreach($coordinators as $c): ?>
+                <div class="px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:gap-3">
+                    <p class="font-bold text-slate-900 text-sm sm:min-w-[240px]"><?= $c[0] ?></p>
+                    <p class="text-sm text-slate-600 leading-6">&ndash; <?= $c[1] ?></p>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
     </div>
 </section>
 
