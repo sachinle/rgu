@@ -61,10 +61,7 @@ include __DIR__ . '/partials/nav.php';
 
         <p>We believe that education is not just a means to an end but a lifelong pursuit, and we encourage our students to keep their passion for learning alive by embracing the concept of &ldquo;JUST LOVE YOURSELF&rdquo;. By prioritizing personal growth, celebrating life&rsquo;s moments, and nurturing our conscience, we can create a better future for ourselves and those around us. Let us come together and embrace this journey of self-discovery and transformation.</p>
 
-        <div class="mt-8 pt-5 border-t border-slate-200">
-          <p class="text-lg font-extrabold text-slate-900">Dr. C. Krishnaraj</p>
-          <p class="text-sm text-violet-700 font-semibold">Registrar, Rathinam Global (Deemed University)</p>
-        </div>
+     
       </div>
 
       <!-- photo -->
@@ -73,6 +70,10 @@ include __DIR__ . '/partials/nav.php';
           <div class="absolute -inset-3 rounded-3xl bg-gradient-to-br from-violet-500/25 to-sky-400/20 blur-xl"></div>
           <img src="./assets/registrar.jpg" alt="Dr. C. Krishnaraj, Registrar"
             class="relative w-full rounded-3xl border border-slate-200 object-cover shadow-xl">
+        </div>
+        <div class="mt-5 text-center">
+          <p class="text-lg font-bold text-slate-900">Dr. C. Krishnaraj</p>
+          <p class="text-sm font-semibold text-violet-700">Registrar, Rathinam Global <br>(Deemed to be University)</p>
         </div>
       </div>
     </div>

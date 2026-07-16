@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#050508">
-    <meta name="description" content="Rathinam Global University (RGU) — NAAC A++ accredited deemed university in Coimbatore offering UG, PG and research programs in Engineering, AI, Business, Sciences, Arts and more.">
+    <meta name="description" content="Discover Rathinam Global University, one of the best universities in Tamil Nadu and a leading deemed university in Coimbatore, offering industry-focused programs and global opportunities.">
     <meta name="robots" content="index,follow">
-    <meta property="og:title" content="RGU | Rathinam Global University">
-    <meta property="og:description" content="NAAC A++ accredited deemed university in Coimbatore. Admissions open for 2026-27.">
+    <meta property="og:title" content="Best University in Tamil Nadu | Rathinam Global University">
+    <meta property="og:description" content="Discover Rathinam Global University, one of the best universities in Tamil Nadu and a leading deemed university in Coimbatore, offering industry-focused programs and global opportunities.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./assets/images/logo.webp">
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
-    <title>RGU | Rathinam Global University — NAAC A++ Deemed University, Coimbatore</title>
+    <title>Best University in Tamil Nadu | Rathinam Global University</title>
     <!-- Minimal inline CSS: only what must be set before any external stylesheet
          loads (body bg, base font, sr-only utility). Tailwind + style.css follow
          render-blocking to ensure stable layout (no CLS). -->
@@ -47,7 +47,14 @@
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-
+     <!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKNZR4B5B8">
+</script> 
+<script> window.dataLayer = window.dataLayer || []; 
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date()); 
+gtag('config', 'G-EKNZR4B5B8'); 
+</script>
     <!-- Lucide icons are inlined as SVGs in the homepage partials (no runtime needed). -->
 </head>
 

@@ -61,6 +61,7 @@
         </li>
 
         <li><a href="<?= $linkBase ?>research/" class="hover:text-gray-300 transition-colors">Research</a></li>
+        <li><a href="<?= $linkBase ?>global-affairs.html" class="hover:text-gray-300 transition-colors">Global Affairs</a></li>
     </ul>
 
     <!-- Mobile toggle -->
@@ -90,8 +91,7 @@
                         </ul>
                     </details>
                     <a href="<?= $linkBase ?>eoa/eoa.php" class="block py-2">EOA</a>
-                    <a href="<?= $linkBase ?>iqac/iqac.php" class="block py-2">IQAC</a>
-                </div>
+                    <a href="<?= $linkBase ?>iqac/iqac.php" class="block py-2">IQAC</a>                    <a href="<?= $linkBase ?>global-affairs.html" class="block py-2">Global Affairs</a>                </div>
             </details>
         </li>
         <li><a href="<?= $linkBase ?>research/" class="block py-2">Research</a></li>

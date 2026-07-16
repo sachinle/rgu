@@ -149,7 +149,7 @@
   function popupModal() {
     var modal = document.getElementById("r-popup-modal");
     var secondModal = document.getElementById("r-popup-modal-2");
-    if (!modal) return;
+    if (!modal && !secondModal) return;
 
     function showModal(modalEl) {
       if (!modalEl) return;
@@ -164,7 +164,9 @@
     }
 
     function closeFirstModal() {
-      hideModal(modal);
+      if (modal) {
+        hideModal(modal);
+      }
       if (secondModal) {
         setTimeout(function () {
           showModal(secondModal);
@@ -172,21 +174,25 @@
       }
     }
 
-    var image = modal.querySelector(".r-popup-image");
-    if (image) {
-      image.loading = "eager";
-      image.decoding = "async";
-      image.addEventListener("error", function () {
-        hideModal(modal);
+    if (modal) {
+      var image = modal.querySelector(".r-popup-image");
+      if (image) {
+        image.loading = "eager";
+        image.decoding = "async";
+        image.addEventListener("error", function () {
+          hideModal(modal);
+        });
+      }
+
+      var closeButton = document.getElementById("r-popup-close");
+      if (closeButton) closeButton.addEventListener("click", closeFirstModal);
+
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) closeFirstModal();
       });
+
+      showModal(modal);
     }
-
-    var closeButton = document.getElementById("r-popup-close");
-    if (closeButton) closeButton.addEventListener("click", closeFirstModal);
-
-    modal.addEventListener("click", function (event) {
-      if (event.target === modal) closeFirstModal();
-    });
 
     if (secondModal) {
       var secondCloseButton = document.getElementById("r-popup-close-2");
@@ -199,19 +205,21 @@
       secondModal.addEventListener("click", function (event) {
         if (event.target === secondModal) hideModal(secondModal);
       });
+
+      if (!modal) {
+        showModal(secondModal);
+      }
     }
 
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape") {
         if (secondModal && !secondModal.classList.contains("hidden")) {
           hideModal(secondModal);
-        } else {
-          closeFirstModal();
+        } else if (modal && !modal.classList.contains("hidden")) {
+          hideModal(modal);
         }
       }
     });
-
-    showModal(modal);
   }
 
   document.addEventListener("DOMContentLoaded", function () {

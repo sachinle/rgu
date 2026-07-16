@@ -7,14 +7,14 @@ include __DIR__ . '/partials/nav.php';
 ?>
 
 <!-- Popup modal for site-load image -->
-<div id="r-popup-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60">
+<!-- <div id="r-popup-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60">
   <div class="r-popup-inner max-w-[95%] max-h-[95%] p-4">
     <button id="r-popup-close" aria-label="Close popup" class="r-popup-close absolute top-3 right-3 z-60 bg-white/90 rounded-full p-2 shadow">✕</button>
     <div class="r-popup-content rounded-lg overflow-hidden max-w-3xl mx-auto">
       <img src="./assets/model.jpeg" alt="Research popup" loading="eager" decoding="async" class="r-popup-image w-full h-auto object-cover block">
     </div>
   </div>
-</div>
+</div> -->
 
 <div id="r-popup-modal-2" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60">
   <div class="r-popup-inner max-w-[90vw] max-h-[90vh] p-4">

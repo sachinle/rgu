@@ -1,5 +1,32 @@
 <section class="bg-black pt-1 pb-0">
     <marquee behavior="scroll" direction="left">
+
+    <span
+            style="
+              font-family: DM Sans, sans-serif;
+              font-size: 11px;
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: 0.16em;
+              color: rgba(255, 255, 255, 0.4);
+              margin-right: 48px;
+              display: inline-flex;
+              align-items: center;
+              gap: 8px;
+            "><svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="rgba(163,230,53,.55)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z" />
+                <path d="M2 12h20" />
+                <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>Anugraha'2026 - OnBoarding Ceremony, 09.07.2026 & 10.07.2026, 08.00 AM onwards, Venue - Rathinam Grand Hall<span style="color: rgba(163, 230, 53, 0.4)">◆</span></span>
         <span
             style="
               font-family: DM Sans, sans-serif;
@@ -25,6 +52,8 @@
                 <path d="M2 10l10-5 10 5-10 5z" />
                 <path d="M6 12v5c3 3 9 3 12 0v-5" />
             </svg>25,000+ Students<span style="color: rgba(163, 230, 53, 0.4)">◆</span></span>
+
+            
         <span
             style="
               font-family: DM Sans, sans-serif;
