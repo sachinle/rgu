@@ -181,6 +181,15 @@
         <p class="text-center text-slate-500 max-w-2xl mx-auto mb-14 leading-7">A comprehensive portfolio of business programmes from BBA to MBA, including AI-integrated specialisations and professional accounting pathways.</p>
 
         <?php
+        // ── School of Business & Commerce · Course → Program-LP slug map ──
+        // Any course whose name matches (case-sensitive, ignoring html entities)
+        // will render as a clickable link + VIEW chip. All others stay plain text.
+        // Paths include "courses/" because this page uses <base href="../">.
+        $programLinks = [
+            "B.Com Professional Accounting"               => "./courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca.php",
+            "B.Com Professional Accounting (CA Training)" => "./courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca.php",
+            "B.Com Professional Accounting (Chartered Accountant)" => "./courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca.php",
+        ];
         $groups=[
             ["num"=>"1","g"=>"from-green-600 to-lime-500","sh"=>"shadow-green-500/30","title"=>"BBA Programmes","sub"=>"3 Years &middot; Undergraduate &middot; Full Time","hc"=>"hover:border-green-200","nc"=>"bg-green-50 border-green-200 text-green-700","ht"=>"group-hover:text-green-700","bc"=>"bg-green-50 text-green-600 border-green-100","courses"=>["BBA General","BBA Aviation Management","BBA Computer Applications","BBA Logistics & Supply Chain"]],
             ["num"=>"2","g"=>"from-emerald-600 to-teal-500","sh"=>"shadow-emerald-500/30","title"=>"B.Com Programmes","sub"=>"3 Years &middot; Undergraduate &middot; Full Time","hc"=>"hover:border-emerald-200","nc"=>"bg-emerald-50 border-emerald-200 text-emerald-700","ht"=>"group-hover:text-emerald-700","bc"=>"bg-emerald-50 text-emerald-600 border-emerald-100","courses"=>["B.Com Accounting & Finance","B.Com Banking & Insurance","B.Com Business Process Services","B.Com Corporate Secretorship","B.Com Financial Services","B.Com Information Technology","B.Com International Business","B.Com Professional Accounting","B.Com Professional Accounting (CA Training)"]],
@@ -196,13 +205,25 @@
                 <div><h3 class="text-lg font-extrabold text-slate-900"><?=$g['title']?></h3><p class="text-xs text-slate-400"><?=$g['sub']?></p></div>
             </div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <?php foreach($g['courses'] as $i=>$c): ?>
-                <div class="prog-card bg-white border border-slate-100 rounded-2xl p-5 <?=$g['hc']?> hover:shadow-md transition group cursor-default">
+                <?php foreach($g['courses'] as $i=>$c):
+                    $key  = html_entity_decode($c, ENT_QUOTES, 'UTF-8');
+                    $href = $programLinks[$key] ?? null;
+                ?>
+                <div class="prog-card bg-white border border-slate-100 rounded-2xl p-5 <?=$g['hc']?> hover:shadow-md transition group <?= $href ? 'cursor-pointer' : 'cursor-default' ?>">
+                    <?php if ($href): ?><a href="<?= htmlspecialchars($href) ?>" class="block"><?php endif; ?>
                     <div class="flex items-start gap-3">
                         <span class="prog-number mt-0.5 w-6 h-6 rounded-full <?=$g['nc']?> text-[10px] font-bold flex items-center justify-center flex-shrink-0 transition-all"><?=$i+1?></span>
-                        <div><p class="text-sm font-semibold text-slate-800 leading-snug <?=$g['ht']?> transition"><?=htmlspecialchars($c)?></p>
-                        <span class="inline-block mt-2 text-[10px] <?=$g['bc']?> border rounded-full px-2 py-0.5 font-medium"><?=strpos($g['sub'],'3 Years')!==false?'3 Years':'2 Years'?></span></div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-800 leading-snug <?=$g['ht']?> transition"><?=htmlspecialchars($c)?></p>
+                            <div class="flex items-center gap-2 mt-2 flex-wrap">
+                                <span class="inline-block text-[10px] <?=$g['bc']?> border rounded-full px-2 py-0.5 font-medium"><?=strpos($g['sub'],'3 Years')!==false?'3 Years':'2 Years'?></span>
+                                <?php if ($href): ?>
+                                    <span class="inline-block text-[10px] bg-emerald-600 text-white rounded-full px-2 py-0.5 font-bold uppercase tracking-wider">View</span>
+                                <?php endif; ?>
+                            </div>
+                        </div>
                     </div>
+                    <?php if ($href): ?></a><?php endif; ?>
                 </div>
                 <?php endforeach; ?>
             </div>

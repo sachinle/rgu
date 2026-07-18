@@ -24,7 +24,7 @@ return [
         'campus'           => 'Rathinam Global Deemed To Be University',
         'academic_year'    => '2026-27',
         'prepared_by'      => '',                                       // (blank — faculty)
-        'duration_label'   => '3 Years · 8 Semesters · Full Time',
+        'duration_label'   => '3 Years · 6 Semesters · Full Time',
         'mode'             => 'Full Time',
         'level'            => 'Under-Graduate',
         'school_slug'      => 'school-of-quantum-science',
@@ -268,30 +268,7 @@ return [
                 ['cat'=>'','code'=>'CXXXX','title'=>'VAC 3',                                                     'ltpc'=>'','credit'=>'02','eval'=>''],
             ],
         ],
-        [
-            'sem' => 'Semester 7',
-            'total_hours' => '360',
-            'total_credits' => '24',
-            'courses' => [
-                ['cat'=>'','code'=>'CXXXX','title'=>'Advanced Algorithm Design and Analysis',                    'ltpc'=>'','credit'=>'04','eval'=>''],
-                ['cat'=>'','code'=>'CXXXX','title'=>'Enterprise Software Architecture',                          'ltpc'=>'','credit'=>'04','eval'=>''],
-                ['cat'=>'','code'=>'CXXXX','title'=>'Compiler Design and Optimization',                          'ltpc'=>'','credit'=>'04','eval'=>''],
-                ['cat'=>'','code'=>'CXXXX','title'=>'Advanced Database Administration',                          'ltpc'=>'','credit'=>'04','eval'=>''],
-                ['cat'=>'','code'=>'CXXXX','title'=>'Microservices Architecture',                                'ltpc'=>'','credit'=>'04','eval'=>''],
-                ['cat'=>'','code'=>'CXXXX','title'=>'Mobile Application Development',                            'ltpc'=>'','credit'=>'04','eval'=>''],
-            ],
-        ],
-        [
-            'sem' => 'Semester 8',
-            'total_hours' => '240',
-            'total_credits' => '16',
-            'courses' => [
-                ['cat'=>'','code'=>'CXXXX','title'=>'High Performance Computing',                                'ltpc'=>'','credit'=>'04','eval'=>''],
-                ['cat'=>'','code'=>'CXXXX','title'=>'Software Reliability Engineering',                          'ltpc'=>'','credit'=>'04','eval'=>''],
-                ['cat'=>'','code'=>'CXXXX','title'=>'Distributed Ledger Technologies',                           'ltpc'=>'','credit'=>'04','eval'=>''],
-                ['cat'=>'','code'=>'CXXXX','title'=>'Emerging Computing Technologies',                           'ltpc'=>'','credit'=>'04','eval'=>''],
-            ],
-        ],
+        
         [
             'sem' => 'Project & Internship Semester',
             'total_hours' => '600',
@@ -371,7 +348,7 @@ return [
         'headline' => 'Why RGU for B.Sc Computer Science?',
         'body' => 'The B.Sc. Computer Science program at Rathinam Global University offers a future-focused curriculum that integrates core computer science concepts with emerging technologies such as Artificial Intelligence, Machine Learning, Deep Learning, Generative AI, LLMOps, Cloud Computing, Data Analytics, and Full-Stack development. Students benefit from industry-co-designed modules, NASA-aligned EXT exposure, mandatory ITR research blocks every semester, and a final capstone project + internship, ensuring placement readiness in software, AI, and product engineering roles.',
         'stats' => [
-            ['value' => '8',    'label' => 'Semesters'],
+            ['value' => '6',    'label' => 'Semesters'],
             ['value' => '218+', 'label' => 'Total Credits'],
             ['value' => '40+',  'label' => 'Industry Partners'],
             ['value' => '100%', 'label' => 'Placement Support'],

@@ -1,6 +1,6 @@
 <?php
 
-$DATA = require __DIR__ . '/_data/b-sc-computer-science.php';
+$DATA = require __DIR__ . '/_data/b.com-pa-and-b.com-pa-with-ca.php';
 
 
 $root      = '../../../';

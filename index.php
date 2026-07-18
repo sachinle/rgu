@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#050508">
     <meta name="description" content="Discover Rathinam Global University, one of the best universities in Tamil Nadu and a leading deemed university in Coimbatore, offering industry-focused programs and global opportunities.">
+    <meta name="google-site-verification" content="RMXPW9hR4uofEp4FIp4QOaQMtyqJJYN2ESvtlyt2VJY" />
     <meta name="robots" content="index,follow">
     <meta property="og:title" content="Best University in Tamil Nadu | Rathinam Global University">
     <meta property="og:description" content="Discover Rathinam Global University, one of the best universities in Tamil Nadu and a leading deemed university in Coimbatore, offering industry-focused programs and global opportunities.">
