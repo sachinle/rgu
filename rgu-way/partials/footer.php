@@ -221,7 +221,7 @@
 
         <!-- Download Brochure Button -->
         <a
-          href="./assets/brouchure.pdf"
+          href="./assets/brouchure-new.pdf"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center gap-2 rounded-xl border border-purple-500/40 bg-purple-500/10 px-6 py-3 text-sm font-bold text-purple-300 transition duration-300 hover:border-purple-400/60 hover:bg-purple-500/20 hover:text-purple-200"

@@ -186,9 +186,17 @@
         // will render as a clickable link + VIEW chip. All others stay plain text.
         // Paths include "courses/" because this page uses <base href="../">.
         $programLinks = [
-            "B.Com Professional Accounting"               => "./courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca.php",
-            "B.Com Professional Accounting (CA Training)" => "./courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca.php",
+            // B.Com PA family
+            "B.Com Professional Accounting"                        => "./courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca.php",
+            "B.Com Professional Accounting (CA Training)"          => "./courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca.php",
             "B.Com Professional Accounting (Chartered Accountant)" => "./courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca.php",
+
+            // B.Com CA (Computer Applications) family
+            "B.Com Computer Applications (Business Intelligence & AI)" => "./courses/programmes/school-of-business-and-commerce/b.com-ca.php",
+            "B.Com Computer Applications (AI-Ready Accountant)"        => "./courses/programmes/school-of-business-and-commerce/b.com-ca.php",
+
+            // M.Com CA (Computer Applications)
+            "M.Com Computer Applications (AI-Ready Accountant)"        => "./courses/programmes/school-of-business-and-commerce/m.com-ca.php",
         ];
         $groups=[
             ["num"=>"1","g"=>"from-green-600 to-lime-500","sh"=>"shadow-green-500/30","title"=>"BBA Programmes","sub"=>"3 Years &middot; Undergraduate &middot; Full Time","hc"=>"hover:border-green-200","nc"=>"bg-green-50 border-green-200 text-green-700","ht"=>"group-hover:text-green-700","bc"=>"bg-green-50 text-green-600 border-green-100","courses"=>["BBA General","BBA Aviation Management","BBA Computer Applications","BBA Logistics & Supply Chain"]],

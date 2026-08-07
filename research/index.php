@@ -16,14 +16,14 @@ include __DIR__ . '/partials/nav.php';
   </div>
 </div> -->
 
-<div id="r-popup-modal-2" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60">
-  <div class="r-popup-inner max-w-[90vw] max-h-[90vh] p-4">
-    <button id="r-popup-close-2" aria-label="Close second popup" class="r-popup-close absolute top-3 right-3 z-60 bg-white/90 rounded-full p-2 shadow">✕</button>
-    <div class="r-popup-content rounded-lg overflow-hidden max-w-full mx-auto">
-      <img src="./assets/model2.jpeg" alt="Research popup 2" loading="eager" decoding="async" class="r-popup-image w-full max-h-[82vh] h-auto object-contain block">
-    </div>
-  </div>
-</div>
+<!--<div id="r-popup-modal-2" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60">-->
+<!--  <div class="r-popup-inner max-w-[90vw] max-h-[90vh] p-4">-->
+<!--    <button id="r-popup-close-2" aria-label="Close second popup" class="r-popup-close absolute top-3 right-3 z-60 bg-white/90 rounded-full p-2 shadow">✕</button>-->
+<!--    <div class="r-popup-content rounded-lg overflow-hidden max-w-full mx-auto">-->
+<!--      <img src="./assets/model2.jpeg" alt="Research popup 2" loading="eager" decoding="async" class="r-popup-image w-full max-h-[82vh] h-auto object-contain block">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
 <!-- ════════════════ HERO ════════════════ -->
 <section class="relative overflow-hidden bg-[#080810] min-h-[92vh] flex items-center">

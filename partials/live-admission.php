@@ -249,9 +249,9 @@
                     </a>
 
                     <a
-                        href="https://payment.rathinam.global/login"
+                        href="https://rathinamglobal.edu.in/law/"
                         class="flex-1 inline-flex items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-lime-300 to-emerald-400 px-6 py-3 md:px-9 md:py-4 font-[Sora] text-[10px] md:text-lg font-extrabold text-[#0A0A14] no-underline shadow-[0_8px_32px_rgba(163,230,53,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_40px_rgba(163,230,53,0.5)]">
-                        Apply Ph.D.
+                        Explore LL.B
 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

@@ -14,11 +14,11 @@
     .rgu-nav-solid{background:rgba(5,11,31,0.95);backdrop-filter:blur(8px);position:sticky;top:0;}
 </style>
 
-<nav class="<?= $navMode === 'solid' ? 'rgu-nav-solid' : 'relative' ?> z-50 flex items-center justify-between px-4 py-3 md:px-10 md:py-5">
+<nav class="<?= $navMode === 'solid' ? 'rgu-nav-solid' : 'relative' ?> z-50 flex items-center justify-between px-4 py-2 md:px-10 md:py-3">
     <a href="<?= $linkBase ?>" class="flex-shrink-0">
         <img src="<?= $assetBase ?>assets/images/logo-360.webp" alt="Rathinam Global University Logo" id="rgu-nav-logo"
-            width="180" height="56" fetchpriority="high" decoding="async"
-            class="h-10 md:h-14 w-auto object-contain" style="filter: brightness(0) invert(1);">
+            width="140" height="40" fetchpriority="high" decoding="async"
+            class="h-8 md:h-9 w-auto object-contain" style="filter: brightness(0) invert(1);">
     </a>
 
     <!-- Desktop Menu -->
@@ -60,8 +60,25 @@
             </ul>
         </li>
 
-        <li><a href="<?= $linkBase ?>research/" class="hover:text-gray-300 transition-colors">Research</a></li>
-        <li><a href="<?= $linkBase ?>global-affairs.html" class="hover:text-gray-300 transition-colors">Global Affairs</a></li>
+        <!-- Research dropdown (8 sub-menu items) -->
+        <li class="relative group">
+            <button class="flex items-center gap-1 hover:text-gray-300 transition-colors">
+                Research
+                <svg class="w-3 h-3" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+            </button>
+            <ul class="rgu-dropdown absolute right-0 top-full pt-2 w-64 z-50">
+                <li class="bg-black/90 backdrop-blur-md border border-white/10"><a href="<?= $linkBase ?>research/"                       class="block px-4 py-2 hover:bg-white/10 transition-colors">R & D</a></li>
+                <li class="bg-black/90 backdrop-blur-md border border-white/10"><a href="<?= $linkBase ?>research/grants-received.php"    class="block px-4 py-2 hover:bg-white/10 transition-colors">Grants Received</a></li>
+                <li class="bg-black/90 backdrop-blur-md border border-white/10"><a href="<?= $linkBase ?>research/publications.php"       class="block px-4 py-2 hover:bg-white/10 transition-colors">Publications</a></li>
+                <li class="bg-black/90 backdrop-blur-md border border-white/10"><a href="<?= $linkBase ?>research/book-chapters.php"      class="block px-4 py-2 hover:bg-white/10 transition-colors">Book Chapters</a></li>
+                <li class="bg-black/90 backdrop-blur-md border border-white/10"><a href="<?= $linkBase ?>research/patents.php"            class="block px-4 py-2 hover:bg-white/10 transition-colors">Patents</a></li>
+                <li class="bg-black/90 backdrop-blur-md border border-white/10"><a href="https://scholar.google.com/citations?hl=en&user=5ca4ktkAAAAJ"  target="_blank" class="block px-4 py-2 hover:bg-white/10 transition-colors">Citation Metrics</a></li>
+                <li class="bg-black/90 backdrop-blur-md border border-white/10"><a href="<?= $linkBase ?>research/extension-consultancy.php" class="block px-4 py-2 hover:bg-white/10 transition-colors">Extension &amp; Consultancy</a></li>
+                <li class="bg-black/90 backdrop-blur-md border border-white/10"><a href="<?= $linkBase ?>research/hackathons.php"         class="block px-4 py-2 hover:bg-white/10 transition-colors">Hackathons</a></li>
+                <li class="bg-black/90 backdrop-blur-md border border-white/10"><a href="<?= $linkBase ?>research/startups.php"           class="block px-4 py-2 hover:bg-white/10 transition-colors">Startups</a></li>
+            </ul>
+        </li>
+        <li><a href="<?= $linkBase ?>global-affairs" class="hover:text-gray-300 transition-colors">Global Affairs</a></li>
     </ul>
 
     <!-- Mobile toggle -->
@@ -91,10 +108,27 @@
                         </ul>
                     </details>
                     <a href="<?= $linkBase ?>eoa/eoa.php" class="block py-2">EOA</a>
-                    <a href="<?= $linkBase ?>iqac/iqac.php" class="block py-2">IQAC</a>                    <a href="<?= $linkBase ?>global-affairs.html" class="block py-2">Global Affairs</a>                </div>
+                    <a href="<?= $linkBase ?>iqac/iqac.php" class="block py-2">IQAC</a>
+                </div>
             </details>
         </li>
-        <li><a href="<?= $linkBase ?>research/" class="block py-2">Research</a></li>
+        <li>
+            <details>
+                <summary class="py-2 cursor-pointer list-none flex items-center justify-between">Research <span>+</span></summary>
+                <div class="pl-3">
+                    <a href="<?= $linkBase ?>research/"                          class="block py-2">R & D</a>
+                    <a href="<?= $linkBase ?>research/grants-received.php"       class="block py-2">Grants Received</a>
+                    <a href="<?= $linkBase ?>research/publications.php"          class="block py-2">Publications</a>
+                    <a href="<?= $linkBase ?>research/book-chapters.php"         class="block py-2">Book Chapters</a>
+                    <a href="<?= $linkBase ?>research/patents.php"               class="block py-2">Patents</a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=5ca4ktkAAAAJ"   target="_blank"   class="block py-2">Citation Metrics</a>
+                    <a href="<?= $linkBase ?>research/extension-consultancy.php" class="block py-2">Extension &amp; Consultancy</a>
+                    <a href="<?= $linkBase ?>research/hackathons.php"            class="block py-2">Hackathons</a>
+                    <a href="<?= $linkBase ?>research/startups.php"              class="block py-2">Startups</a>
+                </div>
+            </details>
+        </li>
+        <li><a href="<?= $linkBase ?>global-affairs" class="block py-2 font-semibold text-purple-400">Global Affairs</a></li>
     </ul>
 </div>
 <script>

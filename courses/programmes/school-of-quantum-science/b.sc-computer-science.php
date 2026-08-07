@@ -936,12 +936,17 @@ $M = $DATA['meta'];
             <span class="lp-eyebrow">Facilities</span>
             <h2 class="lp-title">Labs, Software &amp; Learning Resources</h2>
         </div>
-        <?php if (!empty($DATA['facilities'])): ?>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+        <?php if (!empty($DATA['facilities'])):
+            $facCount = count($DATA['facilities']);
+            if      ($facCount === 1) { $facGrid = 'grid-cols-1 max-w-3xl mx-auto'; }
+            elseif  ($facCount === 2) { $facGrid = 'grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto'; }
+            else                       { $facGrid = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'; }
+        ?>
+            <div class="grid <?= $facGrid ?> gap-5 mb-12">
                 <?php foreach ($DATA['facilities'] as $f): ?>
                     <div class="bg-white/60 border border-slate-100 rounded-2xl p-6">
                         <h4 class="font-sora font-bold text-slate-900 mb-2"><?= htmlspecialchars($f['name']) ?></h4>
-                        <p class="text-sm text-slate-600 leading-6"><?= htmlspecialchars($f['desc']) ?></p>
+                        <p class="text-sm text-slate-600 leading-7"><?= htmlspecialchars($f['desc']) ?></p>
                     </div>
                 <?php endforeach; ?>
             </div>

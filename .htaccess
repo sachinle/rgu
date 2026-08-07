@@ -1,4 +1,26 @@
 # =============================================================================
+# Clean URLs Rewrite Rules (No Trailing Slash)
+# =============================================================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1. Redirect /global-affairs/ or any /url/ to /url (Remove trailing slash)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} ^(.+)/$
+  RewriteRule ^ %1 [R=301,L]
+
+  # 2. Redirect /global-affairs.html or .php to clean URL /global-affairs
+  RewriteCond %{THE_REQUEST} \s/global-affairs\.(html|php)[\s?] [NC]
+  RewriteRule ^global-affairs\.(html|php)$ global-affairs [R=301,L]
+
+  # 3. Map clean URL /global-affairs -> global-affairs.php
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteRule ^([^\.]+)$ $1.php [L]
+</IfModule>
+
+# =============================================================================
 # RGU site — performance/caching/security headers
 # Requires Apache modules: mod_deflate, mod_brotli (optional), mod_expires,
 # mod_headers. cPanel/XAMPP have these on by default.
