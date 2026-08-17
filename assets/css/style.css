@@ -364,10 +364,11 @@ body {
   font-size: 0.75rem;
   font-weight: 600;
   background: rgba(0, 0, 0, 0.05);
-  youtube-slider.dragging .iframe-overlay {
-    cursor: grabbing;
-  }
   border-radius: 100px;
+}
+
+.youtube-slider.dragging .iframe-overlay {
+  cursor: grabbing;
 }
 
 .card-title {
@@ -872,4 +873,129 @@ body {
   max-height: 200px; /* enough to show content; adjust if needed */
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ==========================================================================
+   MOBILE VIEW IMPROVEMENTS
+   Written as plain CSS on purpose: assets/css/tailwind.css is a precompiled
+   artifact with no build pipeline in this repo, so new arbitrary utilities
+   (e.g. md:text-[10px]) would not exist. Everything below is scoped to the
+   mobile breakpoint unless noted.
+   ========================================================================== */
+
+/* --- 1. Legibility -------------------------------------------------------
+   The banner sidebar labels were text-[5px] on mobile (md:text-[8px] raised
+   them to 8px only from 768px up), and the mobile stat labels were 8px.
+   5px is not readable on a phone; this aligns mobile with the desktop size.
+   These are still small by design — micro-labels inside 56px circles. */
+@media (max-width: 767px) {
+  .banner .floating-card p {
+    font-size: 8px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+  }
+
+  /* Absolutely-positioned constellation stats in the mobile banner. */
+  .banner .stat-label {
+    font-size: 10px;
+  }
+  .banner .stat-value {
+    font-size: 15px;
+  }
+}
+
+/* --- 2. Touch target sizing ---------------------------------------------
+   "More Details" was 85x17px; WCAG 2.5.8 asks for 24px minimum and the
+   practical mobile guideline is 44px. The negative margin keeps the card's
+   visual rhythm unchanged while the tappable box grows. */
+@media (max-width: 767px) {
+  .more-details {
+    min-height: 44px;
+    align-items: center;
+    padding-block: 4px;
+  }
+
+  /* Slider dots were 8x8px. Grow the hit area via a pseudo-element so the
+     dot itself keeps its size and the layout does not shift. */
+  .slider-dots .dot {
+    position: relative;
+  }
+  .slider-dots .dot::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    transform: translate(-50%, -50%);
+  }
+  .slider-dots {
+    gap: 1.25rem;
+  }
+}
+
+/* --- 3. Mobile paint cost ------------------------------------------------
+   .blob is three fixed-position elements at 300-500px with filter:blur(80px)
+   animating continuously. On mobile that is a large, constant compositor
+   repaint for a purely decorative effect. Keep the colour wash, drop the
+   animation. */
+@media (max-width: 767px) {
+  .blob {
+    animation: none;
+    opacity: 0.3;
+  }
+  .particles {
+    display: none;
+  }
+}
+
+/* --- 4. Respect reduced-motion (all breakpoints) -------------------------
+   The homepage runs ~60 infinite CSS animations (marquees, floating cards,
+   rising lines, pulses). Only the life-at-RGU marquee honoured this. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- 5. Keep the far-left banner stats on screen -------------------------
+   These two used inline left:-9% / left:-10%, which scale with the stats
+   container: harmless at 375px but 33px off the left edge at 767px (the
+   text was simply cut off). The stats column always starts 80px from the
+   viewport edge on mobile (72px sidebar + 8px padding), so a fixed offset
+   holds the same visual position at every width. Overrides an inline
+   style, hence !important. */
+@media (max-width: 767px) {
+  .banner .stat-edge-left {
+    /* -26px puts the centre at 54px, and the widest label here ("Global
+       Partners") is ~104px, so it spans 2px..106px — clear of the edge. */
+    left: -26px !important;
+  }
+}
+
+/* --- 6. Remaining mobile tap targets & small type -----------------------
+   Footer quick-links rendered at 18px tall and the programme search input
+   at 26px — both well under a comfortable touch target. The 9px marquee
+   labels and accreditation chips get a small bump for legibility. */
+@media (max-width: 767px) {
+  footer li > a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  #programme-search {
+    min-height: 44px;
+    /* 16px prevents iOS Safari from auto-zooming the page on focus. */
+    font-size: 16px;
+  }
+
+  .text-\[9px\] {
+    font-size: 10px;
+  }
 }

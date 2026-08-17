@@ -57,6 +57,31 @@ gtag('js', new Date());
 gtag('config', 'G-EKNZR4B5B8'); 
 </script>
     <!-- Lucide icons are inlined as SVGs in the homepage partials (no runtime needed). -->
+
+    <!-- Identity / Organization structured data. Homepage only: this describes the
+         institution as an entity, so it should not be repeated on inner pages. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollegeOrUniversity",
+      "name": "Rathinam Global Deemed to be University",
+      "alternateName": "Rathinam Global University",
+      "url": "https://rathinamglobal.edu.in/",
+      "logo": "https://rathinamglobal.edu.in/assets/images/logo-360.webp",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8448448909",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "ta", "ml"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/rathinamglobal/",
+        "https://www.instagram.com/rathinam_global/",
+        "https://www.youtube.com/@RathinamGlobal"
+      ]
+    }
+    </script>
 </head>
 
 <body>

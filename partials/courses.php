@@ -10,9 +10,12 @@
             Your Future Awaits
         </span>
     </div>
-    <h2 class="text-4xl md:text-6xl font-extrabold text-center mb-0 md:mb-10 relative z-10">
-        Courses Offered at <span style="background:linear-gradient(90deg,#7e22ce,#0284c7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">RGU</span>
-    </h2>
+    <!-- Page H1. Visually identical to the previous h2; the sr-only span expands the
+         "RGU" acronym so the full university name is in the H1 for crawlers and
+         screen readers without changing the visual design. -->
+    <h1 class="text-4xl md:text-6xl font-extrabold text-center mb-0 md:mb-10 relative z-10">
+        Courses Offered at <span style="background:linear-gradient(90deg,#7e22ce,#0284c7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">RGU</span><span class="sr-only"> — Rathinam Global University</span>
+    </h1>
     <!-- Background Blobs -->
     <div class="bg-blobs">
         <div class="blob blob-1"></div>
@@ -44,9 +47,9 @@
                         </div>
                         <span class="programme-count text-white">13 Programmes</span>
                     </div>
-                    <h2 class="card-title text-white">Quantum Science, Computing & AI</h2>
+                    <h3 class="card-title text-white">Quantum Science, Computing & AI</h3>
                     <a href="./courses/school-of-quantum-science.php"
-                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       class="more-details inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
                     </a>
@@ -69,9 +72,9 @@
                         </div>
                         <span class="programme-count text-white">10 Programmes</span>
                     </div>
-                    <h2 class="card-title text-white">Engineering & Emerging Technologies</h2>
+                    <h3 class="card-title text-white">Engineering & Emerging Technologies</h3>
                     <a href="./courses/school-of-engineering-emerging-technologies.php"
-                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       class="more-details inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
                     </a>
@@ -93,9 +96,9 @@
                         </div>
                         <span class="programme-count text-white">36 Programmes</span>
                     </div>
-                    <h2 class="card-title text-white">Business & Commerce</h2>
+                    <h3 class="card-title text-white">Business & Commerce</h3>
                     <a href="./courses/school-of-business-and-commerce.php"
-                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       class="more-details inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
                     </a>
@@ -119,9 +122,9 @@
                         </div>
                         <span class="programme-count text-white">5 Programmes</span>
                     </div>
-                    <h2 class="card-title text-white">Applied Biosciences / Food / Agritech</h2>
+                    <h3 class="card-title text-white">Applied Biosciences / Food / Agritech</h3>
                     <a href="./courses/school-of-applied-biosciences.php"
-                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       class="more-details inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
                     </a>
@@ -143,9 +146,9 @@
                         </div>
                         <span class="programme-count text-white">11 Programmes</span>
                     </div>
-                    <h2 class="card-title text-white">Liberal Arts & Science</h2>
+                    <h3 class="card-title text-white">Liberal Arts & Science</h3>
                     <a href="./courses/school-of-liberal-arts-science.php"
-                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       class="more-details inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
                     </a>
@@ -168,9 +171,9 @@
                         </div>
                         <span class="programme-count text-white">4 Programmes</span>
                     </div>
-                    <h2 class="card-title text-white">Media & Performing Arts</h2>
+                    <h3 class="card-title text-white">Media & Performing Arts</h3>
                     <a href="./courses/school-of-media-and-performing-arts.php"
-                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       class="more-details inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
                     </a>
@@ -192,9 +195,9 @@
                         </div>
                         <span class="programme-count text-white">5 Programmes</span>
                     </div>
-                    <h2 class="card-title text-white">Fashion Design</h2>
+                    <h3 class="card-title text-white">Fashion Design</h3>
                     <a href="./courses/school-of-fashion-design.php"
-                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       class="more-details inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
                     </a>
@@ -215,9 +218,9 @@
                         </div>
                         <span class="programme-count text-white">4 Programmes</span>
                     </div>
-                    <h2 class="card-title text-white">Sports & Health Sciences</h2>
+                    <h3 class="card-title text-white">Sports & Health Sciences</h3>
                     <a href="./courses/school-of-sports-and-health-sciences.php"
-                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       class="more-details inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
                     </a>
@@ -240,9 +243,9 @@
                         </div>
                         <span class="programme-count text-white">2 Programmes</span>
                     </div>
-                    <h2 class="card-title text-white">Sustainability & Climate Studies</h2>
+                    <h3 class="card-title text-white">Sustainability & Climate Studies</h3>
                     <a href="./courses/school-of-sustainability-and-climate-studies.php"
-                       class="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
+                       class="more-details inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-white/80 hover:text-white transition"
                        onclick="event.stopPropagation()">
                         More Details &#x2192;
                     </a>

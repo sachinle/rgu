@@ -410,6 +410,7 @@
           <li><a href="<?= $linkBase ?? './' ?>research/" class="text-sm text-white/70 transition hover:text-white">Research</a></li>
           <li><a href="#spotlight" class="text-sm text-white/70 transition hover:text-white">Placements</a></li>
           <li><a href="#life-at-rgu" class="text-sm text-white/70 transition hover:text-white">Alumni</a></li>
+          <li><a href="<?= $linkBase ?? './' ?>careers.php" class="text-sm text-white/70 transition hover:text-white">Careers</a></li>
           <li><a href="#contact" class="text-sm text-white/70 transition hover:text-white">Contact</a></li>
           <li><a href="https://rathinamglobal.edu.in/fab/" rel="noopener" class="text-sm text-white/70 transition hover:text-white">RGU Summer Camp - 2026</a></li>
         </ul>

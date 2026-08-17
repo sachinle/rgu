@@ -24,13 +24,28 @@
     <?php
       // Centralised gallery list (image, shape). Each item is rendered twice to support
       // the seamless marquee loop without duplicating markup in source.
+      // [id, shape, alt]. Alt text describes the actual photo — the marquee's
+      // duplicate pass is decorative and gets alt="" + aria-hidden instead.
       $gallery1 = [
-        ['01','wide'], ['02','tall'], ['03','square'], ['04','wide'], ['05','square'],
-        ['06','tall'], ['07','wide'], ['08','square'], ['09','wide'],
+        ['01','wide',   'Aerial view of the Rathinam Global University campus and sports ground in Coimbatore'],
+        ['02','tall',   'Aerial view of Rathinam campus academic blocks and hostel building'],
+        ['03','square', 'Rathinam Global University academic buildings seen from above'],
+        ['04','wide',   'Rathinam Research Hub building on campus'],
+        ['05','square', 'Rathinam Institutions and IT Parks entrance arch with rocket model'],
+        ['06','tall',   'Campus academic block with outdoor basketball courts'],
+        ['07','wide',   'Campus football ground at Rathinam Global University'],
+        ['08','square', 'Wall of Fame displaying university rankings, placement and research achievements'],
+        ['09','wide',   'Open-air amphitheatre with tiered seating on campus'],
       ];
       $gallery2 = [
-        ['10','wide'], ['11','square'], ['12','tall'], ['13','wide'], ['14','square'],
-        ['15','tall'], ['16','wide'], ['17','square'],
+        ['10','wide',   'Rathinam Grand Hall illuminated at sunset with students gathered outside'],
+        ['11','square', 'Discussion room with a motivational wall mural'],
+        ['12','tall',   'Computer lab with rows of desktop workstations'],
+        ['13','wide',   'Rathinam Hybrid Learning Hub classroom with tiered seating'],
+        ['14','square', 'Innovation lab with partitioned workstations and technology partner logos'],
+        ['15','tall',   'Bio InnoSpace incubation laboratory with shared work desks'],
+        ['16','wide',   'Wooden tiered seating area used as an informal student collaboration space'],
+        ['17','square', 'Open-plan student workspace with rows of desks and colourful ceiling lighting'],
       ];
       // Approx render dims (must match CSS) so the browser can reserve space (no CLS).
       $dims = [
@@ -42,12 +57,13 @@
         // Render twice for a seamless infinite-scroll loop (transform animates 0 → -50%).
         for ($pass = 0; $pass < 2; $pass++) {
           foreach ($items as $g) {
-            [$id, $shape] = $g;
+            [$id, $shape, $alt] = $g;
             $w = $dims[$shape]['w']; $h = $dims[$shape]['h'];
             // First pass is visible; second pass is the off-screen copy used purely
             // to fill the gap during the loop — mark it aria-hidden.
             $hidden = $pass === 1 ? ' aria-hidden="true"' : '';
-            echo '<div class="gallery-card ' . $shape . '"' . $hidden . '><img src="assets/images/life/' . $id . '.webp" alt="' . ($pass === 0 ? 'Life at RGU' : '') . '" width="' . $w . '" height="' . $h . '" loading="lazy" decoding="async"></div>';
+            $altAttr = $pass === 0 ? htmlspecialchars($alt, ENT_QUOTES, 'UTF-8') : '';
+            echo '<div class="gallery-card ' . $shape . '"' . $hidden . '><img src="assets/images/life/' . $id . '.webp" alt="' . $altAttr . '" width="' . $w . '" height="' . $h . '" loading="lazy" decoding="async"></div>';
           }
         }
       }

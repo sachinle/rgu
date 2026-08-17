@@ -79,6 +79,7 @@
             </ul>
         </li>
         <li><a href="<?= $linkBase ?>global-affairs" class="hover:text-gray-300 transition-colors">Global Affairs</a></li>
+        <li><a href="<?= $linkBase ?>careers.php" class="hover:text-gray-300 transition-colors">Careers</a></li>
     </ul>
 
     <!-- Mobile toggle -->
@@ -128,7 +129,8 @@
                 </div>
             </details>
         </li>
-        <li><a href="<?= $linkBase ?>global-affairs" class="block py-2 font-semibold text-purple-400">Global Affairs</a></li>
+        <li><a href="<?= $linkBase ?>global-affairs" class="block py-2">Global Affairs</a></li>
+        <li><a href="<?= $linkBase ?>careers.php" class="block py-2 font-semibold text-purple-400">Careers</a></li>
     </ul>
 </div>
 <script>
